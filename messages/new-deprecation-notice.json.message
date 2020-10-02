@@ -3,7 +3,6 @@ MessageType: NewAzureDeprecationV1
 ```json
 {
     "Title": "Azure Cognitive Services Translator v2 is deprecated by 24 May 2021.",
-    "DueOn": "2025-03-31T00:00:00+00:00",
     "Impact": {
         "Description": "Service will no longer be available.",
         "Type": "MigrationRequired",
@@ -23,6 +22,13 @@ MessageType: NewAzureDeprecationV1
     "Contact": {
         "Type": "Support"
     },
+    "Timeline":[
+        {
+            "Date": "2025-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Feature will no longer work"
+        }
+    ],
     "AdditionalInformation": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/migrate-to-v3"
 }
 ```
