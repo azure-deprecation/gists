@@ -31,7 +31,7 @@ MessageType: NewAzureDeprecationV1
         {
             "Date": "2025-03-31T00:00:00+00:00",
             "Phase": "Deprecation",
-            "Description": "Feature will no longer work"
+            "Description": "Feature will no longer work",
             "IsDueDate": true
         }
     ],
