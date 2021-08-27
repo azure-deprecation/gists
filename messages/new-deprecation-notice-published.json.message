@@ -29,7 +29,7 @@
           "Data": "example@example.com"
       }
     ],
-    "AdditionalInformation": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/migrate-to-v3"
+    "AdditionalInformation": ""
   },
   "PublishedNotice": {
     "Title": "Azure Cognitive Services Translator v2 is retiring on 24 May 2021.",

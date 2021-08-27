@@ -45,6 +45,6 @@ https://azure.microsoft.com/en-us/updates/azure-functions-support-for-node-8-is-
             "IsDueDate": true
         }
     ],
-    "AdditionalInformation": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/migrate-to-v3"
+    "AdditionalInformation": ""
 }
 ```

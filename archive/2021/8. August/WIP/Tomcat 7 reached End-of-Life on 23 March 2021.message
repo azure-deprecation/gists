@@ -45,6 +45,6 @@ https://azure.microsoft.com/en-us/updates/transition-to-tomcat-85-or-90-by-29-ju
             "IsDueDate": true
         }
     ],
-    "AdditionalInformation": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/migrate-to-v3"
+    "AdditionalInformation": ""
 }
 ```

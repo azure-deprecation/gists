@@ -45,6 +45,6 @@ https://azure.microsoft.com/en-au/updates/update-apps-using-azure-ad-b2c-to-new-
             "IsDueDate": true
         }
     ],
-    "AdditionalInformation": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/migrate-to-v3"
+    "AdditionalInformation": ""
 }
 ```

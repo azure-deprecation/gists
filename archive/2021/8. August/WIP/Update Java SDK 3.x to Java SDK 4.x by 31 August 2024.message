@@ -45,6 +45,6 @@ https://azure.microsoft.com/en-au/updates/retirement-notice-update-java-sdk-3x-t
             "IsDueDate": true
         }
     ],
-    "AdditionalInformation": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/migrate-to-v3"
+    "AdditionalInformation": ""
 }
 ```
