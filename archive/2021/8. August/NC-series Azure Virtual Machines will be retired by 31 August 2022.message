@@ -4,7 +4,7 @@ https://azure.microsoft.com/en-au/updates/ncseries-azure-virtual-machines-will-b
 {
     "Title": "Azure Cognitive Services Translator v2 is retiring on 24 May 2021",
     "Impact": {
-        "Description": "Service will no longer be available.",
+        "Description": "VMs will be set to a deallocated state, will stop working, and will no longer incur billing charge.",
         "Type": "MigrationRequired",
         "Area": "Feature",
         "Cloud": "Public",
@@ -41,10 +41,10 @@ https://azure.microsoft.com/en-au/updates/ncseries-azure-virtual-machines-will-b
         {
             "Date": "2024-02-29T00:00:00+00:00",
             "Phase": "Deprecation",
-            "Description": "Feature will no longer work",
+            "Description": "VMs will be set to a deallocated state, will stop working, and will no longer incur billing charge.",
             "IsDueDate": true
         }
     ],
-    "AdditionalInformation": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/migrate-to-v3"
+    "AdditionalInformation": ""
 }
 ```
