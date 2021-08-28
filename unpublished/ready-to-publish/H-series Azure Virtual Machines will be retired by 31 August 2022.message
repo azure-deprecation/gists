@@ -16,7 +16,7 @@ MessageType: NewAzureDeprecationV1
         "Links": ["https://azure.microsoft.com/en-au/updates/hseries-azure-virtual-machines-will-be-retired-by-31-august-2022/", "https://aka.ms/H-series-migration"]
     },
     "RequiredAction": {
-        "OfficialReport": "> **We are retiring H-series VMs on 31 August 2022**. All H-series VMs will need to be de-allocated by that date.  For recommendations on which VMs to migrate your H-series workloads to or for the creation of net new VMs, please see this migration guide.  Visit the Azure Virtual Machine pricing page for additional information.",
+        "OfficialReport": "> **We are retiring H-series VMs on 31 August 2022**. All H-series VMs will need to be de-allocated by that date.  For recommendations on which VMs to migrate your H-series workloads to or for the creation of net new VMs, please see this [migration guide](https://aka.ms/H-series-migration). Visit the [Azure Virtual Machine pricing page](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/) for additional information.",
         "AdditionalInfo": "Use the official [migration guide](https://aka.ms/H-series-migration).\r\n\r\nYou will need to resize or deallocate your H-series virtual machines. We recommend migrating workloads from original H-series (inclusive of H-series promo) virtual machines to our newer offerings."
     },
     "Contact": [
