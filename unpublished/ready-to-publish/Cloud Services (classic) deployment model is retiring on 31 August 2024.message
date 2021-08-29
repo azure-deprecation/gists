@@ -2,9 +2,9 @@ MessageType: NewAzureDeprecationV1
 
 ```json
 {
-    "Title": "Azure Cloud Services (classic) deployment model is retiring on 24 May 2021",
+    "Title": "Azure Cloud Services (classic) deployment model is retiring on 31 August 2024",
     "Impact": {
-        "Description": "Azure Cloud Services (classic) deployment model is retiring on 24 May 2021 and migration to [Azure Cloud Services (extended support)](https://docs.microsoft.com/en-gb/azure/cloud-services-extended-support/overview).",
+        "Description": "Azure Cloud Services (classic) deployment model is retiring on 31 August 2024 and migration to [Azure Cloud Services (extended support)](https://docs.microsoft.com/en-gb/azure/cloud-services-extended-support/overview).",
         "Type": "MigrationRequired",
         "Area": "ServiceRuntime",
         "Cloud": "Public",
