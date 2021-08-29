@@ -1,7 +1,5 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/were-retiring-the-log-analytics-agent-in-azure-monitor-on-31-august-2024/
-https://docs.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration
-See email
+https://azure.microsoft.com/en-au/updates/retirement-notice-transition-to-new-work-item-integration-in-application-insights/
 ```json
 {
     "Title": "Azure Cognitive Services Translator v2 is retiring on 31 August 2021",
