@@ -34,7 +34,7 @@ https://azure.microsoft.com/en-us/updates/transition-to-tomcat-85-or-90-by-29-ju
     ],
     "Timeline":[
         {
-            "Date": "2021-02-29T00:00:00+00:00",
+            "Date": "2021-08-20T00:00:00+00:00",
             "Phase": "Announcement",
             "Description": "Deprecation was announced"
         },
