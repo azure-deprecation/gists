@@ -6,7 +6,7 @@ MessageType: NewAzureDeprecationV1
     "Impact": {
         "Description": "VMs will likely be de-allocated and no longer up & running.",
         "Type": "MigrationRequired",
-        "Area": "Feature",
+        "Area": "Sku",
         "Cloud": "Public",
         "Services": ["VirtualMachine"]
     },
