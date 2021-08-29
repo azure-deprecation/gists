@@ -6,7 +6,7 @@ MessageType: NewAzureDeprecationV1
     "Impact": {
         "Description": "VMs will be set to a deallocated state, will stop working, and will no longer incur billing charge.",
         "Type": "MigrationRequired",
-        "Area": "Feature",
+        "Area": "Sku",
         "Cloud": "Public",
         "Services": ["VirtualMachine"]
     },
