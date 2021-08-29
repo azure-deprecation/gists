@@ -39,7 +39,7 @@ https://azure.microsoft.com/en-au/updates/retirement-notice-select-azure-cogniti
             "Description": "Deprecation was announced"
         },
         {
-            "Date": "2024-02-29T00:00:00+00:00",
+            "Date": "2024-08-31T00:00:00+00:00",
             "Phase": "Deprecation",
             "Description": "Feature will no longer work",
             "IsDueDate": true
