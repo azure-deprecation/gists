@@ -2,8 +2,9 @@
 
 \r\n
 
-> In May 2018, we announced the general availability of version 3 of Translator and will retire version 2 of Translator on 24 May 2021.\r\n> \r\n> Key benefits of version 3 of Translator include:
+> In May 2018, we announced the general availability of version 3 of Translator and will retire version 2 of Translator on 31 August 2021.\r\n> \r\n> Key benefits of version 3 of Translator include:
 
 ---
 
-> To avoid service disruption, please remove your existing Compute Optimized data flows before 31 August 2024. [Follow the steps in this document](https://aka.ms/dataflowcoretire) to create a new Azure Integration Runtime in Azure Data Factory and associate your existing data flows to the new General Purpose Azure Integration Runtime.  Visit the [Azure Data Factory pricing page](https://azure.microsoft.com/en-us/pricing/details/data-factory/data-pipeline/) for the latest updated pricing available for General Purpose and Memory Optimized data flows.
+> As the [new release annotations](https://docs.microsoft.com/azure/azure-monitor/app/annotations) in Application Insights provide a simple way to re-use your existing deployment tasks or custom deployment scripts, we’re retiring release annotations using API Keys on 31 August 2024.\r\n> \r\n> With the new release annotations, you no longer need to maintain a dedicated task. Your pre-existing deployment task for App Services or Functions will be sufficient or you can add a custom PowerShell script for [other scenarios](https://docs.microsoft.com/azure/azure-monitor/app/annotations#release-annotations-with-azure-pipelines-build).
+
