@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure App Service's PHP 7.3 support is retiring on 31 August 2021",
+    "Impact": {
+        "Description": "Azure App Service's PHP 7.3 support is retiring on 31 August 2021 and upgrade to PHP 7.4 is advised.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["AppService"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because PHP 7.3 extended support on Linux and Windows will end on 6 December 2021, any applications hosted on Azure App Service that are still using it will not be supported after 6 December 2021. Your applications will continue to run unchanged but won't receive any patches after 6 December 2021, since PHP will no longer be providing them.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/community-support-for-php-73-is-ending-on-6-december-2021/", "https://github.com/Azure/app-service-linux-docs/blob/master/Runtime_Support/php_support.md#end-of-life-for-php-73"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To minimize risk and potential security vulnerabilities, [follow the steps to update your applications to PHP 7.4](https://aka.ms/phpsupport) before 6 December 2021.",
+        "AdditionalInfo": null
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-web-apps-php-7"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-24T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2021-12-06T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Applications will still be functional but are no longer supported nor will they receive security patches",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

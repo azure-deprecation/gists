@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Funtions' PowerShell 6 support is retiring on 30 September 2022",
+    "Impact": {
+        "Description": "Azure Function App running PowerShell 6 will no longer be supported after 30 September 2022",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Functions"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because PowerShell 6 has reached end of support on 4 September 2020, applications hosted on Azure Functions using PowerShell 6 will be unsupported after **30 September 2022.**",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/azure-functions-support-for-powershell-6-is-ending-on-30-september-2022/", "https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell?tabs=portal#changing-the-powershell-version"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To avoid any service disruption and potential security vulnerabilities in your applications, we recommend you  upgrade to PowerShell 7, and then [follow the steps to update your applications settings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell?tabs=portal#changing-the-powershell-version) before 30 September 2022.",
+        "AdditionalInfo": null
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-functions-ps6"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-31T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Azure Function App running PowerShell 6 will no longer be supported",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure IoT Central v2 is retiring on 1 March 2022",
+    "Impact": {
+        "Description": "Azure IoT Central v2 is retiring on 1 March 2022.",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["IotCentral"]
+    },
+    "Notice": {
+        "OfficialReport": "> We are extending the retirement date for Azure IoT Central version 2 as we know that it takes time to adjust to changes. **The new retirement due date is 1 March 2022**.\r\n> \r\n> We encourage you to make the switch early to gain the benefits of version 3 which provides many new features that are not available in version 2. Version 3 includes:\r\n> \r\n> - [**Raw Data View**](https://docs.microsoft.com/en-us/azure/iot-central/core/concepts-telemetry-properties-commands) to review telemetry sent from your devices to quickly identify and resolve issues.\r\n> - [**Public APIs**](https://docs.microsoft.com/en-us/rest/api/iotcentral/) with built-in support for lifecycle management, operations, and data querying.\r\n> - [**Improved Data Export**](https://docs.microsoft.com/azure/iot-central/core/howto-export-data) for receiving real-time enriched data and unlocking business insights.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/iotcentralv2/", "https://docs.microsoft.com/en-us/azure/iot-central/core/howto-migrate"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To avoid service disruptions, [migrate your Azure IoT Central apps](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-migrate) to version 3 before 1 March  2022.",
+        "AdditionalInfo": "The steps to migrate an application from V2 to V3 are:\r\n\r\n1. Create a new V3 application from the V2 application.\r\n2. Configure the V3 application.\r\n3. Delete to V2 application.\r\n\r\nTo learn how to identify the version of an IoT Central application, see [How do I get information about my application?](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-faq#how-do-i-get-information-about-my-application-)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-iot-central-v2"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-21T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-03-01T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Feature will no longer work",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

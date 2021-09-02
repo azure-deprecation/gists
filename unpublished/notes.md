@@ -6,5 +6,9 @@
 
 ---
 
-> As the [new release annotations](https://docs.microsoft.com/azure/azure-monitor/app/annotations) in Application Insights provide a simple way to re-use your existing deployment tasks or custom deployment scripts, we’re retiring release annotations using API Keys on 31 August 2024.\r\n> \r\n> With the new release annotations, you no longer need to maintain a dedicated task. Your pre-existing deployment task for App Services or Functions will be sufficient or you can add a custom PowerShell script for [other scenarios](https://docs.microsoft.com/azure/azure-monitor/app/annotations#release-annotations-with-azure-pipelines-build).
-
+> To minimize risk and potential security vulnerabilities, upgrade your Web Apps to Tomcat 8.5 or 9 depending on your workload requirements. To start, [log in to Azure portal](https://portal.azure.com/#home), navigate to the web app(s) go to **Configuration > Settings > Stack Settings**. You will see dropdowns for Tomcat versions. Select Tomcat 8.5 or 9.0.\r\n
+> \r\n
+> You can also view other resources before you upgrade your Web Apps to Tomcat 8.5 or 9.\r\n
+>\r\n
+- [Tomcat 8.5 Migration Guide](https://tomcat.apache.org/migration-85.html)
+- [Tomcat 9.0 Migration Guide](https://tomcat.apache.org/migration-9.html)

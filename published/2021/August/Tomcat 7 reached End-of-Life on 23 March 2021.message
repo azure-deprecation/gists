@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure App Service's Tomcat 7 support is retiring on 23 March 2021",
+    "Impact": {
+        "Description": "Azure App Service's Tomcat 7 support is retiring on 23 March 2021 and upgrade to Tomcat 8.5 or 9 is advised.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["AppService"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because Tomcat 7 has reached the end of community support on 23 March  2021, applications hosted on App Service will continue to run, but they will not receive updates or security patches because they are no longer available.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-us/updates/transition-to-tomcat-85-or-90-by-29-july-2022/"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To minimize risk and potential security vulnerabilities, upgrade your Web Apps to Tomcat 8.5 or 9 depending on your workload requirements. To start, [log in to Azure portal](https://portal.azure.com/#home), navigate to the web app(s) go to **Configuration > Settings > Stack Settings**. You will see dropdowns for Tomcat versions. Select Tomcat 8.5 or 9.0.\r\n> \r\n> You can also view other resources before you upgrade your Web Apps to Tomcat 8.5 or 9.\r\n>\r\n> - [Tomcat 8.5 Migration Guide](https://tomcat.apache.org/migration-85.html)\r\n> - [Tomcat 9.0 Migration Guide](https://tomcat.apache.org/migration-9.html)",
+        "AdditionalInfo": "Migration guides are available for [Tomcat 8.5](https://tomcat.apache.org/migration-85.html) & [Tomcat 9.0](https://tomcat.apache.org/migration-9.html)"
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-web-apps-tomcat7"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-20T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2021-03-23T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Applications will still be functional but are no longer supported nor will they receive security patches",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Funtions' Python 3.6 support is retiring on 30 September 2022",
+    "Impact": {
+        "Description": "Azure Function App running Python 3.6 will no longer be supported after 30 September 2022",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Functions"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because Python 3.6 will reach the end of community support on 23 December 2021, applications hosted on Azure Functions using Python 3.6 will be unsupported after 30 September 2022.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-us/updates/azure-functions-support-for-python-36-is-ending-on-30-september-2022/"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To avoid any service disruption and potential security vulnerabilities in your applications, we recommend you upgrade to Python 3.8, and then [follow the steps to update your applications settings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=application-level#python-version) before 30 September 2022.",
+        "AdditionalInfo": null
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-functions-python-3"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-31T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Azure Function App running Python 3.6 will no longer be supported",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
