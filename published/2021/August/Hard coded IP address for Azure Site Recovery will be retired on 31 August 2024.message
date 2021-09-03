@@ -1,0 +1,51 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Hard coded IP address for Azure Site Recovery are retiring on 31 August 2024",
+    "Impact": {
+        "Description": "Hard coded IP address for Azure Site Recovery are retiring on 31 August 2024 and will no longer work.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["SiteRecovery"]
+    },
+    "Notice": {
+        "OfficialReport": "> We're extending the retirement due date for hard coded IP addresses to connect with Azure Site Recovery services as we know that it takes time to adjust to changes. **The new retirement due date is 31 August 2024**.\r\n> \r\n> Please transition to Azure service tags soon, as service tags is a security feature enhancement that allows or denies any traffic to your critical workloads and reduces the complexity of frequent updates to network security rules. Here’s a quick comparison between hard coded IP addresses and service tags:\r\n> \r\n> | **Hard coded IP addresses** | **Service tags** |\r\n> |:-----------------------:|:------------:|\r\n> | - Limitation in updating IP addresses when a service change occurs | - Minimizes the possibility of causing a breaking change |\r\n> | - Current features require frequent security updates | - Service tags ensure better security, stability, and resiliency |\r\n> | - Ongoing replications may be disrupted during a service upgrade | - Ongoing replications are not affected by a service change |",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/transition-to-using-service-tags-by-31-august-2024/"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To minimize disruption and security vulnerabilities, [transition to service tags](https://aka.ms/azure-site-recovery-using-service-tags) **before 31 August 2024**. Beginning 1 September 2024, net-new hard coded IP addresses will not be supported.",
+        "AdditionalInfo": null
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-site-recovery-hardcodedaddress"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2020-08-25T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2021-08-25T00:00:00+00:00",
+            "Phase": "Extension",
+            "Description": "Deprecation was extended to 2024"
+        },
+        {
+            "Date": "2024-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "IP addresses will no longer work",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

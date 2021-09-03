@@ -6,9 +6,6 @@
 
 ---
 
-> To minimize risk and potential security vulnerabilities, upgrade your Web Apps to Tomcat 8.5 or 9 depending on your workload requirements. To start, [log in to Azure portal](https://portal.azure.com/#home), navigate to the web app(s) go to **Configuration > Settings > Stack Settings**. You will see dropdowns for Tomcat versions. Select Tomcat 8.5 or 9.0.\r\n
-> \r\n
-> You can also view other resources before you upgrade your Web Apps to Tomcat 8.5 or 9.\r\n
->\r\n
-- [Tomcat 8.5 Migration Guide](https://tomcat.apache.org/migration-85.html)
-- [Tomcat 9.0 Migration Guide](https://tomcat.apache.org/migration-9.html)
+A migration guide is available in the [documentation](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-upgrade-previous-version).
+
+> Transition to version 3 of the [Cognitive Search sentiment analysis and entity recognition skills](https://aka.ms/azs-deprecated-skills) **before 31 August 2024. After 31 August 2024, the older versions of sentiment analysis and entity recognition skills will no longer be supported, and any invocation of these skills will result in errors.**  When adding sentiment analysis or entity recognition skills, please use the latest version.

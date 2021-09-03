@@ -1,0 +1,50 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Active Directory Connect v1 is retiring on 31 August 2022",
+    "Impact": {
+        "Description": "Azure Active Directory Connect v1 is retiring on 31 August 2022 and an upgrade is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["ActiveDirectory"]
+    },
+    "Notice": {
+        "OfficialReport": "> On 31 August 2022, all 1.x versions of Azure Active Directory (Azure AD) Connect will be retired because they include SQL Server 2012 components that will no longer be supported. Upgrade to the most recent version of Azure AD Connect by that date.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/action-required-upgrade-to-the-latest-version-of-azure-ad-connect-before-31-august-2022/","https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-upgrade-previous-version"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To avoid service disruptions, [upgrade to the latest version of Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-upgrade-previous-version) before 31 August 2022.",
+        "AdditionalInfo": "A migration guide is available in the [documentation](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-upgrade-previous-version)."
+    },
+    "Contact": [
+        {
+            "Type": "Email",
+            "Data": "example@example.com"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-ad-connect"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-09-02T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Using it is no longer supported, effective impact is unclear",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
