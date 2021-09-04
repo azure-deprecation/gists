@@ -6,6 +6,6 @@
 
 ---
 
-A migration guide is available in the [documentation](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-upgrade-previous-version).
+A migration guide is available in the [documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/migrate-java-v4-sdk?tabs=java-v4-async).
 
-> Transition to version 3 of the [Cognitive Search sentiment analysis and entity recognition skills](https://aka.ms/azs-deprecated-skills) **before 31 August 2024. After 31 August 2024, the older versions of sentiment analysis and entity recognition skills will no longer be supported, and any invocation of these skills will result in errors.**  When adding sentiment analysis or entity recognition skills, please use the latest version.
+> Because version 3 of the Azure Cosmos DB .NET SDK includes updated features and improved performance, **we’ll retire version 2.x of this SDK on 31 August 2024**.  As a result, you’ll need to update your SDK to version 3 by that date.  \r\n> \r\n> Version 3 includes:  \r\n> \r\n> - Improved performance through stream API support. \r\n> - Built-in support for change feed processor library and bulk operations. \r\n> - Mockable APIs for easier unit testing. 

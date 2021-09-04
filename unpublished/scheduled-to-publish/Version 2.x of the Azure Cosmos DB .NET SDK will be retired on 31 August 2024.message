@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Cosmos DB's .NET SDK v2.x is retiring on 31 August 2024",
+    "Impact": {
+        "Description": "Azure Cosmos DB's .NET SDK v2.x will no longer receive patches after 31 August 2024.",
+        "Type": "UpgradeRequired",
+        "Area": "Sdk",
+        "Cloud": "Public",
+        "Services": ["CosmosDb"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because version 3 of the Azure Cosmos DB .NET SDK includes updated features and improved performance, **we’ll retire version 2.x of this SDK on 31 August 2024**.  As a result, you’ll need to update your SDK to version 3 by that date.  \r\n> \r\n> Version 3 includes:  \r\n> \r\n> - Improved performance through stream API support. \r\n> - Built-in support for change feed processor library and bulk operations. \r\n> - Mockable APIs for easier unit testing. ",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-us/updates/action-required-update-your-azure-cosmos-db-net-sdk-to-version-3-by-31-august-2024/", "https://docs.microsoft.com/en-us/azure/cosmos-db/sql/migrate-dotnet-v3?tabs=dotnet-v3"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To avoid service disruptions, [migrate to Azure Cosmos DB .NET SDK version 3](https://docs.microsoft.com/en-us/azure/cosmos-db/sql/migrate-dotnet-v3?tabs=dotnet-v3) by 31 August 2024.",
+        "AdditionalInfo": "You can post questions about the migration on [GitHub](https://github.com/Azure/azure-cosmos-dotnet-v3/discussions/2151)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-cosmos-db-net-sdk"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-20T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "SDK will most likely no longer work",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
