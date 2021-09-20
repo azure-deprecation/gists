@@ -1,0 +1,39 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Monitor’s Baseline and CalculateBaseline APIs are retiring on 30 November 2021",
+    "Impact": {
+        "Description": "Baseline and CalculateBaseline APIs will no longer be available.",
+        "Type": "MigrationRequired",
+        "Area": "ApiEndpoint",
+        "Cloud": "Public",
+        "Services": ["Monitor"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because Azure Monitor now provides a unified and improved MetricBaselines API for retrieving Dynamic Thresholds baselines for Azure metrics, the legacy Baseline and CalculateBaseline APIs will be retired on 30 November 2021.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/azure-monitor-s-baseline-and-calculatebaseline-apis-will-be-retired-on-30-november-2021/"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To get the Dynamic Thresholds baselines (upper and lower bounds) for your Azure resource metrics, please use the [MetricBaselines](https://docs.microsoft.com/rest/api/monitor/baselines/list) API.",
+        "AdditionalInfo": null
+    },
+    "Contact": [
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-17T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2021-11-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Feature will no longer work",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

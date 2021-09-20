@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Application Insights' work item integration (classic) is retiring on 31 August 2022",
+    "Impact": {
+        "Description": "Classic work item integration will no longer be available in favor of new work item integration.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["ApplicationInsights"]
+    },
+    "Notice": {
+        "OfficialReport": "> As the [new work item integration](https://docs.microsoft.com/azure/azure-monitor/app/work-item-integration) experience within Application Insights includes updated features and improved performance, **we’ll be retiring the work item integration (classic) capability on 31 August 2022**. Please update to the new work item integration by that date. Some of the new features include:\r\n> \r\n> - Customizable workbook templates\r\n> - Deployment through Azure Resource Manager templates.\r\n> - Multiple configurations for any number of repositories and work items.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/retirement-notice-transition-to-new-work-item-integration-in-application-insights/","https://docs.microsoft.com/en-gb/azure/azure-monitor/app/work-item-integration#migrate-to-new-work-item-integration"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> - Beginning 30 November 2021, creation of new work item integration via work item integration (classic) will be disabled. Start using the [new work item integration](https://docs.microsoft.com/en-us/azure/azure-monitor/app/work-item-integration#create-and-configure-a-work-item-template) in Application Insights.\r\n> - [Migrate](https://docs.microsoft.com/azure/azure-monitor/app/work-item-integration#migrate-to-new-work-item-integration) to the new work item integration before 31 August 2022. After 31 August 2022, the work item integration (classic) capability will not be supported.",
+        "AdditionalInfo": "A migration guide is available in the [documentation](https://docs.microsoft.com/en-gb/azure/azure-monitor/app/work-item-integration#migrate-to-new-work-item-integration)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-monitor-ai-classic-work-integration"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-24T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Feature will no longer work",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
