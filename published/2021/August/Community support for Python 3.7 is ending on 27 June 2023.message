@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure App Service's Python 3.7 support is retiring on 27 June 2023",
+    "Impact": {
+        "Description": "Azure App Service's Python 3.7 support is retiring on 27 June 2023 and upgrade to Python 3.8 is advised.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["AppService"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because Python 3.7 extended support on Linux will end on 27 June 2023, any applications hosted on Azure App Service that are still using it will be unsupported after 27 June 2023. Your applications will continue to run unchanged but won't receive any patches after 27 June 2023, since Python will no longer be providing them.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/community-support-for-python-37-is-ending-on-27-june-2023/"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To minimize risk and potential security vulnerabilities, [follow the steps to update your applications to Python 3.8](https://aka.ms/pythonsupport) before 27 June 2023.",
+        "AdditionalInfo": null
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-web-apps-java7"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-26T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-06-27T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Applications will still be functional but are no longer supported nor will they receive security patches",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

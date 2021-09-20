@@ -1,10 +1,10 @@
 {
   "DeprecationInfo": {
-    "Title": "Azure Cognitive Services Translator v2 is retiring on 24 May 2021.",
+    "Title": "Azure Cognitive Services Translator v2 is retiring on 31 August 2021.",
     "Timeline": [
       {
         "Phase": "Deprecation",
-        "Date": "2024-02-29T00:00:00+00:00",
+        "Date": "2024-08-31T00:00:00+00:00",
         "Description": "Feature will no longer work"
       }
     ],
@@ -16,7 +16,7 @@
       "Services": ["CognitiveServices"]
     },
     "Notice": {
-      "Description": "Here's the official report from Microsoft:\r\n\r\n> In May 2018, we announced the general availability of version 3 of Translator and will retire version 2 of Translator on 24 May 2021.\r\n> \r\n> Key benefits of version 3 of Translator include: \r\n> - More functionalities including bilingual dictionary, transliterate and translate to multiple target languages in a single request.\r\n> - Provides a  [layered security model](https://docs.microsoft.com/en-us/azure/cognitive-services/Welcome#securing-resources) as part of Azure Cognitive Services.\r\n> - Customized translations through [Custom Translator](https://portal.customtranslator.azure.ai/).\r\n",
+      "Description": "Here's the official report from Microsoft:\r\n\r\n> In May 2018, we announced the general availability of version 3 of Translator and will retire version 2 of Translator on 31 August 2021.\r\n> \r\n> Key benefits of version 3 of Translator include: \r\n> - More functionalities including bilingual dictionary, transliterate and translate to multiple target languages in a single request.\r\n> - Provides a  [layered security model](https://docs.microsoft.com/en-us/azure/cognitive-services/Welcome#securing-resources) as part of Azure Cognitive Services.\r\n> - Customized translations through [Custom Translator](https://portal.customtranslator.azure.ai/).\r\n",
       "Links": [
         "https://azure.microsoft.com/en-gb/updates/version-2-of-translator-is-retiring-on-24-may-2021/",
         "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/migrate-to-v3"
@@ -29,10 +29,10 @@
           "Data": "example@example.com"
       }
     ],
-    "AdditionalInformation": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/migrate-to-v3"
+    "AdditionalInformation": ""
   },
   "PublishedNotice": {
-    "Title": "Azure Cognitive Services Translator v2 is retiring on 24 May 2021.",
+    "Title": "Azure Cognitive Services Translator v2 is retiring on 31 August 2021.",
     "ApiInfo": {
       "Url": "https://api.github.com/repos/azure-deprecation/dashboard/issues/103",
       "Id": 713558006
@@ -47,8 +47,8 @@
       "services:cognitive-services",
       "verified"
     ],
-    "CreatedAt": "2021-02-29T11:41:26+00:00",
-    "UpdatedAt": "2021-02-29T11:41:27+00:00",
+    "CreatedAt": "2021-08-20T11:41:26+00:00",
+    "UpdatedAt": "2021-08-20T11:41:27+00:00",
     "ClosedAt": null
   }
 }

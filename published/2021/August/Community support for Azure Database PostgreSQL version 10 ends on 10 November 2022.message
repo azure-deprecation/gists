@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Database for PostgreSQL v10 is retiring on 10 November 2022",
+    "Impact": {
+        "Description": "Azure Database for PostgreSQL v10 is retiring on 10 November 2022 after which restrictions will be applied as per the [versioning policy](https://docs.microsoft.com/en-us/azure/postgresql/concepts-version-policy).",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["DatabaseForPostgreSQL"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because [PostgreSQL version 10 community support ends on 10 November 2022](https://www.postgresql.org/support/versioning/), Azure Database for PostgreSQL will no longer support PostgreSQL version 10 after 10 November 2022.\r\n> \r\n> If you choose to maintain your existing Azure Database for PostgreSQL version 10 servers beyond the retirement date, restrictions will apply to those servers as described in the Azure Database for PostgreSQL [versioning policy](https://docs.microsoft.com/en-us/azure/postgresql/concepts-version-policy) document.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/action-required-upgrade-your-azure-database-for-postgresql-from-version-10-to-11/", "https://aka.ms/azure-postgres-upgrade", "https://docs.microsoft.com/en-us/azure/postgresql/concepts-version-policy"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To avoid or minimize disruption to your workloads, we recommend you upgrade your Azure Database for PostgreSQL 10 database servers to version 11 **before 10 November 2022**. Review the steps in the [upgrade documentation](https://aka.ms/azure-postgres-upgrade) for more details.",
+        "AdditionalInfo": "A migration guide is available in the [documentation](https://docs.microsoft.com/en-gb/azure/postgresql/how-to-upgrade-using-dump-and-restore)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-database-postgresql-v10"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-25T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-11-10T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Databases will remain but will have restrictions as per the [versioning policy](https://docs.microsoft.com/en-us/azure/postgresql/concepts-version-policy)",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

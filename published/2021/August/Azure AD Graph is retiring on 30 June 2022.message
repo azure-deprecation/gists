@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Active Directory (AD) Graph is retiring on 30 June 2022",
+    "Impact": {
+        "Description": "Azure Active Directory (AD) Graph will no longer be available, migrate to [Microsoft Graph](https://docs.microsoft.com/en-us/graph/overview).",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["ActiveDirectory"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 June 2022, we’ll retire Azure AD Graph.** Before that date, you’ll need to update your apps that use it to instead use Microsoft Graph, which provides all of the functionality of Azure AD Graph plus new features, including:\r\n> \r\n> - A single endpoint for APIs from Azure AD and other services, such as Microsoft Teams, Exchange, and Intune.\r\n> - Built-in support for retry handling, secure redirects, transparent authentication, and payload compression.",
+        "AdditionalInfo": "Migrate to [Microsoft Graph](https://docs.microsoft.com/en-us/graph/overview)",
+        "Links": ["https://azure.microsoft.com/en-au/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/","https://github.com/microsoft/AzureADGraphApps","https://docs.microsoft.com/en-us/graph/migrate-azure-ad-graph-planning-checklist?view=graph-rest-1.0"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To avoid service disruptions, [identify your apps](https://aka.ms/AzADGraphDeprecation-ListApps) that use Azure AD Graph and [update them](https://docs.microsoft.com/en-us/graph/migrate-azure-ad-graph-planning-checklist?view=graph-rest-1.0) to use Microsoft Graph before 30 June 2022.",
+        "AdditionalInfo": "There is an official migration planning checklist available [in the documentation](https://docs.microsoft.com/en-us/graph/migrate-azure-ad-graph-planning-checklist?view=graph-rest-1.0)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://docs.microsoft.com/en-us/answers/topics/azure-ad-graph-deprecation.html"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-09-01T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-06-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "AD Graph will no longer be available",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

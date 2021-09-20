@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+https://azure.microsoft.com/en-us/updates/transition-to-java-11-or-8-by-29-july-2022/
+```json
+{
+    "Title": "Azure App Service's Java 7 support is retiring on 29 July 2022",
+    "Impact": {
+        "Description": "Azure App Service's Java 7 support is retiring on 29 July 2022 and upgrade to Java 8 or 11 is advised.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["AppService"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because Java 7 community support ends on 29 July 2022, applications hosted on App Service will continue to run, but they will not receive updates or security patches.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-us/updates/transition-to-java-11-or-8-by-29-july-2022/"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To minimize risk and potential security vulnerabilities, upgrade your Web Apps to Java 11 or 8 depending on your workload requirements. To start, log in to Azure portal, navigate to the web app(s) go to Configuration > Settings > Stack Settings. You will see dropdowns for the Java major and minor versions, as well as the Tomcat version (if you are using Tomcat).\r\n> \r\n> You can also view other resources before you upgrade your Web Apps to Java 11 or 8.\r\n> \r\n> - [Reasons to move to Java 11](https://docs.microsoft.com/en-us/azure/developer/java/fundamentals/reasons-to-move-to-java-11)\r\n> - [Java 7 migration guide](https://aka.ms/java-7-migrate-guide)",
+        "AdditionalInfo": "A migration guide to Java 8 is [available in the documentation](https://aka.ms/java-7-migrate-guide)"
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-web-apps-java7"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-25T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-07-29T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Applications will still be functional but are no longer supported nor will they receive security patches",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

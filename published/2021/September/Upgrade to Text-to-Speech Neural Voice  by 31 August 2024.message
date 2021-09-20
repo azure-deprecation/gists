@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Cognitive Services' Standard Text-to-Speech is retiring on 31 August 2024",
+    "Impact": {
+        "Description": "Azure Cognitive Services' Standard Text-to-Speech is retiring on 31 August 2024, migrate to neural voices.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["CognitiveServices"]
+    },
+    "Notice": {
+        "OfficialReport": "> Text-to-Speech currently supports both standard and neural voices. However, **since the neural voices provide more natural sounding speech output, and thus, a better end-user experience, we are retiring the standard voices on 31st August 2024 and they will no longer be supported after that date.**  \r\n> \r\n> Here is a quick comparison between Standard Text-to-Speech and Neural Text-to-Speech features： \r\n> \r\n> | **Standard text-to-speech** | **Neural text-to-speech** |\r\n> |:-----------------------:|:--------------------:|\r\n> | - Noticeably robotic  | - Natural sounding, closer to human-parity |\r\n> | - Limited capabilities in voice tuning | - Advanced capabilities in voice tuning  |\r\n> | - No new investment in future voice fonts | - On-going investment in future voice fonts |",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/we-re-retiring-the-standard-voice-on-31-august-2024/"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> - Review the [price](https://azure.microsoft.com/pricing/details/cognitive-services/speech-services/) structure and listen to the [neural voice samples](https://azure.microsoft.com/services/cognitive-services/text-to-speech/#overview) to determine the right voice for your business needs.\r\n> \r\n> - To make the change, [follow the steps](https://aka.ms/sttsretirement) to update the voice name in your speech synthesis request to the supported neural voice names in [chosen languages](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support#neural-voices) by 31 August 2024. **Starting 1st September 2024**, standard voices will no longer be supported, please use neural voices for your speech synthesis request, on cloud or on prem.",
+        "AdditionalInfo": "A migration guide is available in the [documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/text-to-speech#migrate-to-neural-voice)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-speech"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-17T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Standard voices will no longer be supported",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

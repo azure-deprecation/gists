@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Cloud Services (classic) deployment model is retiring on 31 August 2024",
+    "Impact": {
+        "Description": "Azure Cloud Services (classic) deployment model is retiring on 31 August 2024 and migration to [Azure Cloud Services (extended support)](https://docs.microsoft.com/en-gb/azure/cloud-services-extended-support/overview).",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["CloudServices"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 August 2024, we’ll retire the Cloud Services (classic) deployment model.** Before that date, you’ll need to migrate your services that were deployed using this model to Cloud Services (extended support) in Azure Resource Manager, which provides new capabilities, including:\r\n> \r\n> - Support for deployment templates.\r\n> - Role-based access control.\r\n> - Regional resiliency.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/cloud-services-retirement-announcement/", "https://docs.microsoft.com/azure/cloud-services-extended-support/in-place-migration-overview"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To continue to use your cloud services that were deployed using Cloud Services (classic), [migrate them to Cloud Services (extended support)](https://docs.microsoft.com/azure/cloud-services-extended-support/in-place-migration-overview) in Resource Manager before 31 August 2024.",
+        "AdditionalInfo": "Cloud Services (extended support) supports two paths for customers to migrate from Azure Service Manager to Azure Resource Manager: Re-deploy and In-place Migration.\r\n\r\nA [migration guide](https://docs.microsoft.com/en-gb/azure/cloud-services-extended-support/in-place-migration-overview) is available here which includes a [migration tool](https://docs.microsoft.com/en-gb/azure/cloud-services-extended-support/in-place-migration-overview#migration-tool-overview)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-cloud-services"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-24T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Deployments will most likely no longer work",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

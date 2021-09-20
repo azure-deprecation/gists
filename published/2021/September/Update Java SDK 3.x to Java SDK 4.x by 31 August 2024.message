@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Cosmos DB's Java SDK v3.x is retiring on 31 August 2024",
+    "Impact": {
+        "Description": "Azure Cosmos DB's Java SDK v3.x will no longer receive patches after 31 August 2024.",
+        "Type": "UpgradeRequired",
+        "Area": "Sdk",
+        "Cloud": "Public",
+        "Services": ["CosmosDb"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because [Azure Cosmos DB Java SDK v4](https://devblogs.microsoft.com/cosmosdb/java-sdk-v4-ga/) has up to 20% enhanced throughput, TCP-based direct mode, bug fixes, and provide support for the latest backend features, **we’ll retire 3.x version of the Azure Cosmos DB Java SDK for SQL API on 31 August 2024**. We recommend you make the switch early to gain the enhanced benefits of Azure Cosmos DB Java SDK 4.x. Start using SDK 4.x for net-new subscriptions/accounts.\r\n> \r\n> In addition to current features you already use, here’s a quick comparison between Azure Cosmos DB Java SDK 3.x and Azure Cosmos DB Java SDK 4.x:\r\n> \r\n> | **Java SDK 3.x** | **Java SDK 4.x** |\r\n> |:----------------:|:----------------:|\r\n> | - HTTP-based direct mode | - ~20% improved throughput with TCP |\r\n> | - Manual throughput mode only | - All modes including autoscale supported | \r\n> \r\n> **After 31 August 2024**, if you prefer not to upgrade, requests sent from 3.x SDK will continue to be served by the Azure Cosmos DB service. No further updates will be made for 3.x version of the Azure Cosmos DB Java SDK for SQL API.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/retirement-notice-update-java-sdk-3x-to-java-sdk-4x-by-31-august-2024/", "https://docs.microsoft.com/en-us/azure/cosmos-db/migrate-java-v4-sdk?tabs=java-v4-async"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> Please [follow the steps](https://docs.microsoft.com/en-us/azure/cosmos-db/migrate-java-v4-sdk?tabs=java-v4-async) to migrate your application to use the Azure Cosmos DB Java SDK version 4.",
+        "AdditionalInfo": "A migration guide is available in the [documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/migrate-java-v4-sdk?tabs=java-v4-async)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-cosmosdb-javasdk-3x"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-17T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "It will keep on working, but no further updates will be made for 3.x version of the Azure Cosmos DB Java SDK for SQL API.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

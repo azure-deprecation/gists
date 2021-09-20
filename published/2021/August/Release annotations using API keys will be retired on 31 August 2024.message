@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Application Insights Release annotations using API keys are retiring on 31 August 2024",
+    "Impact": {
+        "Description": "Annotation will stop working.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["ApplicationInsights"]
+    },
+    "Notice": {
+        "OfficialReport": "> As the [new release annotations](https://docs.microsoft.com/azure/azure-monitor/app/annotations) in Application Insights provide a simple way to re-use your existing deployment tasks or custom deployment scripts, we’re retiring release annotations using API Keys on 31 August 2024.\r\n> \r\n> With the new release annotations, you no longer need to maintain a dedicated task. Your pre-existing deployment task for App Services or Functions will be sufficient or you can add a custom PowerShell script for [other scenarios](https://docs.microsoft.com/azure/azure-monitor/app/annotations#release-annotations-with-azure-pipelines-build).",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/transition-to-new-release-annotations-in-application-insights/", "https://docs.microsoft.com/en-gb/azure/azure-monitor/app/annotations#transition-to-the-new-release-annotation"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> [Follow the detailed steps to transition to new release annotations](https://docs.microsoft.com/azure/azure-monitor/app/annotations#transition-to-the-new-release-annotation) before 31 August 2024. After 31 August 2024, Release annotations using API Keys will not be supported.",
+        "AdditionalInfo": "Migration guide is available [here](https://docs.microsoft.com/en-gb/azure/azure-monitor/app/annotations#transition-to-the-new-release-annotation)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-monitor-ai-release-annotations"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-08-20T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Annotation will stop working",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
