@@ -1,0 +1,43 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Site Recovery TLS <1.2 support will retire on 15 November 2021",
+    "Impact": {
+        "Description": "Legacy protocols will no longer work and TLS 1.2+ is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Security",
+        "Cloud": "Public",
+        "Services": ["SiteRecovery"]
+    },
+    "Notice": {
+        "OfficialReport": "> As  part of [Azure-wide initiative towards using TLS 1.2 by default and removing dependencies on older versions](https://azure.microsoft.com/updates/azuretls12/), Azure Site Recovery is working towards shifting away from legacy protocols to ensure improved security for your replication data.  Hence, TLS 1.0 and TLS 1.1 will no longer be supported.  These changes are expected to take effect on November 15, 2021.",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-us/updates/asr-tls-upgrade/", "https://docs.microsoft.com/en-us/azure/site-recovery/transport-layer-security"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> To continue using Azure Site Recovery without any interruption, ensure all the resources using the Microsoft Azure Recovery Services (MARS) agent are enabled to use TLS 1.2 or later.  For information on how to take appropriate steps and ensure that your server configuration does not force use legacy protocols, see [the detailed steps](https://docs.microsoft.com/en-us/azure/site-recovery/transport-layer-security) provided in our public documentation.",
+        "AdditionalInfo": "A migration guide is available in the [documentation](https://docs.microsoft.com/en-us/azure/site-recovery/transport-layer-security)."
+    },
+    "Contact": [
+        {
+            "Type": "Email",
+            "Data": "askasr@microsoft.com"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-09-27T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2021-11-15T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Legacy protocols will no longer work",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

@@ -1,0 +1,39 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Microsoft Security Code Analysis (MSCA) extension is retiring on 1 March 2022",
+    "Impact": {
+        "Description": "Microsoft Security Code Analysis (MSCA) will no longer be maintained and migration to GitHub Advanced Security or OWASP is required.",
+        "Type": "MigrationRequired",
+        "Area": "Security",
+        "Cloud": "Public",
+        "Services": ["Other"]
+    },
+    "Notice": {
+        "OfficialReport": "> Effective March 1, 2022, the Microsoft Security Code Analysis (MSCA) extension will be retired. Existing MSCA customers will retain their access to MSCA through March 1, 2022.",
+        "AdditionalInfo": null,
+        "Links": ["https://docs.microsoft.com/en-us/azure/security/develop/security-code-analysis-overview"]
+    },
+    "RequiredAction": {
+        "OfficialReport": "> Please refer to the [OWASP Source Code Analysis Tools](https://owasp.org/www-community/Source_Code_Analysis_Tools) for alternative options in Azure DevOps. For customers planning to migrate to GitHub, you can check out [GitHub Advanced Security](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security).",
+        "AdditionalInfo": null
+    },
+    "Contact": [
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-03-22T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced in Azure Docs ([commit](https://github.com/MicrosoftDocs/azure-docs/commit/1dce02dd00fbe61800d8652b2550231a34d7683a#diff-89bf33c9c41123ca4592080b99a3a3cccb6f882c1c79b90abb6d4c29f300fe12))"
+        },
+        {
+            "Date": "2022-03-01T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Feature will no longer work",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
