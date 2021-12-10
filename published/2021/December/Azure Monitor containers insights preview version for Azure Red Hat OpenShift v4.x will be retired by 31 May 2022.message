@@ -1,0 +1,47 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Monitor containers insights preview version for Azure Red Hat OpenShift v4.x is retiring on May 31st 2022",
+    "Impact": {
+        "Description": "Azure Monitor containers insights preview will no longer be supported and migration to Container Insights on Azure Arc enabled Kubernetes is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Monitor", "RedHatOpenshift"]
+    },
+    "Notice": {
+        "OfficialReport": "> Container Insights on Azure Arc enabled Kubernetes is now generally available, and offers greater functionality including:\r\n> \r\n> - Automatic updates for the container monitoring agent\r\n> - Metric-based alerts and other monitoring features in parity with Container Insights for AKS\r\n> - Improved onboarding via Azure portal, Azure CLI, or ARM\r\n> \r\n> With these new functionalities to optimize your business operations, **we are retiring Container Insights on Azure Red Hat OpenShift v4.x preview version on 31 May 2022**.  We encourage you to make the switch earlier and migrate to using Container Insights on Azure Arc enabled Kubernetes. **After 31 May 2022,Container Insights on Azure Red Hat OpenShift v4.x preview version will not be supported.**",
+        "AdditionalInfo": null,
+        "Links": ["https://azure.microsoft.com/en-au/updates/azure-monitor-containers-insights-support-for-azure-red-hat-openshift-v4x-will-be-retired-by-31-may-2022/","https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-transition-hybrid"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "To minimize disruption to your Azure Arc enabled Kubernetes monitoring, review the [steps in this migration document](https://aka.ms/arccoinmigration) and transition all OpenShift clusters to the Container Insights on Azure Arc enabled Kubernetes before 31 May 2022.",
+        "AdditionalInfo": "A migration guide is available in the [documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-transition-hybrid)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/arccoinmigrationqa"
+        },
+        {
+            "Type": "Email",
+            "Data": "askcoin@microsoft.com"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-12-08T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-05-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Container Insights on Azure Red Hat OpenShift v4.x will no longer be supported",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
