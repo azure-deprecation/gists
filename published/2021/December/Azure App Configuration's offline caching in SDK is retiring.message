@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure App Configuration's offline caching in SDK is retiring",
+    "Impact": {
+        "Description": "Azure App Configuration's offline caching in SDK is retiring as of v5.0 (preview) and [recommend using highly available App Configuration setup](https://docs.microsoft.com/azure/azure-app-configuration/concept-disaster-recovery#high-availability-architecture).",
+        "Type": "UpgradeRequired",
+        "Area": "Sdk",
+        "Cloud": "Public",
+        "Services": ["AppConfiguration"]
+    },
+    "Notice": {
+        "OfficialReport": "> We recently revisited the problems we were trying to solve with offline caching since this library was launched in 2019. We found that OfflineCache was being used as a fallback configuration source in case the App Configuration service is down. However, storing configuration data in a local environment outside your App Configuration store can potentially lead to issues. These include difficulties enforcing data access policies and retaining sensitive information in unreliable environments. In the last two years since we went to GA, we have invested heavily in server- side resiliency and availability. Please check our [recommendation for highly available App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/concept-disaster-recovery#high-availability-architecture).",
+        "AdditionalInfo": "This means that your application will have a higher dependency as it no longer caches things",
+        "Links": ["https://github.com/Azure/AppConfiguration-Announcements/issues/20","https://docs.microsoft.com/en-us/azure/azure-app-configuration/concept-disaster-recovery?tabs=core2x#high-availability-architecture"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Therefore, we are deprecating all offline caching capabilities with the release of [v5.0.0 preview](https://github.com/Azure/AppConfiguration/blob/main/releaseNotes/MicrosoftExtensionsConfigurationAzureAppConfiguration.md), in favor of improving server-side reliability.",
+        "AdditionalInfo": ""
+    },
+    "Contact": [
+        {
+            "Type": "Unknown"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2021-12-17T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-01-01T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "This is a placeholder for deprecation as the end date is not known yet.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
