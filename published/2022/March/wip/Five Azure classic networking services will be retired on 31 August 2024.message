@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+https://azure.microsoft.com/en-au/updates/five-azure-classic-networking-services-will-be-retired-on-31-august-2024/
+```json
+{
+    "Title": "Kubernetes v1.20 is being removed from Azure Kubernetes Service on April 7th 2022",
+    "Impact": {
+        "Description": "Kubernetes v1.20 is being removed from Azure Kubernetes Service on April 7th 2022 and customers need to upgrade their Kubernetes version.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["KubernetesService"]
+    },
+    "Notice": {
+        "OfficialReport": "> Kubernetes version 1.20 will be deprecated and removed from AKS on April 7th 2022.",
+        "AdditionalInfo": "",
+        "Links": ["https://github.com/Azure/AKS/releases/tag/2022-03-03"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "",
+        "AdditionalInfo": ""
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-11T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-04-07T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Kubernetes version 1.20 will be removed",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
