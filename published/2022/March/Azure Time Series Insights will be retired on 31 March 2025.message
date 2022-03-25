@@ -1,0 +1,51 @@
+MessageType: NewAzureDeprecationV1
+https://azure.microsoft.com/en-au/updates/we-ll-retire-azure-time-series-insights-on-31-of-march-2025/
+```json
+{
+    "Title": "Azure Time Series Insights is retiring on March 31st 2025",
+    "Impact": {
+        "Description": "Azure Time Series Insights is retiring on March 31st 2025 and migration to Azure Data Explorer is required.\n\rThis is for both 1st and 2nd generation of Azure Time Series Insights.",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["TimeSeriesInsights"]
+    },
+    "Notice": {
+        "OfficialReport": "> **Because Azure Data Explorer now provides a data analytics service for streaming telemetry data, we’ll retire Azure Time Series Insights on 31 March 2025. Please transition to using Azure Data Explorer by that date.**\r\n> \r\n> We encourage you to make the switch sooner to gain the richer benefits of Azure Data Explorer. In addition to the current features you already use, here’s a quick comparison between Azure Time Series Insights and Azure Data Explorer:\r\n> \r\n> | **Features** | **Azure Time Series Insights** | **Azure Data Explorer** |\r\n> |:---------|:---------------------------|:---------------------| \r\n> | Data ingestion | Limited to 1MB/s | No limits on ingestions (scalable), 200 MB/s/node on a 16-core machine in ADX cluster. |\r\n> | Data Querying | TSQ | KQL, SQL |\r\n> | Data Visualization | TSI Explorer, PBI | PBI, Azure Data Explorer Dashboards, Grafana, Kibana and other visualization tools using ODBC/JDBC connectors |\r\n> \r\n> **Beginning 31 March 2022 no new features will be released for Azure Time Series Insights**. All Azure Time Series Insights instances created before the 31 March 2022 date will be supported through 31 March 2025. You can continue to use Azure Time Series Insights or transition to Azure Data Explorer.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/we-ll-retire-azure-time-series-insights-on-31-of-march-2025/", "https://docs.microsoft.com/en-us/azure/time-series-insights/migration-to-adx"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Review [pricing](https://azure.microsoft.com/en-us/pricing/details/data-explorer/) and then [transition](https://aka.ms/tsi2adx) to Azure Data Explorer by **31 March 2025**. Use the [Azure Data Explorer Cost Estimator](https://dataexplorer.azure.com/AzureDataExplorerCostEstimator.html) for price estimation. After 31 March 2025, Azure Time Series Insights will not be supported.",
+        "AdditionalInfo": "A migration guide to Azure Data Explorer is provided [here](https://docs.microsoft.com/en-us/azure/time-series-insights/migration-to-adx), but at the time of announcement there does not seem to be an alternative for Time Series Insights Explorer."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/tsiqa"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-22T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-03-31T00:00:00+00:00",
+            "Phase": "Features",
+            "Description": "No new features will be released for the service"
+        },
+        {
+            "Date": "2025-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Service will no longer be supported",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
