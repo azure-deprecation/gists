@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Instrumentation key–based data ingestion in Azure Application Insights is retiring on March 31st 2025",
+    "Impact": {
+        "Description": "Instrumentation key–based data ingestion in Azure Application Insights is retiring on March 31st 2025 and customers should use the [connection string-based authentication](https://docs.microsoft.com/azure/azure-monitor/app/sdk-connection-string) instead.",
+        "Type": "MigrationRequired",
+        "Area": "Security",
+        "Cloud": "Public",
+        "Services": ["ApplicationInsights","Monitor"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end.** After that date, your Applications Insights resources will continue to receive data, but we'll no longer provide updates or customer support for instrumentation key–based global ingestion.\r\n> \r\n> Application Insights is changing from global ingestion endpoints to regional endpoints that [use connection strings](https://docs.microsoft.com/azure/azure-monitor/app/sdk-connection-string), which provide these additional capabilities:\r\n> \r\n> - Authenticated telemetry ingestion.\r\n> - Regional data residency.\r\n> - Endpoint customization for intranet or hybrid environments.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/technical-support-for-instrumentation-key-based-global-ingestion-in-application-insights-will-end-on-31-march-2025/","https://docs.microsoft.com/azure/azure-monitor/app/migrate-from-instrumentation-keys-to-connection-strings","https://docs.microsoft.com/azure/azure-monitor/app/sdk-connection-string"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To continue getting technical support related to data ingestion for your Application Insights resources, [transition to connection string–based ingestion](https://docs.microsoft.com/azure/azure-monitor/app/migrate-from-instrumentation-keys-to-connection-strings) before 31 March 2025.",
+        "AdditionalInfo": "A migration guide is provided [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/migrate-from-instrumentation-keys-to-connection-strings) to use connection strings instead of instrumentation keys along with a [FAQ](https://docs.microsoft.com/en-us/azure/azure-monitor/app/migrate-from-instrumentation-keys-to-connection-strings#faq).\r\n\r\nMake sure to use [one of the following supported SDKs](https://docs.microsoft.com/azure/azure-monitor/app/migrate-from-instrumentation-keys-to-connection-strings#supported-sdk-versions)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/connectionstrings-qna"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-21T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2025-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Data ingestion will continue to work but will no longer be supported nor receive patches",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
