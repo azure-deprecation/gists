@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "App Service Environment v1 is retiring on August 31st 2024",
+    "Impact": {
+        "Description": "App Service Environment v1 is retiring on August 31st 2024 and migration to v3 is required.",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["AppService"]
+    },
+    "Notice": {
+        "OfficialReport": "> In August 2021, we announced Azure Cloud Services (classic) will be retiring on 31 August 2024. As App Service Environment version 1 and version 2 run on Azure Cloud Services (classic), we will retire App Service Environment version 1 and version 2 on the same date. Before that date, please migrate to App Service Environment version 3.\r\n> \r\n> App Service Environment is an App Service feature that provides a fully isolated and dedicated environment for securely running App Service apps at high scale. App Service Environment version 3 is easier to use, runs on more powerful infrastructure that can go up to 8 cores and 32 GB RAM with faster scaling speeds for both Windows and Linux, and has much simpler network topology. Here’s a quick comparison between App Service Environment version 1/version 2 to version 3.\r\n> \r\n> | App Service Environment version 1 and version 2 | App Service Environment version 3 |\r\n> |:------------------------------------------------|:----------------------------------|\r\n> | Management of front-end scaling required  | App Service Environment version 3 runs on newer and more performant Virtual Machine Scale Sets infrastructure |\r\n> | No access across global peering | Apps in internal VIP App Service Environment version 3 can be reached across global peering |\r\n> | Flat Stamp Fee for each App Service Environment | Price savings due to elimination of Stamp Fee and access to use reserved instance pricing |\r\n>\r\n> **After 31 August 2024**, App Service Environment version 1 and version 2 will no longer be supported and these App Service Environments and the applications running on them will be no longer available. ",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/app-service-environment-v1-and-v2-retirement-announcement/","https://docs.microsoft.com/azure/app-service/environment/migration-alternatives", "https://github.com/azure-deprecation/dashboard/issues/167"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid service disruption, please follow the [steps](https://docs.microsoft.com/azure/app-service/environment/migration-alternatives) to migrate to App Service Environment version 3 by 31 August 2024.",
+        "AdditionalInfo": "A migration guide is available [here](https://aka.ms/asev3migration)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/asev1v2retirement"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-28T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "App service environment v1 will no longer be supported and apps will no longer be available",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
