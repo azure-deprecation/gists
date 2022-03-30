@@ -1,0 +1,51 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Storage Accounts (classic) are retiring on August 2024",
+    "Impact": {
+        "Description": "Azure Storage Accounts (classic) are retiring on August 2024 and migrate to the new Azure Storage Accounts.",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["Storage"]
+    },
+    "Notice": {
+        "OfficialReport": "> In August 2021, we announced [Azure Cloud Services (classic)](https://azure.microsoft.com/en-us/updates/cloud-services-retirement-announcement/) will be retired on 31 August 2024. **Because classic storage accounts are dependent on Azure Cloud Services (classic), they'll be retired on the same date.** Before that date, you'll need to migrate them to [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview), which provides the same capabilities as well as new features, including:\r\n> \r\n> - A management layer that simplifies deployment by enabling you to create, update, and delete resources.\r\n> - Resource grouping, which allows you to deploy, monitor, manage, and apply access control policies to resources as a group.\r\n> \r\n> **Beginning 1 August 2022**, you'll no longer be able to create new classic storage account resources, however, resources created before that date will be supported through 31 August 2024.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/classic-azure-storage-accounts-will-be-retired-on-31-august-2024/","https://github.com/azure-deprecation/dashboard/issues/167"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid service disruptions, review Azure Resource Manager [pricing](https://azure.microsoft.com/pricing/details/storage/blobs/#pricing) and [migrate](https://docs.microsoft.com/azure/virtual-machines/migration-classic-resource-manager-overview#migration-of-storage-accounts) your classic storage accounts before 31 August 2024.",
+        "AdditionalInfo": "A migration guide to the newer Azure Storage Accounts is available [here](https://docs.microsoft.com/azure/virtual-machines/migration-classic-resource-manager-overview#migration-of-storage-accounts)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/classicstorageaccountmigration"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-29T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-08-01T00:00:00+00:00",
+            "Phase": "Creation No Longer Allowed",
+            "Description": "Customers will no longer be able to create new classic Azure Storage Accounts"
+        },
+        {
+            "Date": "2024-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Storage account will no longer be available",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

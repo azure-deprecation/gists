@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Event Grid on Azure IoT Edge (public preview) is retiring on March 31st 2023",
+    "Impact": {
+        "Description": "Event Grid on Azure IoT Edge (public preview) is retiring on March 31st 2023 and migration to Azure IoT Edge native capabilities is required.",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["EventGrid","IoTEdge"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2023, Event Grid on Azure IoT Edge public preview will be retired**. Before that date, please transition to standard messaging protocol for IoT (MQTT) on Azure IoT Edge. Applications using Event Grid on IoT preview release will no longer be supported after 31 March 2023.\r\n> \r\n> With the MQTT broker on Azure IoT Edge, you’ll be able to provide granular messaging between devices and connect to Azure IoT Edge Hub with ease. Here’s a quick comparison between Event Grid on Azure IoT Edge and MQTT broker on Azure IoT Edge.\r\n> \r\n> | Event Grid on Azure IoT Edge | MQTT broker on Azure IoT Edge |\r\n> |:-----------------------------|:------------------------------|\r\n> | Publishing and subscribing to events locally/cloud | Connectivity to IoT Edge hub |\r\n> | Forwarding events to Event Grid | Publish and subscribe on user-defined topics |\r\n> | Forwarding events to IoT Hub | Publish and subscribe on IoT Hub topics |\r\n> | React to Blob Storage events locally | Publish and subscribe between MQTT brokers |\r\n> \r\n> From now through 31 March 2023, Event Grid on Azure IoT Edge preview version will not roll out new features and bug fixes. Critical security updates will be implemented.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/migrate-to-mqtt-broker-on-azure-iot-edge-by-31-march-2023/","https://docs.microsoft.com/azure/event-grid/edge/transition"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Review [pricing](https://azure.microsoft.com/pricing/details/iot-edge/) and follow the [detailed steps](https://docs.microsoft.com/azure/event-grid/edge/transition) to transition from Event Grid on IoT Edge to the IoT Edge native capabilities.",
+        "AdditionalInfo": "A migration guide to Azure IoT Edge native capabilities is available [here](https://docs.microsoft.com/azure/event-grid/edge/transition)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-17T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Applications using Event Grid on IoT preview release will no longer be supported, but will receive critical security patches",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
