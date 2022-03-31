@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Application Gateway (classic) is retiring on August 31st 2024",
+    "Impact": {
+        "Description": "Azure Application Gateway (classic) is retiring on August 31st 2024 and migration to ARM-based Azure Application Gateway is required.",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["ApplicationGateway"]
+    },
+    "Notice": {
+        "OfficialReport": "> In August 2021, we announced that Azure Cloud Services (classic) will be retired on 31 August 2024. **Because classic Azure Virtual Network, reserved IP addresses, Azure ExpressRoute gateway, Azure Application Gateway, and Azure VPN Gateway are dependent on Azure Cloud Services (classic), they’ll be retired on the same date.**\r\n> \r\n> Before that date, you’ll need to migrate any resources that use these classic networking services to the Azure Resource Manager deployment model, which provides the same capabilities as classic plus: \r\n> \r\n> - Simplified resource deployment with a management layer that enables you to create, update, and delete Azure resources. \r\n> - Resource grouping, which allows you to deploy, monitor, manage, and apply access control policies to resources as a group.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/five-azure-classic-networking-services-will-be-retired-on-31-august-2024/", "https://docs.microsoft.com/azure/application-gateway/classic-to-resource-manager", "https://github.com/azure-deprecation/dashboard/issues/167"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid service disruptions, follow the [guidance to migrate your resources](https://docs.microsoft.com/azure/application-gateway/classic-to-resource-manager) that use these classic networking services to Azure Resource Manager by 31 August 2024.",
+        "AdditionalInfo": "A migration guide is available [here](https://docs.microsoft.com/azure/application-gateway/classic-to-resource-manager)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/AAflal1"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-18T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Service will no longer work",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
