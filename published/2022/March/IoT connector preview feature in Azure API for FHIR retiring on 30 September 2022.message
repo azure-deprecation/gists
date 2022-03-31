@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "IoT connector (preview) in Azure API for Fast Healthcare Interoperability Resources (FHIR) is retiring on September 30th 2022",
+    "Impact": {
+        "Description": "IoT connector (preview) in Azure API for Fast Healthcare Interoperability Resources (FHIR) is retiring on September 30th 2022 and migration to MedTech service feature in Azure Health Data Services is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["ApiForFhir"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 September 2022 IoT connector preview feature in Azure API for Fast Healthcare Interoperability Resources (FHIR) will be retired.** Before that date, migrate to MedTech service feature in Azure Health Data Services.\r\n> \r\n> The MedTech service feature in Azure Health Data Services provides same capabilities as IoT connector preview feature in API for FHIR. Additionally, the MedTech service feature drives stronger security and supportability. ",
+        "AdditionalInfo": "Migration to MedTech service feature in Azure Health Data Services is required",
+        "Links": ["https://azure.microsoft.com/updates/retirement-of-feature-iot-connector-within-azure-api-for-fhir/", "https://docs.microsoft.com/azure/healthcare-apis/iot/deploy-iot-connector-in-azure"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Review the [pricing](https://azure.microsoft.com/en-us/pricing/details/azure-api-for-fhir/) and then follow the [detailed steps](https://docs.microsoft.com/azure/healthcare-apis/iot/deploy-iot-connector-in-azure) to transition to MedTech service in Azure Health Data Services. **After 30 September 2022, IoT connector feature in Azure API will not be supported.**",
+        "AdditionalInfo": "A migration guide is available [here](https://docs.microsoft.com/azure/healthcare-apis/iot/deploy-iot-connector-in-azure)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-28T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "IoT connector will no longer be supported",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

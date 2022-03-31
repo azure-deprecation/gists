@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Community support for .NET 5 in Azure App Service is retiring on May 8th 2022",
+    "Impact": {
+        "Description": "Community support for .NET 5 in Azure App Service is retiring on May 8th 2022 and upgrade to .NET 6 is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["AppService"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 8 May 2022, extended support for .NET 5 will end.** After that date, your applications that are hosted on App Service will continue to run and your existing workloads will not be impacted. However, we'll no longer provide patches or customer service for .NET 5.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/net5/", "https://github.com/Azure/app-service-linux-docs/blob/master/Runtime_Support/dot_net_core.md#how-to-update-your-app-to-target-a-different-version-of-net-or-net-core"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To minimize risk and potential security vulnerabilities, [follow the steps to update your applications](https://github.com/Azure/app-service-linux-docs/blob/master/Runtime_Support/dot_net_core.md#how-to-update-your-app-to-target-a-different-version-of-net-or-net-core) to .NET 6 before 8 May 2022.",
+        "AdditionalInfo": "A migration guide to upgrade .NET version is available [here](https://github.com/Azure/app-service-linux-docs/blob/master/Runtime_Support/dot_net_core.md#how-to-update-your-app-to-target-a-different-version-of-net-or-net-core)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/appserviceqa"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-16T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-05-08T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "App Service apps will continue to run but no longer receive patches nor support",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
