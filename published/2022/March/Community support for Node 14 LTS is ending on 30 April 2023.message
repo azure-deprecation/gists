@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Community support for Node 14 LTS in Azure App Service is retiring on October 30th 2023",
+    "Impact": {
+        "Description": "Community support for Node 14 LTS in Azure App Service is retiring on October 30th 2023 and upgrade to Node 16 LTS is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["AppService"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 April 2023, extended support for Node 14 LTS will end.** After that date, your applications that are hosted on App Service will continue to run and your existing workloads will not be impacted. However, we'll no longer provide patches or customer service for Node 14 LTS.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/community-support-for-node-14-lts-is-ending-on-30-april-2023/", "https://github.com/Azure/app-service-linux-docs/blob/master/Runtime_Support/node_support.md#how-to-update-your-app-to-target-a-different-version-of-node"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid any service disruption and potential security vulnerabilities, follow the steps to [update your applications to Node 16 LTS](https://github.com/Azure/app-service-linux-docs/blob/master/Runtime_Support/node_support.md#how-to-update-your-app-to-target-a-different-version-of-node) before 30 April 2023.",
+        "AdditionalInfo": ""
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/appserviceqanode14"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-21T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-04-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "App Service apps will continue to run but no longer receive patches nor support",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

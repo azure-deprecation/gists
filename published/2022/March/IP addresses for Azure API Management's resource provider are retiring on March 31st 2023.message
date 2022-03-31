@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "IP addresses for Azure API Management's resource provider are retiring on March 31st 2023",
+    "Impact": {
+        "Description": "IP addresses for Azure API Management's resource provider are retiring on March 31st 2023 and migration to service tag of Azure API Management or the new IPs are required for a subset of regions.",
+        "Type": "Limited",
+        "Area": "Tooling",
+        "Cloud": "Public",
+        "Services": ["ApiManagement"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2023, we are making the resource providers for Azure API Management zone redundant in each region.** This exercise is a part of our continuing work to increase the resiliency of API Management services. As a result of this work, we are changing the IP address of the resource provider in these seven regions: \r\n> \r\n> | Region | Old IP Address | New IP Address |\r\n> |:-------|:--------------|:--------------|\r\n> | Canada Central | 52.139.20.34 | 20.48.201.76 |\r\n> | Brazil South | 191.233.24.179 | 191.238.73.14 |\r\n> | Germany West Central | 51.116.96.0 | 20.52.94.112 |\r\n> | South Africa North | 102.133.0.79 | 102.37.166.220 |\r\n> | Korea Central | 40.82.157.167 | 20.194.74.240 |\r\n> | Central India | 13.71.49.1 | 20.192.45.112 |\r\n> | South Central US | 20.188.77.119 | 20.97.32.190 |\r\n> \r\n> Your environments are affected if:\r\n> \r\n> - Your service runs in one or more of the regions indicated in the table above. \r\n> - Your API Management service is running inside a virtual network. \r\n> - Your virtual network Network Security Group is configured with explicit source IP address filtering. \r\n> \r\n> After 31 March 2023, if you prefer not to make changes to your IP addresses, your services will continue to run but you will not be able to add or remove APIs, change API policy, or otherwise configure your API Management service.",
+        "AdditionalInfo": "A detailed overview and FAQ is available [here](https://docs.microsoft.com/azure/api-management/breaking-changes/rp-source-ip-address-change-mar2023).",
+        "Links": ["https://azure.microsoft.com/updates/ip-address-changes-will-begin-affecting-your-ability-to-manage-your-virtual-networkenabled-api-management-services-on-31-marc/"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid potential service disruptions, please review your virtual network configuration and review the [change notice in our documentation](https://docs.microsoft.com/azure/api-management/breaking-changes/rp-source-ip-address-change-mar2023#can-i-avoid-this-sort-of-change-in-the-future). If any security rules reference the old IP addresses in the table above, review the [virtual network configuration reference](https://docs.microsoft.com/azure/api-management/virtual-network-reference?tabs=stv2) and make necessary updates before 31 March 2023.",
+        "AdditionalInfo": "Customers should add both the old and new IP addresses to their firewall, as well as [UDR](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview) for those doing [forced tunneling](https://techcommunity.microsoft.com/t5/azure-paas-blog/api-management-networking-faqs-demystifying-series-i/ba-p/1500996#UDR3). A configuration reference is available [here](https://docs.microsoft.com/azure/api-management/virtual-network-reference?tabs=stv2).\r\n\r\nIt is strongly recommended to rely on the [service tag for API Management](https://docs.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags), instead of using fixed IP addresses. ([learn more](https://docs.microsoft.com/azure/api-management/breaking-changes/rp-source-ip-address-change-mar2023#can-i-avoid-this-sort-of-change-in-the-future))"
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/apim/azureqa"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-22T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "New IP addresses were announced"
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "IP addresses will be changed from old to new. Services will continue to run but you will not be able to add or remove APIs, change API policy, or otherwise configure your API Management service if you rely on the old addresses",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
