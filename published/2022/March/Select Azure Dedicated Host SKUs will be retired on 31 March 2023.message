@@ -1,0 +1,51 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Dedicated Hosts SKUs Dsv3-Type1, Esv3-Type1, Dsv3-Type2, and Esv3-Type2 are retiring on March 31st 2023",
+    "Impact": {
+        "Description": "Azure Dedicated Hosts SKUs Dsv3-Type1, Esv3-Type1, Dsv3-Type2, and Esv3-Type2 are retiring on March 31st 2023 and customers need to migrate to different SKUs.",
+        "Type": "MigrationRequired",
+        "Area": "Sku",
+        "Cloud": "Public",
+        "Services": ["DedicatedHost"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2023, Azure Dedicated Hosts Dsv3-Type1, Esv3-Type1, Dsv3-Type2, and Esv3-Type2 will be retired.** Before that date, please migrate to the new Dedicated Host SKUs indicated in the table below.\r\n> \r\n> | Current Azure Dedicated Host SKUs | Recommended Dedicated Host SKUs |\r\n> |:----------------------------------|\r\n:--------------------------------|\r\n> | Dsv3-Type1 | Dsv3-Type3 or Dsv3-Type4 |\r\n> | Dsv3-Type2 | Dsv3-Type3 or Dsv3-Type4 |\r\n> | Esv3-Type1 | Esv3-Type3 or Esv3-Type4 |\r\n> | Esv3-Type2 | Esv3-Type3 or Esv3-Type4 |\r\n> \r\n> Some of the new capabilities of the new Dedicated Host SKUs include:\r\n> \r\n> 1. Newer, more efficient processors.\r\n> 2. Increased number of available vCPUs and RAM.\r\n> 3. Greater regional capacity compared to the retiring Dedicated Host SKUs.\r\n> 4. Ability to potentially consolidate your workloads on a reduced number of hosts.\r\n> \r\n> Please transition your workloads to the new Dedicated Hosts soon to take advantage of these new capabilities.\r\n> \r\n> **Beginning 31 March 2022, you will no longer be able to create new Dsv3-Type1, Esv3-Type1, Dsv3-Type2, or Esv3-Type2 hosts or purchase new reservations for these SKUs.** However, your existing Dedicated Host deployments created before 31 March 2022 will be supported through 31 March 2023.",
+        "AdditionalInfo": "Beginning 31 March 2022, you will no longer be able to create new Dsv3-Type1, Esv3-Type1, Dsv3-Type2, or Esv3-Type2 hosts or purchase new reservations for these SKUs.",
+        "Links": ["https://azure.microsoft.com/updates/azure-dedicated-hosts-dsv3type1-dsv3type2-esv3type1-and-esv3type2-will-be-retired-on-31-march-2023/", "https://docs.microsoft.com/azure/virtual-machines/dedicated-host-migration-guide?tabs=manualVM%2CPS"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruptions to your workloads, review [Dedicated Hosts pricing](https://azure.microsoft.com/pricing/details/virtual-machines/dedicated-host/) and [migrate](https://aka.ms/dedicated-host-retirement) your VMs to the latest Dedicated Host SKUs before 31 March 2023.",
+        "AdditionalInfo": "A migration guide is available [here](https://aka.ms/dedicated-host-retirement)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/azure-dedicated-host-qa"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-17T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-03-31T00:00:00+00:00",
+            "Phase": "Creation Disabled",
+            "Description": "Customers will no longer be able to create new `Dsv3-Type1`, `Esv3-Type1`, `Dsv3-Type2`, or `Esv3-Type2` hosts or purchase new reservations for these SKUs."
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Kubernetes version 1.20 will be removed",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

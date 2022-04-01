@@ -1,0 +1,51 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure QnA Maker is retiring on March 31st 2025",
+    "Impact": {
+        "Description": "Azure QnA Maker is retiring on March 31st 2025 and customers need to migrate to [custom question answering](https://azure.microsoft.com/services/cognitive-services/question-answering/) in Azure Cognitive Service for Language.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["CognitiveServices"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2025, QnA Maker will be retired.** Before that date, you’ll need to migrate your QnA Maker knowledge bases to [custom question answering](https://azure.microsoft.com/services/cognitive-services/question-answering/), a feature of Azure Cognitive Service for Language. Custom question answering provides all the capabilities of QnA Maker, plus enhancements such as:\r\n> \r\n> - Improved relevance ranking.\r\n> - Availability across 31 regions.\r\n> - The ability to add and query unstructured content from documents and public URLs.\r\n> \r\n> **Beginning 1 October 2022, you won’t be able to create new QnA Maker resources or knowledge bases.** All QnA Maker resources and knowledge bases created before that date will be supported until 31 March 2025.",
+        "AdditionalInfo": "Migration to [custom question answering](https://azure.microsoft.com/services/cognitive-services/question-answering/) in Azure Cognitive Service for Language is required.\r\n\r\nAfter October 1st 2022, customers will not able to create new QnA Maker resources or knowledge bases.",
+        "Links": ["https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruptions to your applications that use QnA Maker, first review [pricing](https://aka.ms/langpricing) for the custom question answering feature of Cognitive Service for Language. Then, **before 31 March 2025**:\r\n> \r\n> - [Create](https://aka.ms/createLanguageResource) a Cognitive Service for Language resource.\r\n> - [Follow the steps to migrate](https://aka.ms/migrateqnamaker) your knowledge bases from QnA Maker to custom question answering.\r\n> - If you use the QnA Maker SDK or REST APIs to query your knowledge base, [review the documentation](https://aka.ms/qaquickstartrest) to learn how to call the custom question answering APIs and make the appropriate code changes.  ",
+        "AdditionalInfo": "A migration guide is available [here](https://aka.ms/migrateqnamaker)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/retireqnamaker-msqnathread"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-21T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-10-01T00:00:00+00:00",
+            "Phase": "Creation Disabled",
+            "Description": "Customers will not able to create new QnA Maker resources or knowledge bases"
+        },
+        {
+            "Date": "2025-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Azure QnA Maker will no longer be available",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

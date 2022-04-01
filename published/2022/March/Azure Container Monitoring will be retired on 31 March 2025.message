@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Monitor's Container Monitoring Solution is retiring on March 31st 2025",
+    "Impact": {
+        "Description": "Azure Monitor's [Container Monitoring Solution](https://docs.microsoft.com/azure/azure-monitor/containers/containers) is retiring on March 31st 2025 and customers need to migrate to [Container Insights](https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-overview).",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Monitor"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2025, Azure container monitoring will be retired.** Before that date, please transition to Azure Monitor container insights as it provides more advanced monitoring capabilities. \r\n> \r\n> In addition to the current features you already use, Azure Monitor container insights provides:   \r\n> \r\n> - Single step onboarding via Azure portal, Command-Line Interfaces (CLI), or Azure Resource Management (ARM). \r\n> - Log based alerting and recommended metric alerts. \r\n> - Automatic monitoring agent updates. \r\n> \r\n> We encourage you to transition your workloads using Azure container monitoring to Kubernetes on Azure Kubernetes Service (AKS) or Azure Arc enabled Kubernetes before **31 March 2025**. \r\n ",
+        "AdditionalInfo": "Migration to [Container Insights](https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-overview) is required.",
+        "Links": ["https://azure.microsoft.com/updates/omstoci/", "https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-transition-solution"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Review Kubernetes on AKS [pricing](https://aka.ms/AKSpricing) and [migrate](https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-transition-solution) to Azure Monitor container insights before 31 March 2025 to avoid disruption to your container monitoring. ",
+        "AdditionalInfo": "A migration guide is available [here](https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-transition-solution)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/OMStoCIQA"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-16T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2025-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Container monitoring solution will no longer work",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

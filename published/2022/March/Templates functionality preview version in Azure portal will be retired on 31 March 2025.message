@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Portal's Templates (public preview) are retiring on March 31st 2025",
+    "Impact": {
+        "Description": "Azure Portal's Templates (public preview) are retiring on March 31st 2025 and migration to [template specs](https://docs.microsoft.com/azure/azure-resource-manager/templates/quickstart-create-template-specs?tabs=azure-portal) are required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Portal"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2025, we’ll retire the public preview templates functionality in the Azure portal.** Before that date, you’ll need to start using [template specs](https://docs.microsoft.com/azure/azure-resource-manager/templates/quickstart-create-template-specs?tabs=azure-portal), which includes all the functionality of templates, plus enables you to: \r\n>\r\n> - Securely store, share, and manage access to template specs in Azure Resource Manager.\r\n> - Iterate on template code to update an existing version or publish a new one.\r\n> - Deploy using PowerShell, Azure CLI, the Azure portal, REST, and other supported SDKs and clients.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/the-templates-functionality-in-the-azure-portal-will-be-retired-on-31-march-2025/","https://docs.microsoft.com/azure/azure-resource-manager/templates/template-spec-convert"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid losing access to your templates, follow the steps to [convert them to template specs](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-spec-convert) in the Azure portal before 31 March 2025.",
+        "AdditionalInfo": "A migration guide is available [here](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-spec-convert)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-22T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2025-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Templates will no longer be available",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

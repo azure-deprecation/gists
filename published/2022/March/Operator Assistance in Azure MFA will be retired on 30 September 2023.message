@@ -1,0 +1,51 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Multi-Factor Authentication (MFA)'s Operator Assistance is retiring on September 30th 2023",
+    "Impact": {
+        "Description": "Azure Multi-Factor Authentication (MFA)'s Operator Assistance is retiring on September 30th 2023 and Azure AD will automatically dial the appropriate user extension upon call connection.",
+        "Type": "Limited",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["ActiveDirectory"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 September 2023, we will retire Operator Assistance in Azure multifactor authentication and it will no longer be available.** Before that date, please start using the automated attendant functionality within your phone system, which provides a frictionless and more secure connection experience.\r\n> \r\n> Currently, when a multifactor authentication phone call is initiated and an operator answers, the operator is asked to transfer the phone call to the extension belonging to the end-user needing to perform multifactor authentication. This approach delays call connection and can result in incomplete multifactor authentication attempts.\r\n> \r\n> When Operator Assistance retires on 30 September 2023, this feature will be disabled for all Azure AD tenants. Azure AD will automatically dial the appropriate user extension upon call connection. New Azure AD tenants created after 1 March 2022 will not have access to the Operator Assistance feature.",
+        "AdditionalInfo": "Once disabled, Azure AD will automatically dial the appropriate user extension upon call connection.\r\n\r\nNew Azure AD tenants created after 1 March 2022 will not have access to the Operator Assistance feature.",
+        "Links": ["https://azure.microsoft.com/updates/azure-multifactor-authentication-operator-assistance-will-be-retired-on-30-september-2023/","https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-operator-assistance"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid service disruption, [follow the steps](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-operator-assistance) to disable Operator Assistance before 30 September 2023. ",
+        "AdditionalInfo": "A guide to disable the feature is available [here](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-operator-assistance)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/opassistqa"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-24T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-03-01T00:00:00+00:00",
+            "Phase": "Disabled for new AD tenants",
+            "Description": "New AD tenants will not be able to use Operator Assistance"
+        },
+        {
+            "Date": "2023-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Operator Assistance will no longer be available",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
