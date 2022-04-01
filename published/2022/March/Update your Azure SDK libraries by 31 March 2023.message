@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Legacy Azure SDK libraries are retiring on March 31st 2023",
+    "Impact": {
+        "Description": "Legacy Azure SDK libraries are retiring on March 31st 2023 which do not conform to our [current Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html).",
+        "Type": "MigrationRequired",
+        "Area": "Sdk",
+        "Cloud": "Public",
+        "Services": ["All"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2023, we will be retiring support for Azure SDK libraries which do not conform to our [current Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html).** The new Azure SDK libraries are updated regularly to drive consistent experiences and strengthen your security posture. Please transition to the new Azure SDK libraries to take advantage of the new capabilities and critical security updates before 31 March 2023.\r\n> \r\n> Although the older libraries can still be used beyond 31 March 2023, they will no longer receive official support and updates from Microsoft. If you prefer not to transition to the new Azure SDK libraries, source code for the current Azure SDKs libraries is available on GitHub as open source. You can continue to use the code and apply your own fixes, as required.\r\n> \r\n> To learn more about the retirement and replacement of older Azure SDK libraries, read this [blog](https://azure.microsoft.com/en-us/blog/previewing-azure-sdks-following-new-azure-sdk-api-standards/) post. The new Azure SDK libraries improve the developer experience including ease of use, consistency, security, performance, and dependability. For a full list of retired libraries, refer to [this page](https://aka.ms/azure-sdk-deprecations).",
+        "AdditionalInfo": "A full list of deprecated libraries and their replacement libraries can be found in this [SDK overview](https://azure.github.io/azure-sdk/releases/deprecated/index.html).",
+        "Links": ["https://azure.microsoft.com/updates/support-for-azure-sdk-libraries-that-do-not-conform-to-our-current-azure-sdk-guidelines-will-be-retired-as-of-31-march-2023/","https://azure.github.io/azure-sdk/general_introduction.html","https://azure.github.io/azure-sdk/"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Support for the older libraries is ending. To avoid missing out on security and performance updates to the Azure SDKs, upgrade to the [new Azure SDK libraries](https://azure.github.io/azure-sdk/) by 31 March 2023.",
+        "AdditionalInfo": "",
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-17T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Deprecated SDKs will still work, but will no longer be supported nor receive updates",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

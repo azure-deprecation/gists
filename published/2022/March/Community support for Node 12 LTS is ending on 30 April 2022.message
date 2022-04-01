@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Community support for Node 12 LTS in Azure App Service is retiring on April 30th 2022",
+    "Impact": {
+        "Description": "Community support for Node 12 LTS in Azure App Service is retiring on October 30th 2023 and upgrade to Node 14 or 16 LTS is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["AppService"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 April 2022, extended support for Node 12 LTS will end.**  After that date, your applications that are hosted on App Service will continue to run and your existing workloads will not be impacted. However, we'll no longer provide patches or customer service for Node 12 LTS.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/node12/", "https://github.com/Azure/app-service-linux-docs/blob/master/Runtime_Support/node_support.md#how-to-update-your-app-to-target-a-different-version-of-node", "https://github.com/azure-deprecation/dashboard/issues/228"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To minimize risk and potential security vulnerabilities, [follow the steps to update your applications](https://aka.ms/nodeversion) to Node 14 LTS before 30 April 2022.",
+        "AdditionalInfo": "While the recommendation is to upgrade to Node 14 LTS, do consider upgrading straight to Node 16 LTS given [Node 14 LTS is deprecated and retiring in 2023](https://github.com/azure-deprecation/dashboard/issues/228) as well."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/appserviceqanode"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-16T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-04-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "App Service apps will continue to run but no longer receive patches nor support",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

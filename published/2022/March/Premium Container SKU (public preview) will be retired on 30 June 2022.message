@@ -1,0 +1,47 @@
+MessageType: NewAzureDeprecationV1
+
+
+```json
+{
+    "Title": "Premium Container SKU (public preview) in Azure App Service v1.20 is retiring on June 30th 2022",
+    "Impact": {
+        "Description": "Premium Container SKU (public preview) in Azure App Service v1.20 is retiring on June 30th 2022 and customers need to migrate to the [Premium V3 SKU](https://docs.microsoft.com/azure/app-service/app-service-configure-premium-tier).\r\n\r\nThis is only impacting Windows container workloads.",
+        "Type": "UpgradeRequired",
+        "Area": "Sku",
+        "Cloud": "Public",
+        "Services": ["AppService"]
+    },
+    "Notice": {
+        "OfficialReport": "> The Premium Container SKU (public preview) will be retired on 30 June 2022. Please migrate your Windows container applications to the SLA backed [Premium V3 SKU](https://docs.microsoft.com/azure/app-service/app-service-configure-premium-tier) by 30 June 2022.\r\n>\r\n> In addition to generally available (GA) support for Windows containers, Premium V3 provides enhanced performance for production applications, VNET connectivity, and new pricing options. This includes Dev/Test, Pay-as-you-go, 1-year, and 3-year reserved instances.",
+        "AdditionalInfo": "Customers need to migrate to the [Premium V3 SKU](https://docs.microsoft.com/azure/app-service/app-service-configure-premium-tier) and only impacts Windows container workloads.",
+        "Links": ["https://azure.microsoft.com/updates/premiumcontainer/", "https://azure.github.io/AppService/2022/03/02/Migrating-your-Windows-conainer-apps-from-Premium-Container-SKU-(Preview)-to-Premium-V3-SKU.html"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "",
+        "AdditionalInfo": "A migration guide is available [here](https://azure.github.io/AppService/2022/03/02/Migrating-your-Windows-conainer-apps-from-Premium-Container-SKU-(Preview)-to-Premium-V3-SKU.html)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/appserviceqapcsku"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-16T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-06-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "SKU will no longer be available but the impact on unmigrated resources is unknown.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

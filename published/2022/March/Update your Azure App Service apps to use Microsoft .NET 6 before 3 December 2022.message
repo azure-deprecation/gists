@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Extended support for .NET Core 3.1 in Azure App Service is retiring on December 3rd 2022",
+    "Impact": {
+        "Description": "Extended support for .NET Core 3.1 in App Service is retiring on December 3rd 2022 and upgrade to .NET 6 is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["AppService"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 3 December 2022, extended support for Microsoft .NET Core 3.1 will end.** After that date, your applications that are hosted on App Service will continue to run and your existing workloads will not be impacted. However, we'll no longer provide patches or customer service for .NET Core 3.1.\r\n> \r\n> Update your App Service applications to use .NET 6, which is the latest version with long-term support and provides these enhancements:\r\n> \r\n> - A unified set of base libraries and an SDK that make it easy to share code across any application type.\r\n> - Simplified development with new C# 10 features and minimal APIs.\r\n> - Hot reload that allows you to make code changes without explicit recompiling.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/netcore31/","https://github.com/Azure/app-service-linux-docs/blob/master/Runtime_Support/dot_net_core.md#how-to-update-your-app-to-target-a-different-version-of-net-or-net-core"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid potential service disruptions or security vulnerabilities, follow the steps to [update your App Service applications](https://aka.ms/dotnetversion) to use .NET 6 before 3 December 2022.",
+        "AdditionalInfo": "A migration guide to the different .NET version is available [here](https://github.com/Azure/app-service-linux-docs/blob/master/Runtime_Support/dot_net_core.md#how-to-update-your-app-to-target-a-different-version-of-net-or-net-core)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/appserviceqadotnet"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-21T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-12-03T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "App Service apps will continue to run but no longer receive patches nor support",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

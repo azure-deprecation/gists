@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Extended support for .NET Core 3.1 in Azure Functions is retiring on December 3rd 2022",
+    "Impact": {
+        "Description": "Extended support for .NET Core 3.1 in Azure Functions is retiring on December 3rd 2022 and upgrade to .NET 6 with Azure Functions v4 is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Functions"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 3 December 2022, extended support for Microsoft .NET Core 3.1 will end.** After that date, your applications that are hosted on Functions will continue to run and your applications will not be impacted. However, we'll no longer provide patches or customer service for .NET Core 3.1. Update your Functions applications to [runtime version 4.x, which uses .NET 6](https://docs.microsoft.com/azure/azure-functions/dotnet-isolated-process-guide#supported-versions).\r\n> \r\n> .NET 6 is the latest version with long-term support and provides these enhancements:\r\n> \r\n> - A unified set of base libraries and an SDK that make it easy to share code across any application type.\r\n> - Simplified development with new C# 10 features and minimal APIs.\r\n> - Hot reload that allows you to make code changes without explicit recompiling.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/extended-support-for-microsoft-net-core-31-will-end-on-3-december-2022/", "https://docs.microsoft.com/azure/azure-functions/set-runtime-version?tabs=portal#view-and-update-the-current-runtime-version"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid potential service disruptions or security vulnerabilities, [update your Functions applications](https://aka.ms/functions-view-and-update-runtime-version) to runtime version 4.x, which uses .NET 6, before 3 December 2022.",
+        "AdditionalInfo": "A migration guide to the newer Azure Functions runtime version is available [here](https://docs.microsoft.com/azure/azure-functions/set-runtime-version?tabs=portal#view-and-update-the-current-runtime-version)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/functions-c-sharp-qa-link"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-17T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-12-03T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Function Apps will continue to run but no longer receive patches nor support",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

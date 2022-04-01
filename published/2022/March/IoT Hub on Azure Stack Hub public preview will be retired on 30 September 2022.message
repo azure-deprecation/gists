@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "IoT Hub on Azure Stack Hub (public preview) is retiring on September 30th 2022",
+    "Impact": {
+        "Description": "IoT Hub on Azure Stack Hub (public preview) is retiring on September 30th 2022 and customers need to migrate to [Azure IoT Edge gateway](https://docs.microsoft.com/azure/iot-edge/about-iot-edge).",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["Stack","IotHub"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 September 2022, the public preview version of IoT Hub on Azure Stack Hub will be retired.** Before that date, we recommend you migrate to Azure IoT Edge gateway. Azure IoT Edge gateway is integrated with Azure IoT Hub running in Azure and provides an end-to-end IoT experience with comprehensive diagnostics capabilities. An Azure IoT Edge gateway can be deployed on an Azure Stack Hub Virtual Machine. Alternatively, you can host a VM on another physical hardware of your choice.",
+        "AdditionalInfo": "Customers need to migrate to [Azure IoT Edge gateway](https://docs.microsoft.com/azure/iot-edge/about-iot-edge).",
+        "Links": ["https://azure.microsoft.com/updates/azure-iot-hub-on-azure-stack-hub-preview-will-be-retired-and-it-will-not-go-to-ga/", "https://docs.microsoft.com/azure-stack/operator/iot-hub-rp-remove", "https://docs.microsoft.com/azure/iot-edge/about-iot-edge"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Review the steps [here](https://docs.microsoft.com/azure-stack/operator/iot-hub-rp-remove) to remove IoT Hub on Azure Stack Hub. Please follow these instructions to migrate your solution: (if you choose to host a VM on another physical hardware of your choice, proceed to step 2)\r\n> \r\n> 1.[ Create a Virtual machine on Azure Stack Hub](https://docs.microsoft.com/azure-stack/user/azure-stack-compute-overview?view=azs-2108#create-your-first-vm) to deploy Azure IoT Edge on.\r\n> 2. Follow these steps to configure Azure IoT Edge to run as a gateway:\r\n>   - [Run Azure IoT Edge on Ubuntu Virtual Machines](https://docs.microsoft.com/azure/iot-edge/how-to-install-iot-edge-ubuntuvm)\r\n>   - [Create and provision an Azure IoT Edge device on Linux](https://docs.microsoft.com/azure/iot-edge/how-to-provision-single-device-linux-symmetric?tabs=azure-portal)\r\n>   - [Configure an Azure IoT Edge device to act as a gateway](https://docs.microsoft.com/azure/iot-edge/how-to-create-transparent-gateway)\r\n> \r\n> The package of IoT Hub on Azure Stack Hub in the Azure Stack marketplace will be removed after 30 September 2022.",
+        "AdditionalInfo": "A migration guide is available [here](https://docs.microsoft.com/azure-stack/operator/iot-hub-rp-remove)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-17T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "IoT Hub package in Azure Stack marketplace will be removed",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

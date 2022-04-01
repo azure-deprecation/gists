@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Data Lake Analytics is retiring on February 29th 2024",
+    "Impact": {
+        "Description": "Azure Data Lake Analytics is retiring on February 29th 2024 and migration to Azure Synapse Analytics.",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["DataLakeAnalytics"]
+    },
+    "Notice": {
+        "OfficialReport": "> **In February 2021, we announced Azure Data Lake Storage Gen1 will be retiring on 29 February 2024. Since Azure Data Lake Analytics has a dependency on Azure Data Lake Storage (ADLS) Gen1, we will retire Azure Data Lake Analytics on the same date.**\r\n> \r\n> If you are using Azure Data Lake Analytics, we recommend you migrate to [Azure Synapse Analytics](https://azure.microsoft.com/en-us/services/synapse-analytics/#overview) before 29 February 2024.\r\n> \r\n> Azure Synapse provides:\r\n> \r\n> - A reduced project development time by combining data integration, data engineering, machine learning, and data warehousing for cloud-scale analytics with a single, unified platform. \r\n> - A deeply integrated Spark and SQL engine for analytics: Explore your data lake, data warehouse, and converged analytics from your operational databases.\r\n> - An integrated AI and BI experience to discover insights from all your data and apply machine learning models to all your intelligent apps.",
+        "AdditionalInfo": "This deprecation follows the [earlier deprecation of Azure Data Lake Storage (Gen 1)](https://github.com/azure-deprecation/dashboard/issues/137) on which it depends",
+        "Links": ["https://azure.microsoft.com/updates/migrate-to-azure-synapse-analytics/", "https://docs.microsoft.com/azure/data-lake-analytics/migrate-azure-data-lake-analytics-to-synapse", "https://github.com/azure-deprecation/dashboard/issues/137"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid service disruptions, review the [steps](https://docs.microsoft.com/azure/data-lake-analytics/migrate-azure-data-lake-analytics-to-synapse) to migrate to Azure Synapse Analytics as soon as possible so you can complete the migration **before 29 February 2024**.",
+        "AdditionalInfo": "A migration guide to Azure Data Explorer is provided [here](https://docs.microsoft.com/azure/data-lake-analytics/migrate-azure-data-lake-analytics-to-synapse)"
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/adlaqa"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-21T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-02-29T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Service will no longer be available nor supported",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

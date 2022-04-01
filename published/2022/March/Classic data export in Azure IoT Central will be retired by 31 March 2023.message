@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Classic data export in Azure IoT Central is retiring on March 31st 2023",
+    "Impact": {
+        "Description": "Classic data export in Azure IoT Central is retiring on March 31st 2023 and migration to the new data export is required.",
+        "Type": "MigrationRequired",
+        "Area": "Tooling",
+        "Cloud": "Public",
+        "Services": ["IotCentral"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2023, classic data export (also known as legacy data export) in Azure IoT Central will be retired.** Before that date, please migrate to the new data export, which provides more capabilities including filtering and message transformation.\r\n> \r\n> We encourage you to migrate classic data exports in your Azure IoT Central application to new data exports sooner to gain richer benefits of new data exports in Azure IoT Central. Here is a quick comparison between classic data exports (legacy) and new data exports in Azure IoT Central.\r\n> \r\n> | Classic data export (legacy) | New data export |\r\n> |:-----------------------------|:----------------|\r\n> |Data types limited to telemetry, devices, and device templates.|Data types include telemetry, property changes, device connectivity, device lifecycle, and device template lifecycle.|\r\n> |No support for filtering.|Supports filtering and message enrichments prior to exporting data.|",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/migrate-your-classic-data-exports-to-new-data-exports-by-31-march-2023/"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruption to your data exports to Azure IoT Central applications, [follow these steps](https://aka.ms/iotc-dataexport-migrate) to migrate your existing legacy data exports to new data exports before **31 March 2023**.",
+        "AdditionalInfo": "A migration guide is available [here](https://docs.microsoft.com/azure/iot-central/core/howto-export-data-legacy)."
+    },
+    "Contact": [
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/iotc-legacydataexport-qna"
+        },
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-03-24T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "The classic export will no longer work",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
