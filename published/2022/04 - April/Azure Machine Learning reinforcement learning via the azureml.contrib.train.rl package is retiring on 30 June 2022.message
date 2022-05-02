@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Machine Learning reinforcement learning via the azureml.contrib.train.rl package is retiring on 30 June 2022",
+    "Impact": {
+        "Description": "Azure Machine Learning reinforcement learning via the `azureml.contrib.train.rl` package is retiring on 30 June 2022 and customers should use the [Ray on Azure Machine Learning Library](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/library-to-turn-azure-ml-compute-into-ray-and-dask-cluster/ba-p/3048784) package instead.",
+        "Type": "MigrationRequired",
+        "Area": "Sdk",
+        "Cloud": "Public",
+        "Services": ["MachineLearning"]
+    },
+    "Notice": {
+        "OfficialReport": "> **Azure Machine Learning reinforcement learning via the azureml.contrib.train.rl package will be retired on 30 June 2022.** Before that date, please use the [Ray on Azure Machine Learning Library](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/library-to-turn-azure-ml-compute-into-ray-and-dask-cluster/ba-p/3048784) for reinforcement learning experiments with Azure Machine Learning. For example, see the notebook Reinforcement Learning in Azure Machine Learning - Pong problem.\r\n> \r\n> Ray on Azure Machine Learning Library gives you the same level of integration for reinforcement learning experiments plus enhancements such as:\r\n>\r\n> - Ability to simplify cluster management.\r\n> - Ease of converting Azure Machine Learning compute instance and compute cluster into Ray and Dask cluster.\r\n> - Ability to complete all the complex wirings and setup of a Ray cluster with Dask behind the scene while exposing a simple Ray context object for users perform parallel Python computing tasks.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/azure-machine-learning-reinforcement-learning-preview-will-be-retired-after-june-2022/"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid service disruptions, update the experiments and pipelines using azureml.contrib.train.rl and update them to follow a similar pattern as this notebook [Reinforcement Learning in Azure Machine Learning - Pong problem](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/reinforcement-learning/atari-on-distributed-compute/pong_rllib.ipynb).",
+        "AdditionalInfo": "A migration guide is provided [here](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/reinforcement-learning/atari-on-distributed-compute/pong_rllib.ipynb)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-04-29T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-06-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Package will be retired and service interuptions may occur",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
