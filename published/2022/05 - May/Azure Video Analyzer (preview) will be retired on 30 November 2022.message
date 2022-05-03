@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Video Analyzer (preview) is retiring on 30 November 2022",
+    "Impact": {
+        "Description": "Azure Video Analyzer (preview) is retiring on 30 November 2022.",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["MachineLearning"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 November 2022, Azure Video Analyzer preview will be retired. Before that date, please transition to Dynamics Connected Spaces or Open Source solutions.** Dynamics Connected Spaces or Open Source solutions each provide unique video analyzing scenarios, please [explore the two migration options](https://aka.ms/avaretirement) and select the one which best meet your business needs.\r\n>\r\n> From now through 30 November 2022, you can continue to use the Azure Video Analyzer in preview and work on migrating your application. Beginning 1 December 2022, your Azure Video Analyzer account will no longer function.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/video-analyzer-retirement/", "https://docs.microsoft.com/en-us/azure/azure-video-analyzer/video-analyzer-docs/transition-from-video-analyzer"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> [Explore the two migration options](https://aka.ms/avaretirement) and select the one which best meet your business needs before 30 November 2022.",
+        "AdditionalInfo": "A migration guide is provided [here](https://docs.microsoft.com/en-us/azure/azure-video-analyzer/video-analyzer-docs/transition-from-video-analyzer)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-05-02T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-11-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Azure Video Analyzer account will no longer function.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
