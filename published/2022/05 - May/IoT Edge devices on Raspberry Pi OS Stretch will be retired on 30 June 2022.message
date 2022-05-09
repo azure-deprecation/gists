@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Support for IoT Edge devices on Raspberry Pi OS Stretch is retiring on 30 June 2022",
+    "Impact": {
+        "Description": "Support for IoT Edge devices on Raspberry Pi OS Stretch is retiring on 30 June 2022.",
+        "Type": "MigrationRequired",
+        "Area": "Tooling",
+        "Cloud": "Public",
+        "Services": ["IoTEdge"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because [community support for Debian 9 (Stretch) LTS will end June 30, 2022](https://wiki.debian.org/LTS), **we will no longer release patch updates for IoT Edge on Raspberry Pi OS Stretch devices**. Your IoT Edge device will continue to run and your applications will not be impacted. Previously published packges for Stretch will continue to be available. However, after that date we will no longer be publishing patch releases of IoT Edge's armhf packages targeting Stretch.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/update-rpios-stretch-to-latest/"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid potential security vulnerabilities update your host OS to Bullseye using [the arm32v7 packages now available on packages.microsoft.com](https://azure.microsoft.com/updates/azure-iot-edge-supports-debian-bullseye-arm32v7).",
+        "AdditionalInfo": ""
+    },
+    "Contact": [
+        {
+            "Type": "NotAvailable"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-05-06T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-06-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "No patches for IoT Edge on Raspberry Pi OS Stretch devices will be released anymore.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

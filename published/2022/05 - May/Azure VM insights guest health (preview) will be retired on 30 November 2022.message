@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure VM insights guest health (preview) is retiring on 30 November 2022",
+    "Impact": {
+        "Description": "Azure VM insights guest health (preview) is retiring on 30 November 2022 and migration to transition to Azure Monitor log alerts is advised.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Monitor"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 November 2022, VM insights guest health public preview feature in Azure Monitor will be retired.** Before that date, we encourage you to transition to Azure Monitor log alerts.\r\n> \r\n> Azure Monitor log alerts capabilities include the usual features you are familiar with including  configuring alerts on VM metrics (CPU utilization, Available memory and Free space) plus enhancements such as the ability to:\r\n> \r\n> - Apply processing on fired alerts using alert processing rules\r\n> - Summarize results by configuring various measurement values\r\n> - Get detailed context information about the alert using dimensions\r\n> \r\n> After 30 November 2022, VM insights guest health public preview feature will not be available.",
+        "AdditionalInfo": "",
+        "Links": ["https://azure.microsoft.com/updates/transition-to-azure-monitor-log-alerts-for-vm-guest-health-by-30-november-2022/", "https://docs.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-health-migrate"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruption to your applications using VM insights guest health preview feature, please review the Azure Monitor log alert [pricing page](https://azure.microsoft.com/en-us/pricing/details/monitor/) and [migration guidance](https://aka.ms/vmiHealthDeprecation) and transition to Azure Monitor log alerts before 30 November 2022.",
+        "AdditionalInfo": "A migration guide is provided [here](https://docs.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-health-migrate)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-05-06T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-11-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Azure Video Analyzer account will no longer function.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
