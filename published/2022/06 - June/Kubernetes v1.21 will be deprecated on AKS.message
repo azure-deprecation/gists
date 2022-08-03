@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Kubernetes v1.21 is being removed from Azure Kubernetes Service on July 31st 2022",
+    "Impact": {
+        "Description": "Kubernetes v1.21 is being removed from Azure Kubernetes Service on July 31st 2022 and customers need to upgrade their Kubernetes version.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["KubernetesService"]
+    },
+    "Notice": {
+        "OfficialReport": "> Kubernetes version 1.21 will be deprecated and removed from AKS on July 31st 2022.",
+        "AdditionalInfo": "",
+        "Links": ["https://github.com/Azure/AKS/releases/tag/2022-06-19"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "",
+        "AdditionalInfo": "Upgrade your Azure Kubernetes Service cluster to a higher version. Learn more in the [official documentation](https://docs.microsoft.com/en-us/azure/aks/upgrade-cluster?tabs=azure-cli#upgrade-an-aks-cluster)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-06-24T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-07-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Kubernetes version 1.21 will be removed",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

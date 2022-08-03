@@ -1,0 +1,42 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure StorSimple 8000/1200 series is retiring on on December 31st 2022",
+    "Impact": {
+        "Description": "Azure StorSimple 8000/1200 series is retiring on on December 31st 2022 and customers need to migrate to Azure File Sync.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Storage"]
+    },
+    "Notice": {
+        "OfficialReport": "> Microsoft has been expanding the portfolio of Azure Hybrid storage capabilities with new services for data tiering and cloud ingestion, providing more options to customers for storing data in Azure in native formats. In conjunction with this, support for the following StorSimple versions will end 31st December 2022:\r\n> - StorSimple 8000 series - 8100, 8600, 8010, 8020\r\n> - StorSimple 1200 Series\r\n> - StorSimple Data Manager\r\n> - StorSimple Snapshot Manager\r\n> ## How does this affect me?\r\n> IMPORTANT UPDATE:  Effective December 31 2022 the StorSimple service will reach end of life which means the following will no longer be available:\r\n> - All cloud management capability (e.g. viewing or updating settings related to volumes, shares, backups, backup policies or installing updates, etc.)\r\n> - Access to live data and backups.\r\n> - Access to customer support resources (phone, email, web)\r\n> - Hardware replacement parts and repair services for StorSimple 8000 series devices\r\n> - Software updates for StorSimple 8000 series and 1200 series devices ",
+        "AdditionalInfo": "",
+        "Links": ["[Announcement](https://azure.microsoft.com/en-au/updates/storsimpleeol/)"]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> - **How do I migrate StorSimple 8000 series devices?** Microsoft provides a [dedicated migration service](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-migration-storsimple-8000) for StorSimple 8000 series devices\r\n> - **How do I migrate StorSimple Virtual Array devices?** Microsoft provides [migration steps](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-migration-storsimple-1200) to copy data off the StorSimple Virtual Arrays devices. \r\n> - **I have migrated and I am no longer using StorSimple, why am I getting these emails?** You are receiving these emails since you still have atleast one StorSimple device registered. Steps to decommission your StorSimple 8000 series are [here](https://docs.microsoft.com/en-us/azure/storsimple/storsimple-8000-deactivate-and-delete-device) and StorSimple Virtual Array are [here](https://docs.microsoft.com/en-us/azure/storsimple/storsimple-virtual-array-deactivate-and-delete-device). Important, turning off the appliance doesn’t stop billing, you must follow previous steps.",
+        "AdditionalInfo": "Migrate your StorSimple solutions by using the [dedicated migration service](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-migration-storsimple-8000) or this [migration steps](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-migration-storsimple-1200)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-08-01T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-12-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "8000/1200 series will no longer be available/supported",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
