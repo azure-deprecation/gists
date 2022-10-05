@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Basic SKU of Azure Load Balancer is retiring on September 30th, 2025",
+    "Impact": {
+        "Description": "Basic SKU of Azure Load Balancer is retiring on September 30th, 2025 and migration to Standard SKU is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Sku",
+        "Cloud": "Public",
+        "Services": ["LoadBalancer"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 September 2025, Azure Basic Load Balancer will be retired.** You can continue to use your existing Basic Load Balancers until then, but you'll no longer be able to deploy new ones after 31 March 2025.\r\n> \r\n> To keep your workloads appropriately distributed, you'll need to upgrade to Standard Load Balancer, which provides significant [improvements](https://docs.microsoft.com/azure/load-balancer/skus) including:\r\n> \r\n> - High performance, ultra-low latency, and superior resilient load-balancing.\r\n> - Security by default—closed to inbound flows unless allowed by a network security group.\r\n> - Diagnostics such as multi-dimensional metrics and alerts, resource health, and monitoring.\r\n> - SLA of 99.99 percent availability.\r\n> \r\n> **If you have any Basic Load Balancers deployed in Azure Cloud Services (extended support)**, those deployments will not be affected by this retirement and you don't need to take any action for them.",
+        "AdditionalInfo": "**If you have any Basic Load Balancers deployed in Azure Cloud Services (extended support), those deployments will not be affected** by this retirement and you don't need to take any action for them.",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/en-au/updates/azure-basic-load-balancer-will-be-retired-on-30-september-2025-upgrade-to-standard-load-balancer/)",
+            "[Migration Guide](https://aka.ms/lbbasictostandard)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid any potential service disruptions, review [pricing](https://azure.microsoft.com/pricing/details/load-balancer/) and then follow the detailed steps to [upgrade](https://aka.ms/lbbasictostandard) from Basic Load Balancer to Standard Load Balancer by 30 September 2025.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/lbbasictostandard)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/lbQnA"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2025-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "SKU will no longer be available and service disruptions may occur.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
