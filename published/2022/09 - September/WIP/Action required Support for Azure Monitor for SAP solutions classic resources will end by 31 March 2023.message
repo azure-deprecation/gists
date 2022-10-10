@@ -1,5 +1,5 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/hyperscalecitus-pg11/
+https://azure.microsoft.com/en-au/updates/action-required-support-for-azure-monitor-for-sap-solutions-classic-resources-will-end-by-31-march-2023/
 ```json
 {
     "Title": "Log Analytics alert APIs in Azure Monitor are retiring on October 1st, 2025",

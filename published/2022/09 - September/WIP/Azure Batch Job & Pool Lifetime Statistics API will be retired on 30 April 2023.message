@@ -23,6 +23,13 @@ https://azure.microsoft.com/en-au/updates/azure-batch-jobpool-lifetime-statistic
         "AdditionalInfo": "A migration guide is provided [here](https://docs.microsoft.com/azure/azure-monitor/alerts/alerts-log-api-switch)."
     },
     "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/lbQnA"
+        }
     ],
     "Timeline":[
         {

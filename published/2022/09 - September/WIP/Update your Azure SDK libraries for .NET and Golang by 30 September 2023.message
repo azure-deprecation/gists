@@ -23,6 +23,13 @@ http://azure.microsoft.com/en-us/updates/update-your-azure-sdk-libraries-of-net-
         "AdditionalInfo": "A migration guide is provided [here](https://docs.microsoft.com/azure/azure-monitor/alerts/alerts-log-api-switch)."
     },
     "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/lbQnA"
+        }
     ],
     "Timeline":[
         {
