@@ -1,0 +1,45 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "PostgreSQL version 11 in Azure Database PostgreSQL Hyperscale (Citus) is retiring on November 9th, 2023",
+    "Impact": {
+        "Description": "PostgreSQL version 11 in Azure Database PostgreSQL Hyperscale (Citus) is retiring on November 9th, 2023 and upgrade to a higher PostgreSQL version is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["DatabaseForPostgreSQL"]
+    },
+    "Notice": {
+        "OfficialReport": "> [PostgreSQL version 11 community support ends on 9 November 2023](https://www.postgresql.org/support/versioning/). Azure Database for PostgreSQL - Hyperscale (Citus) cluster running on PostgreSQL 11 will need to upgrade to a higher PostgreSQL version by that date to avoid risks running on an unsupported PostgreSQL version.",
+        "AdditionalInfo": "The versioning policy is documented [here](https://docs.microsoft.com/en-us/azure/postgresql/concepts-version-policy).",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/en-au/updates/hyperscalecitus-pg11/)",
+            "[Upgrade Guide](https://aka.ms/AzurePostgresVersionUpgrade)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid any disruption to your workloads and avoid risks running on an unsupported PostgreSQL version, upgrade your Azure Database for PostgreSQL - Hyperscale (Citus) clusters that use PostgreSQL 11 to a higher PostgreSQL version by 9 November 2023.",
+        "AdditionalInfo": "An upgrade guide is provided [here](https://aka.ms/AzurePostgresVersionUpgrade)."
+    },
+    "Contact": [
+        {
+            "Type": "NotAvailable"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-11-09T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Disruption will occur.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
