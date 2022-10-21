@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "TLS 1.0/1.1 in Azure Batch is retiring on March 31st, 2023",
+    "Impact": {
+        "Description": "TLS 1.0/1.1 in Azure Batch is retiring on March 31st, 2023 and migration to TLS 1.2 is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Security",
+        "Cloud": "Public",
+        "Services": ["Monitor"]
+    },
+    "Notice": {
+        "OfficialReport": "> To follow security best practices and remain in compliance with industry standards toward the exclusive use of TLS version 1.2 or later, we’ll retire Azure Batch TLS 1.0/1.1 on **31 March 2023**. Please transition to using Batch TLS 1.2 by that date.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/en-au/updates/azure-batch-tls-1011-will-be-retired-on-31-march-2023/)",
+            "[Migration Guide](https://aka.ms/batchtls1011migration)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruptions to your workflow, follow these [steps](https://aka.ms/batchtls1011migration) to transition using Batch TLS 1.0/1.1 **before 31 March 2023**. After that, we will stop supporting Batch TLS 1.0/1.1. TLS 1.0/1.1 workflows will break, and our client application won’t work until you upgrade.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/batchtls1011migration)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/batchmicrosoftqna"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "TLS 1.0/1.1 will no longer be supported.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
