@@ -14,7 +14,7 @@ MessageType: NewAzureDeprecationV1
         "OfficialReport": "> Because Redis version 4 is no longer supported by the open source community, it will be retired from Azure Cache for Redis and you'll need to upgrade any cache instances that are running version 4 to version 6 by 30 June 2023. We'll continue to backport security fixes from recent versions to version 4 until that date.",
         "AdditionalInfo": "",
         "Links": [
-            "[Announcement](https://azure.microsoft.com/en-au/updates/upgrade-your-azure-cache-for-redis-instances-to-use-redis-version-6-by-30-june-2023/)",
+            "[Announcement](https://azure.microsoft.com/updates/upgrade-your-azure-cache-for-redis-instances-to-use-redis-version-6-by-30-june-2023/)",
             "[Upgrade Guide](https://aka.ms/redis/UpgradeToVersion6)"
         ]
     },  

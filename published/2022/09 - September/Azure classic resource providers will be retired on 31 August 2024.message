@@ -14,7 +14,7 @@ MessageType: NewAzureDeprecationV1
         "OfficialReport": "> Classic resource providers that use Azure Service Manager (classic deployment model) will be retired on 31 August 2024.> \r\n> Before the retirement date, you'll need to migrate your classic resource provider that uses classic deployment model (ASM) to [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview#the-benefits-of-using-resource-manager), which provides the same capabilities as classic and additionally offers the following benefits:\r\n> \r\n> - Simplified resource deployment with a management layer that enables you to create, update, and delete Azure resources.\r\n> - Resource grouping, which allows you to deploy, monitor, manage, and apply access control policies to resources as a group.\r\n> \r\n> See also [Overview of Azure Resource Manager and classic deployment](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/deployment-models).",
         "AdditionalInfo": "",
         "Links": [
-            "[Announcement](https://azure.microsoft.com/en-au/updates/azure-classic-resource-providers-will-be-retired-on-31-august-2024/)",
+            "[Announcement](https://azure.microsoft.com/updates/azure-classic-resource-providers-will-be-retired-on-31-august-2024/)",
             "[Migration Guide](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/deployment-models#migrate-from-classic-to-resource-manager)"
         ]
     },  

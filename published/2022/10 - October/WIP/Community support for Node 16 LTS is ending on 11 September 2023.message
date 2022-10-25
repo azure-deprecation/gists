@@ -1,5 +1,5 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/node16support/
+https://azure.microsoft.com/updates/node16support/
 ```json
 {
     "Title": "Log Analytics alert APIs in Azure Monitor are retiring on October 1st, 2025",

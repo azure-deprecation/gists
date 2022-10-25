@@ -14,7 +14,7 @@ MessageType: NewAzureDeprecationV1
         "OfficialReport": "> Azure [CycleCloud](https://learn.microsoft.com/en-us/azure/cyclecloud/overview?view=cyclecloud-8) now provides CycleCloud 8 with new features and removal of Python 2.7 support in clusters. As Python 2.7 reached end-of-life in 2020, CycleCloud 7 will be retired on **30 September 2023**. Please transition to using CycleCloud 8 by that date.",
         "AdditionalInfo": "",
         "Links": [
-            "[Announcement](https://azure.microsoft.com/en-au/updates/azure-cyclecloud-7-will-be-retired-on-30-september-2023/)",
+            "[Announcement](https://azure.microsoft.com/updates/azure-cyclecloud-7-will-be-retired-on-30-september-2023/)",
             "[Migration Guide](https://aka.ms/cyclecloud7migration)"
         ]
     },  

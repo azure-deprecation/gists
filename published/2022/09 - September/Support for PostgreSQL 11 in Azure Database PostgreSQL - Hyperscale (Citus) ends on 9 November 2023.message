@@ -14,7 +14,7 @@ MessageType: NewAzureDeprecationV1
         "OfficialReport": "> [PostgreSQL version 11 community support ends on 9 November 2023](https://www.postgresql.org/support/versioning/). Azure Database for PostgreSQL - Hyperscale (Citus) cluster running on PostgreSQL 11 will need to upgrade to a higher PostgreSQL version by that date to avoid risks running on an unsupported PostgreSQL version.",
         "AdditionalInfo": "The versioning policy is documented [here](https://docs.microsoft.com/en-us/azure/postgresql/concepts-version-policy).",
         "Links": [
-            "[Announcement](https://azure.microsoft.com/en-au/updates/hyperscalecitus-pg11/)",
+            "[Announcement](https://azure.microsoft.com/updates/hyperscalecitus-pg11/)",
             "[Upgrade Guide](https://aka.ms/AzurePostgresVersionUpgrade)"
         ]
     },  

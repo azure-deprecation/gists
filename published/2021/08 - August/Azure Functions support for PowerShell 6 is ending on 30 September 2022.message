@@ -13,7 +13,7 @@ MessageType: NewAzureDeprecationV1
     "Notice": {
         "OfficialReport": "> Because PowerShell 6 has reached end of support on 4 September 2020, applications hosted on Azure Functions using PowerShell 6 will be unsupported after **30 September 2022.**",
         "AdditionalInfo": null,
-        "Links": ["https://azure.microsoft.com/en-au/updates/azure-functions-support-for-powershell-6-is-ending-on-30-september-2022/", "https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell?tabs=portal#changing-the-powershell-version"]
+        "Links": ["https://azure.microsoft.com/updates/azure-functions-support-for-powershell-6-is-ending-on-30-september-2022/", "https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell?tabs=portal#changing-the-powershell-version"]
     },
     "RequiredAction": {
         "OfficialReport": "> To avoid any service disruption and potential security vulnerabilities in your applications, we recommend you  upgrade to PowerShell 7, and then [follow the steps to update your applications settings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell?tabs=portal#changing-the-powershell-version) before 30 September 2022.",

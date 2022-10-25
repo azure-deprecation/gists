@@ -1,5 +1,5 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/rubysupport/
+https://azure.microsoft.com/updates/rubysupport/
 ```json
 {
     "Title": "Log Analytics alert APIs in Azure Monitor are retiring on October 1st, 2025",

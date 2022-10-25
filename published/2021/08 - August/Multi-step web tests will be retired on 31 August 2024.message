@@ -13,7 +13,7 @@ MessageType: NewAzureDeprecationV1
     "Notice": {
         "OfficialReport": "> Multi-step web tests depend on Visual Studio webtest files, and it has been [announced](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) that Visual Studio 2019 will be the last version with webtest functionality. Therefore, we are retiring multi-step web tests within Application Insights on 31 August 2024.\r\n> \r\n> We recommend using [`TrackAvailability()`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.applicationinsights.telemetryclient.trackavailability) to submit [custom availability tests](https://docs.microsoft.com/en-us/azure/azure-monitor/app/availability-azure-functions) instead of multi-step web tests.\r\n> \r\n> With `TrackAvailability()` and custom availability tests, you can run tests on any compute you want and use C# to easily author new tests.\r\n> \r\n> You won’t be able to create new multi-step web tests after 31 August 2023.",
         "AdditionalInfo": null,
-        "Links": ["https://azure.microsoft.com/en-au/updates/retirement-notice-transition-to-custom-availability-tests-in-application-insights/", "https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/"]
+        "Links": ["https://azure.microsoft.com/updates/retirement-notice-transition-to-custom-availability-tests-in-application-insights/", "https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/"]
     },
     "RequiredAction": {
         "OfficialReport": "> Rewrite your existing multi-step web tests as [custom availability tests](https://docs.microsoft.com/azure/azure-monitor/app/availability-azure-functions) before 31 August 2024.",

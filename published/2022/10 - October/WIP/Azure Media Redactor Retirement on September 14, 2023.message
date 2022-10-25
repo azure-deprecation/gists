@@ -1,5 +1,5 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/azure-media-redactor-retirement-on-september-14-2023/
+https://azure.microsoft.com/updates/azure-media-redactor-retirement-on-september-14-2023/
 ```json
 {
     "Title": "Log Analytics alert APIs in Azure Monitor are retiring on October 1st, 2025",

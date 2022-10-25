@@ -1,5 +1,5 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/azure-functions-support-for-node-12-is-ending-on-13-december-2022/
+https://azure.microsoft.com/updates/azure-functions-support-for-node-12-is-ending-on-13-december-2022/
 ```json
 {
     "Title": "Log Analytics alert APIs in Azure Monitor are retiring on October 1st, 2025",

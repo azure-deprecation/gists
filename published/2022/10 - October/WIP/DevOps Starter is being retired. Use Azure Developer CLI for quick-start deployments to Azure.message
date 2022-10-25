@@ -1,5 +1,5 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/retirement-notice-devops-starter-is-being-retired/
+
 ```json
 {
     "Title": "Log Analytics alert APIs in Azure Monitor are retiring on October 1st, 2025",
@@ -14,7 +14,7 @@ https://azure.microsoft.com/en-au/updates/retirement-notice-devops-starter-is-be
         "OfficialReport": "> On 1 October 2025, the Log Analytics alert API in Azure Monitor will be retired. You'll need to transition to using the Scheduled Query Rules API for log alerts by that date.\r\n> \r\n> The Scheduled Query Rules API for log alerts offers several improvements, including:\r\n> \r\n> - Log alerting on all Azure resources.\r\n> - A single template for creation of log alert rules.\r\n> - Support for dimensional, auto-resolving, and one-minute log alerts.",
         "AdditionalInfo": "",
         "Links": [
-            "[Announcement](https://azure.microsoft.com/updates/on-1-october-2025-the-log-analytics-alert-api-in-azure-monitor-will-be-retired/)",
+            "[Announcement](https://azure.microsoft.com/updates/retirement-notice-devops-starter-is-being-retired/)",
             "[Migration Guide](https://docs.microsoft.com/azure/azure-monitor/alerts/alerts-log-api-switch)"
         ]
     },  
@@ -28,7 +28,7 @@ https://azure.microsoft.com/en-au/updates/retirement-notice-devops-starter-is-be
         },
         {
             "Type": "MicrosoftQAndA",
-            "Data": "https://aka.ms/lbQnA"
+            "Data": "https://docs.microsoft.com/answers/topics/azure-dev-tool-integrations.html"
         }
     ],
     "Timeline":[

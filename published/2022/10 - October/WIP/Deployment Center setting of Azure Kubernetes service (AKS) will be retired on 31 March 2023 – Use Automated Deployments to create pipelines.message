@@ -1,5 +1,5 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/deployment-center-setting-of-azure-kubernetes-service-aks-will-be-retired-on-31-march-2023-use-automated-deployments-to-creat/
+https://azure.microsoft.com/updates/deployment-center-setting-of-azure-kubernetes-service-aks-will-be-retired-on-31-march-2023-use-automated-deployments-to-creat/
 ```json
 {
     "Title": "Log Analytics alert APIs in Azure Monitor are retiring on October 1st, 2025",

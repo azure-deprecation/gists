@@ -13,7 +13,7 @@ MessageType: NewAzureDeprecationV1
     "Notice": {
         "OfficialReport": "> **On 30 June 2022, we’ll retire Azure AD Graph.** Before that date, you’ll need to update your apps that use it to instead use Microsoft Graph, which provides all of the functionality of Azure AD Graph plus new features, including:\r\n> \r\n> - A single endpoint for APIs from Azure AD and other services, such as Microsoft Teams, Exchange, and Intune.\r\n> - Built-in support for retry handling, secure redirects, transparent authentication, and payload compression.",
         "AdditionalInfo": "Migrate to [Microsoft Graph](https://docs.microsoft.com/en-us/graph/overview)",
-        "Links": ["https://azure.microsoft.com/en-au/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/","https://github.com/microsoft/AzureADGraphApps","https://docs.microsoft.com/en-us/graph/migrate-azure-ad-graph-planning-checklist?view=graph-rest-1.0"]
+        "Links": ["https://azure.microsoft.com/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/","https://github.com/microsoft/AzureADGraphApps","https://docs.microsoft.com/en-us/graph/migrate-azure-ad-graph-planning-checklist?view=graph-rest-1.0"]
     },
     "RequiredAction": {
         "OfficialReport": "> To avoid service disruptions, [identify your apps](https://aka.ms/AzADGraphDeprecation-ListApps) that use Azure AD Graph and [update them](https://docs.microsoft.com/en-us/graph/migrate-azure-ad-graph-planning-checklist?view=graph-rest-1.0) to use Microsoft Graph before 30 June 2022.",

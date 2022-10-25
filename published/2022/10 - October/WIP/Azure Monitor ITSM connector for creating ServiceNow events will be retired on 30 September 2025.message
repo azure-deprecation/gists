@@ -1,6 +1,6 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/azure-monitor-itsm-connector-for-creating-servicenow-events-will-be-retired-on-30-september-2025/
-https://azure.microsoft.com/en-au/updates/azure-monitor-itsm-connector-for-creating-servicenow-alerts-will-be-retired-on-30-september-2025/
+https://azure.microsoft.com/updates/azure-monitor-itsm-connector-for-creating-servicenow-events-will-be-retired-on-30-september-2025/
+https://azure.microsoft.com/updates/azure-monitor-itsm-connector-for-creating-servicenow-alerts-will-be-retired-on-30-september-2025/
 ```json
 {
     "Title": "Log Analytics alert APIs in Azure Monitor are retiring on October 1st, 2025",

@@ -1,5 +1,5 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/azure-batch-low-priority-vms-will-be-retired-on-30-september-2025/
+https://azure.microsoft.com/updates/azure-batch-low-priority-vms-will-be-retired-on-30-september-2025/
 ```json
 {
     "Title": "Log Analytics alert APIs in Azure Monitor are retiring on October 1st, 2025",

@@ -14,7 +14,7 @@ MessageType: NewAzureDeprecationV1
         "OfficialReport": "> Because [community support for PostgreSQL version 11](https://www.postgresql.org/support/versioning/) will end on 9 November 2023, you’ll need to migrate your Azure Database for PostgreSQL Single Servers that use version 11 to version 13 or higher on Flexible Server.\r\n> \r\n> To ensure you have enough time to make this change, Azure Database for PostgreSQL will continue to support version 11 on Single Server for an additional year, **through 9 November 2024**, including creating new servers.",
         "AdditionalInfo": "The versioning policy is documented [here](https://docs.microsoft.com/en-us/azure/postgresql/concepts-version-policy).",
         "Links": [
-            "[Announcement](https://azure.microsoft.com/en-au/updates/singlepg11-retirement/)",
+            "[Announcement](https://azure.microsoft.com/updates/singlepg11-retirement/)",
             "[Upgrade Guide](https://aka.ms/flexible-pg-upgrade)"
         ]
     },  

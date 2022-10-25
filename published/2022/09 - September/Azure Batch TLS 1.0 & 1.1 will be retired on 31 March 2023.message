@@ -14,7 +14,7 @@ MessageType: NewAzureDeprecationV1
         "OfficialReport": "> To follow security best practices and remain in compliance with industry standards toward the exclusive use of TLS version 1.2 or later, we’ll retire Azure Batch TLS 1.0/1.1 on **31 March 2023**. Please transition to using Batch TLS 1.2 by that date.",
         "AdditionalInfo": "",
         "Links": [
-            "[Announcement](https://azure.microsoft.com/en-au/updates/azure-batch-tls-1011-will-be-retired-on-31-march-2023/)",
+            "[Announcement](https://azure.microsoft.com/updates/azure-batch-tls-1011-will-be-retired-on-31-march-2023/)",
             "[Migration Guide](https://aka.ms/batchtls1011migration)"
         ]
     },  

@@ -13,7 +13,7 @@ MessageType: NewAzureDeprecationV1
     "Notice": {
         "OfficialReport": "> We are extending the retirement date for Azure IoT Central version 2 as we know that it takes time to adjust to changes. **The new retirement due date is 1 March 2022**.\r\n> \r\n> We encourage you to make the switch early to gain the benefits of version 3 which provides many new features that are not available in version 2. Version 3 includes:\r\n> \r\n> - [**Raw Data View**](https://docs.microsoft.com/en-us/azure/iot-central/core/concepts-telemetry-properties-commands) to review telemetry sent from your devices to quickly identify and resolve issues.\r\n> - [**Public APIs**](https://docs.microsoft.com/en-us/rest/api/iotcentral/) with built-in support for lifecycle management, operations, and data querying.\r\n> - [**Improved Data Export**](https://docs.microsoft.com/azure/iot-central/core/howto-export-data) for receiving real-time enriched data and unlocking business insights.",
         "AdditionalInfo": null,
-        "Links": ["https://azure.microsoft.com/en-au/updates/iotcentralv2/", "https://docs.microsoft.com/en-us/azure/iot-central/core/howto-migrate"]
+        "Links": ["https://azure.microsoft.com/updates/iotcentralv2/", "https://docs.microsoft.com/en-us/azure/iot-central/core/howto-migrate"]
     },
     "RequiredAction": {
         "OfficialReport": "> To avoid service disruptions, [migrate your Azure IoT Central apps](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-migrate) to version 3 before 1 March  2022.",

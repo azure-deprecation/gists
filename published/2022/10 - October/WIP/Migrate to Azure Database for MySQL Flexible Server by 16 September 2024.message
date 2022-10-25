@@ -1,5 +1,5 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/action-required-migrate-to-azure-database-for-mysql-flexible-server-by-16-september-2024/
+https://azure.microsoft.com/updates/action-required-migrate-to-azure-database-for-mysql-flexible-server-by-16-september-2024/
 ```json
 {
     "Title": "Log Analytics alert APIs in Azure Monitor are retiring on October 1st, 2025",
