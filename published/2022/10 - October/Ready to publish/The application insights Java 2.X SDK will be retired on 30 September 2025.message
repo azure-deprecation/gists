@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Application Insights SDK for Java v2.X is retiring on September 30th, 2025",
+    "Impact": {
+        "Description": "Azure Application Insights SDK for Java v2.X is retiring on September 30th, 2025 and migration to Java SDK v3.X auto-instrument is required.",
+        "Type": "MigrationRequired",
+        "Area": "Sdk",
+        "Cloud": "Public",
+        "Services": ["ApplicationInsights"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 September 2025, we’ll be retiring the application insights Java 2.X SDK;** after that date it’ll no longer be supported. Before that date, we recommend you upgrade to OpenTelemetry-based Java 3.X auto-instrumentation, which provides all the functionality of the application insights Java 2.X SDK plus new ones, including:\r\n> \r\n> - Expanded distributed tracing auto-collection including the most common Azure SDKs, MongoDB, Kafka, Cassandra (and more)\r\n> - JMX and micrometer metrics auto-collection\r\n> - Codeless onboarding for easier deployments and upgrades\r\n>\r\n> If you choose to not upgrade, your data will continue to flow to application insights. However, we’ll be unable to support any Azure support cases opened on this SDK, and you won’t receive the latest product features.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/application-insights-java-2x-retirement/)",
+            "[Migration Guide](https://aka.ms/Java3XUpgradeGuidance/)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid being on an unsupported SDK, [upgrade to application insights Java 3.X auto-instrumentation](https://aka.ms/Java3XUpgradeGuidance/) by **30 September 2025**.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/Java3XUpgradeGuidance/)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/AzMonQandAForum"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2025-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "SDK will no longer be supported.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
