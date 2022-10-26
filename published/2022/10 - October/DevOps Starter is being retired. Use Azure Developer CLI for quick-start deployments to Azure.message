@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure DevOps Starter is retiring on March 1st, 2023",
+    "Impact": {
+        "Description": "Azure DevOps Starter is retiring on March 1st, 2023 and migration to Azure Developer CLI is required for quick-start deployments to Azure.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["DevOps"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2023 DevOps Starter experience will be retired, and you won’t be able to create new DevOps Starters.** The corresponding REST APIs for [Microsoft.DevOps](https://github.com/Azure/azure-rest-api-specs/tree/main/specification/devops/resource-manager/Microsoft.DevOps/) and [Microsoft.VisualStudio/accounts/projects](https://docs.microsoft.com/en-us/rest/api/visualstudio/projects) resources will be retired as well. This won’t impact your existing CI/CD pipelines which were created using DevOps starters earlier. It also won’t impact your application code, its deployments, or Azure resources which host the application.\r\n> \r\n> However, you will be unable to see the dashboard for an existing DevOps Starter. We encourage you to make the switch to [Azure Developer CLI](https://docs.microsoft.com/en-us/azure/developer/azure-developer-cli/) **before 31 March 2023** to continue to use the rich benefits of DevOps.\r\n> \r\n> Azure Developer CLI has similar capabilities to DevOps Starter. The [Azure Developer CLI](https://docs.microsoft.com/en-us/azure/developer/azure-developer-cli/) is a developer-centric command-line tool for building cloud apps. The Azure Developer CLI is a set of commands that allows you to work consistently across Developer CLI templates, DevOps workflows, and your IDE (integrated development environment).\r\n> \r\n> **From now through 31 March 2023**, you can continue to use DevOps Starter, but it won’t receive any significant new features.\r\n> \r\n> After **31 March 2023**, you won’t be able to view an existing DevOps Starter dashboard. DevOps Starter doesn’t store any information, but users can get the same information from:\r\n> \r\n> - **Azure resource details in Azure portal** – In Azure portal, visit the resource page for which you had configured DevOps Starter.\r\n> - **Pipeline and deployment details in GitHub Actions or Azure pipelines** – Visit GitHub Actions webpage or the Azure DevOps webpage to look at the pipeline runs and deployments.\r\n> - **Monitoring details in Application insights** – Visit application insights menu in the corresponding Azure resource to look at the monitoring charts.",
+        "AdditionalInfo": "Data will not be lost and will still be available in Azure Portal, GitHub Actions/Azure Pipelines and/or Azure Application Insights.",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/retirement-notice-devops-starter-is-being-retired/)",
+            "[Migration Guide](https://aka.ms/dev-starter-retirement-plan)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruptions to your workflow, migrate to [Azure Developer CLI](https://docs.microsoft.com/azure/developer/azure-developer-cli/) by **31 March 2023**. We encourage you to make the switch sooner to familiarize yourself with the Azure Developer CLI and its extensive capabilities. Please review this [migration guide](https://aka.ms/dev-starter-retirement-plan) to get started.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/dev-starter-retirement-plan)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://docs.microsoft.com/answers/topics/azure-dev-tool-integrations.html"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "You won’t be able to view an existing DevOps Starter dashboard.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

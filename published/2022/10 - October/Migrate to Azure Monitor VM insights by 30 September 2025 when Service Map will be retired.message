@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Monitor's Service Map is retiring on September 30th, 2025",
+    "Impact": {
+        "Description": "Azure Monitor's Service Map is retiring on September 30th, 2025 and migration to Azure Monitor VM insights is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Monitor"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 September 2025, [Azure Service Map](https://docs.microsoft.com/azure/azure-monitor/vm/service-map) will be retired.** To monitor connections between servers, processes, inbound and outbound connection latency, and ports across any TCP-connected architecture, you'll need to migrate to Azure Monitor [VM insights](https://docs.microsoft.com/azure/azure-monitor/vm/vminsights-overview).\r\n>\r\n> The map experience of VM insights includes all the same functionality of Service Map, plus:\r\n>\r\n> - Improved scalability and support for more complex maps.\r\n> - Deeper metrics capabilities for connections.\r\n> - Support for grouping the machines you onboard to the map experience with subscriptions, resource groups, Azure Virtual Machine Scale Sets, and Azure Cloud Services.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/migrate-to-azure-monitor-vm-insights-by-30-september-2025-when-service-map-will-be-retired/)",
+            "[Migration Guide](https://aka.ms/ServiceMapRetirement)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To continue monitoring processes and dependencies for your Azure virtual machines and on-premises machines, review [pricing](https://docs.microsoft.com/azure/azure-monitor/vm/vminsights-overview#pricing) and **[migrate](https://aka.ms/ServiceMapRetirement) to Azure Monitor VM insights by 30 September 2025**.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/ServiceMapRetirement)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/ServiceMapQnA"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-07T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2025-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Feature will no longer work.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

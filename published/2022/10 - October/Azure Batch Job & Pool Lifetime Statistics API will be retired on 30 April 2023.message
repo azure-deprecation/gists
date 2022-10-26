@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Batch Job/Pool Lifetime Statistics API is retiring on April 30th, 2023",
+    "Impact": {
+        "Description": "Azure Batch Job/Pool Lifetime Statistics API is retiring on April 30th, 2023 and migration to Azure portal logs, alerts, log export, and other additional methods is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Batch"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because more advanced ways of log/job/pool data can be collected and used on a need basis using Azure portal logs, alerts, log export, and other additional methods, we’ll retire Batch Job/Pool Lifetime Statistics API on **30 April 2023**. See the [guide](https://aka.ms/jobpoollifetimestatisticsguide) for more information.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-batch-jobpool-lifetime-statistics-api-will-be-retired-on-30-april-2023/)",
+            "[Migration Guide](https://aka.ms/jobpoollifetimestatisticsguide)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Stop using Batch Job/Pool Lifetime Statistics API by **30 April 2023**. After that, we’ll stop supporting the API. The API will cease to work and will return an appropriate HTTP response error code back to the client.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/jobpoollifetimestatisticsguide)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/batchmicrosoftqna"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-04-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "API will no longer work.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

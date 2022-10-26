@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Media Services Redactor is retiring on September 14th, 2023",
+    "Impact": {
+        "Description": "Azure Media Services Redactor is retiring on September 14th, 2023 and migration to Azure Video Indexer is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["MediaServices"]
+    },
+    "Notice": {
+        "OfficialReport": "> As Microsoft’s [Responsible AI](https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/) Standards outline, Microsoft is committed to fairness, privacy, security, and transparency with respect to AI systems. To better align our products to this new Standard and the [Limited Access policy](https://aka.ms/AAh91ff) for other Microsoft products, Azure Media Services will be retiring the following capabilities on September 14, 2023:\r\n>\r\n> - [Azure Media Redactor (RESTv2)](https://docs.microsoft.com/azure/media-services/previous/media-services-redactor-walkthrough)\r\n>\r\n> After September 14, 2023, any applications you have developed using the Azure Media Redactor preset will begin experiencing errors or failed job submissions.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-media-services-face-detect-retirement-on-september-14-2023/)",
+            "[Azure Media Services v3 presets and Azure Video Indexer Comparison](https://learn.microsoft.com/en-us/azure/azure-video-indexer/compare-video-indexer-with-media-services-presets)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> The Azure Media Redactor (RESTv2) preset will be retired and is not being replaced at this time. If you would like to instead detect people in a video, we recommend you update your applications to use the Video Indexer APIs for [detecting observed people](https://docs.microsoft.com/azure/azure-video-indexer/observed-people-tracing) and [matching observed people to faces](https://docs.microsoft.com/azure/azure-video-indexer/matched-person) and [submit a request](https://aka.ms/facerecognition) to get access to the Limited Access program for these features.\r\n>\r\n> If you are currently using the Video Analyzer preset, we recommend updating your applications to use the [Video Indexer APIs for video analysis](https://docs.microsoft.com/en-us/azure/azure-video-indexer/compare-video-indexer-with-media-services-presets), which offers an extended range of capabilities.",
+        "AdditionalInfo": "A comparison between Azure Media Services v3 presets and Azure Video Indexer is provided [here](https://learn.microsoft.com/en-us/azure/azure-video-indexer/compare-video-indexer-with-media-services-presets)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://docs.microsoft.com/answers/topics/azure-media-services.html"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-07T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-09-14T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Jobs will begin experiencing errors or failed job submissions.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

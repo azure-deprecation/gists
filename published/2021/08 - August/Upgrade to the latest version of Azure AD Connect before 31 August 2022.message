@@ -13,7 +13,7 @@ MessageType: NewAzureDeprecationV1
     "Notice": {
         "OfficialReport": "> On 31 August 2022, all 1.x versions of Azure Active Directory (Azure AD) Connect will be retired because they include SQL Server 2012 components that will no longer be supported. Upgrade to the most recent version of Azure AD Connect by that date.",
         "AdditionalInfo": null,
-        "Links": ["https://azure.microsoft.com/en-au/updates/action-required-upgrade-to-the-latest-version-of-azure-ad-connect-before-31-august-2022/","https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-upgrade-previous-version"]
+        "Links": ["https://azure.microsoft.com/updates/action-required-upgrade-to-the-latest-version-of-azure-ad-connect-before-31-august-2022/","https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-upgrade-previous-version"]
     },
     "RequiredAction": {
         "OfficialReport": "> To avoid service disruptions, [upgrade to the latest version of Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-upgrade-previous-version) before 31 August 2022.",

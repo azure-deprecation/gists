@@ -1,0 +1,54 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Basic SKU public IP addresses are retiring on October 1st, 2025",
+    "Impact": {
+        "Description": "Basic SKU public IP addresses are retiring on October 1st, 2025 and upgrade to Standard SKU is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Sku",
+        "Cloud": "Public",
+        "Services": ["VirtualNetwork"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 September 2025, Basic SKU public IP addresses will be retired in Azure.** You can continue to use your existing Basic SKU public IP addresses until then, however, you'll no longer be able to create new ones after 31 March 2025.\r\n> \r\n> Standard SKU public IP addresses offer significant [improvements](https://docs.microsoft.com/azure/virtual-network/ip-services/public-ip-addresses#sku), including:\r\n> \r\n> - Access to a variety of other Azure products, including Standard Load Balancer, Azure Firewall, and NAT Gateway.\r\n> - Security by default—closed to inbound flows unless allowed by a network security group.\r\n> - Zone-redundant and zonal front ends for inbound and outbound traffic.\r\n> \r\n> **If you have any Basic SKU public IP addresses deployed in Azure Cloud Services (extended support)**, those deployments will not be affected by this retirement and you don't need to take any action for them.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/upgrade-to-standard-sku-public-ip-addresses-in-azure-by-30-september-2025-basic-sku-will-be-retired/)",
+            "[Migration Guide](https://aka.ms/ipbasictostandard)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid any potential service disruptions, review [pricing](https://azure.microsoft.com/pricing/details/ip-addresses/) and then **[upgrade](https://aka.ms/ipbasictostandard) to Standard SKU public IP addresses by 30 September 2025.**",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/ipbasictostandard)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/ipQnA"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-07T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2025-03-31T00:00:00+00:00",
+            "Phase": "Creation Disabled",
+            "Description": "Customers will no longer be able to create new basic SKU public IP addresses.",
+        },
+        {
+            "Date": "2025-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Services will no longer work.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

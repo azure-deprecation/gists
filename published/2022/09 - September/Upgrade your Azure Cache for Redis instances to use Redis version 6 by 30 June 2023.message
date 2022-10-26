@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Redis v4 in Azure Cache for Redis are retiring on June 30th, 2023",
+    "Impact": {
+        "Description": "Redis v6 in Azure Cache for Redis are retiring on June 30th, 2023 and migration to Scheduled Query Rules API is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["CacheForRedis"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because Redis version 4 is no longer supported by the open source community, it will be retired from Azure Cache for Redis and you'll need to upgrade any cache instances that are running version 4 to version 6 by 30 June 2023. We'll continue to backport security fixes from recent versions to version 4 until that date.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/upgrade-your-azure-cache-for-redis-instances-to-use-redis-version-6-by-30-june-2023/)",
+            "[Upgrade Guide](https://aka.ms/redis/UpgradeToVersion6)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid an automatic update to your cache instances, [upgrade](https://aka.ms/redis/UpgradeToVersion6) your Azure Cache for Redis instances to Redis version 6 by 30 June 2023.",
+        "AdditionalInfo": "An upgrade guide is provided [here](https://aka.ms/redis/UpgradeToVersion6)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/redis/QnA"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-07-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Azure Cache for Redis instances with Redis v4 will be automatically upgraded to Redis v6.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

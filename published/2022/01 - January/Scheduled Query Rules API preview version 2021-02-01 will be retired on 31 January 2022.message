@@ -13,7 +13,7 @@ MessageType: NewAzureDeprecationV1
     "Notice": {
         "OfficialReport": "> With the general availability of the new API version 2021-08-01, we will be retiring and removing the preview version 2020-02-01-preview on 31 January 2022. We have also began charging for alert rules created using the preview versions on 30 November 2021. Learn more about [Azure Monitor log alerts pricing](https://azure.microsoft.com/pricing/details/monitor/).",
         "AdditionalInfo": "Customers will be chared for alert rules that are being used.",
-        "Links": ["https://azure.microsoft.com/en-au/updates/scheduled-query-rules-api-preview-version-20210201-will-be-retired-on-31-january-2022/", "https://azure.microsoft.com/pricing/details/monitor/"]
+        "Links": ["https://azure.microsoft.com/updates/scheduled-query-rules-api-preview-version-20210201-will-be-retired-on-31-january-2022/", "https://azure.microsoft.com/pricing/details/monitor/"]
     },  
     "RequiredAction": {
         "OfficialReport": "To avoid service disruption, please update any Azure Resource Manager templates that use preview API versions of the `Microsoft.Insights/ScheduledQueryRules` resource type by 31 January 2022. There are no changes to the template format from the `2021-02-01-preview` API version, other than the version used.",

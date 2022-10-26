@@ -1,0 +1,48 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Continuous delivery in Azure VMSS is retiring on March 31st, 2023",
+    "Impact": {
+        "Description": "Continuous delivery in Azure VMSS is retiring on March 31st, 2023 and migration to Azure DevOps / Pipelines is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["VirtualMachineScaleSets"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2023 Azure Continuous delivery setting of Virtual Machine Scale Set will be retired.** Please start using Azure DevOps to directly create pipelines by that date.\r\n>\r\n> Note that all the pipelines created will still be available and functional in Azure DevOps portal. Only the experience of creating/viewing the Azure DevOps pipeline from Azure portal will be retired.\r\n> \r\n> We encourage you to make the switch sooner to familiarize yourself with the Azure DevOps portal and its extensive capabilities.\r\n> \r\n> From now through 31 March 2023, you can continue to create and view pipelines from Continuous delivery setting of a Virtual Machine Scale Set in Azure portal. **After 31 March 2023**, this setting will not be available to use.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/continuous-delivery-setting-of-azure-vmss-will-be-retired-on-31-march-2023-use-azure-devops-to-create-pipelines/)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruptions to your workflow, start using Azure DevOps before 31 March 2023. You can familiarize yourself with the creation of customized pipelines using [Azure DevOps](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/azure/deploy-azure-scaleset?view=azure-devops).",
+        "AdditionalInfo": ""
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/azure-vmss-qna-card"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-21T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Setting will no longer be available.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

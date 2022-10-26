@@ -13,7 +13,7 @@ MessageType: NewAzureDeprecationV1
     "Notice": {
         "OfficialReport": "> **On 31 August 2024, we'll retire the Log Analytics agent that you use in Azure Monitor.** Before that date, you'll need to start using the Azure Monitor agent to monitor your VMs and servers in Azure. The Azure Monitor agent provides new features and capabilities, including: \r\n> \r\n> - Centralized configuration for multiple VMs. \r\n> - Data limits and filters at the source. \r\n> - Multiple destinations for data from a single agent.",
         "AdditionalInfo": null,
-        "Links": ["https://azure.microsoft.com/en-au/updates/were-retiring-the-log-analytics-agent-in-azure-monitor-on-31-august-2024/","https://docs.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration"]
+        "Links": ["https://azure.microsoft.com/updates/were-retiring-the-log-analytics-agent-in-azure-monitor-on-31-august-2024/","https://docs.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration"]
     },
     "RequiredAction": {
         "OfficialReport": "> Follow the [migration instructions](https://aka.ms/migratetoAMA) to start using the Azure Monitor agent to monitor your VMs and servers before 31 August 2024.",

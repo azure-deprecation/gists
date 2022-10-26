@@ -1,0 +1,48 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Monitor's ITSM connector for creating ServiceNow alerts is retiring on September 30th, 2025",
+    "Impact": {
+        "Description": "Azure Monitor's ITSM connector for creating ServiceNow alerts is retiring on September 30th, 2025 and migration to [secure webhooks](https://docs.microsoft.com/azure/azure-monitor/alerts/itsm-connector-secure-webhook-connections-azure-configuration) is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Monitor"]
+    },
+    "Notice": {
+        "OfficialReport": "> We are retiring the Azure Monitor ITSM connector feature for creating ServiceNow alerts on 30 September 2025. If you are using this feature to create alerts in ServiceNow from Azure Montor alerts and would like to continue receiving Azure Monitor alerts in ServiceNow you can either create incidents or create events using [Secure webhook](https://docs.microsoft.com/azure/azure-monitor/alerts/itsm-connector-secure-webhook-connections-azure-configuration) integration. Transition to Azure Monitor log alerts before this date.  From 30 September 2025, this will be the only way to send alerts to ServiceNow.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-monitor-itsm-connector-for-creating-servicenow-alerts-will-be-retired-on-30-september-2025/)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "",
+        "AdditionalInfo": "Migration to [secure webhooks](https://docs.microsoft.com/azure/azure-monitor/alerts/itsm-connector-secure-webhook-connections-azure-configuration) is required.",
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/azureqa"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2025-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Alerts will no longer be created in ServiceNow.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

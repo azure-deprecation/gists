@@ -1,5 +1,5 @@
 MessageType: NewAzureDeprecationV1
-https://azure.microsoft.com/en-au/updates/we-ll-retire-azure-time-series-insights-on-31-of-march-2025/
+https://azure.microsoft.com/updates/we-ll-retire-azure-time-series-insights-on-31-of-march-2025/
 ```json
 {
     "Title": "Azure Time Series Insights is retiring on March 31st 2025",

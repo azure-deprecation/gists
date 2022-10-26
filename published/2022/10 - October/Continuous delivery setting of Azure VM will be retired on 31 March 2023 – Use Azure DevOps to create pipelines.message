@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Continuous delivery in Azure VM is retiring on March 31st, 2023",
+    "Impact": {
+        "Description": "Continuous delivery in Azure VM is retiring on March 31st, 2023 and migration to Azure DevOps / Pipelines is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["VirtualMachine"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 31 March 2023 Azure Continuous delivery setting of Virtual Machine will be retired.** Please start using Azure DevOps to directly create pipelines by that date.\r\n>\r\n> Note that all the pipelines created will still be available and functional in Azure DevOps portal. Only the experience of creating/viewing the Azure DevOps pipeline from Azure portal will be retired.\r\n> \r\n> We encourage you to make the switch sooner to familiarize yourself with the Azure DevOps portal and its extensive capabilities.\r\n> \r\n> From now through 31 March 2023, you can continue to create and view pipelines from Continuous delivery setting of a Virtual Machine in Azure portal. **After 31 March 2023**, this setting will not be available to use.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/retirement-notice-continuous-delivery-setting-of-vms-to-be-retired-by-31-march-2023/)",
+            "[Migration Guide](https://aka.ms/vm-cd-retirement-plan)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruptions to your workflows, start using [Azure DevOps](https://aka.ms/vm-cd-retirement-plan) before 31 March 2023. Prior to your update, you can familiarize yourself with the creation of pipelines using [Azure DevOps](https://docs.microsoft.com/azure/devops/pipelines/?view=azure-devops).",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/vm-cd-retirement-plan)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/azure-vm-qna-card"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-23T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Setting will no longer be available.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

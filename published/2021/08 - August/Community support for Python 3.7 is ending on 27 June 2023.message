@@ -13,7 +13,7 @@ MessageType: NewAzureDeprecationV1
     "Notice": {
         "OfficialReport": "> Because Python 3.7 extended support on Linux will end on 27 June 2023, any applications hosted on Azure App Service that are still using it will be unsupported after 27 June 2023. Your applications will continue to run unchanged but won't receive any patches after 27 June 2023, since Python will no longer be providing them.",
         "AdditionalInfo": null,
-        "Links": ["https://azure.microsoft.com/en-au/updates/community-support-for-python-37-is-ending-on-27-june-2023/"]
+        "Links": ["https://azure.microsoft.com/updates/community-support-for-python-37-is-ending-on-27-june-2023/"]
     },
     "RequiredAction": {
         "OfficialReport": "> To minimize risk and potential security vulnerabilities, [follow the steps to update your applications to Python 3.8](https://aka.ms/pythonsupport) before 27 June 2023.",

@@ -1,0 +1,47 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure SDK for .NET and Golang are retiring on September 30th, 2023",
+    "Impact": {
+        "Description": "Azure SDK for .NET and Golang are retiring on September 30th, 2023 and migration to new SDK for .NET / Go is required.",
+        "Type": "MigrationRequired",
+        "Area": "Sdk",
+        "Cloud": "Public",
+        "Services": ["All"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 September 2023, we will be retiring support for Azure SDK for .NET and Golang libraries which do not conform to our [current Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html).** The new Azure SDK libraries are updated regularly to drive consistent experiences and strengthen your security posture. Please transition to the new Azure SDK for .NET and Golang libraries to take advantage of the new capabilities and critical security updates before 30 September 2023.\r\n>\r\n> Although the older libraries can still be used beyond 30 September 2023, they will no longer receive official support and updates from Microsoft after that date. These older libraries may receive targeted feature updates through 31 March 2023.\r\n>\r\n> If you prefer not to transition to the new Azure SDK for .NET and Go libraries, source code for the current Azure SDKs libraries is available on GitHub as open source. You can continue to use the code and apply your own fixes, as required. For a full list of retired libraries, refer to [this page](https://aka.ms/azure-sdk-deprecations).",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/on-1-october-2025-the-log-analytics-alert-api-in-azure-monitor-will-be-retired/)",
+            "[Migration Guide for .NET](https://aka.ms/dotnet/t2/migration)",
+            "[Migration Guide for Go](https://aka.ms/azsdk/golang/t2/migration)",
+            "[Blog post](https://azure.microsoft.com/blog/previewing-azure-sdks-following-new-azure-sdk-api-standards/)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> - Upgrade to the [new Azure SDK libraries](https://aka.ms/azsdk) by 30 September 2023so that your applications receive regular security and performance updates.\r\n> - View a [full list of retired libraries](https://aka.ms/azure-sdk-deprecations) along with migration guides:\r\n>   - NET: https://aka.ms/dotnet/t2/migration\r\n>   - Golang: https://aka.ms/azsdk/golang/t2/migration\r\n> - Learn more about the retirement and replacement of older Azure SDK libraries in [this](https://azure.microsoft.com/blog/previewing-azure-sdks-following-new-azure-sdk-api-standards/) blog post.",
+        "AdditionalInfo": "A migration guide is provided [for .NET](https://aka.ms/dotnet/t2/migration) and [Goland](https://aka.ms/azsdk/golang/t2/migration)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "SDKs will still be available and work but are no longer supported. Source code remains open-source.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

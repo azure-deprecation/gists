@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Support for Node 12 for Azure Functions is retiring on December 13th, 2022",
+    "Impact": {
+        "Description": "Log Analytics alert APIs in Azure Monitor are retiring on October 1st, 2025 and migration to Azure Functions host v4 and Node 16 is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Functions"]
+    },
+    "Notice": {
+        "OfficialReport": "> **Node 12 is only supported by Azure Functions host version 3, which is ending support on 13 December 2022**. Node 12 also reached the [end of community support](https://nodejs.org/es/blog/release/v12.22.12/) 30 April 2022.\r\n>\r\n> As such, we recommend developers to update their functions apps to use Azure Functions host version 4 and Node 16. The Functions service will continue to run applications that are running Node 12 beyond 13 December 2022, but customers will be asked to upgrade to Node 16 if they need support.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-functions-support-for-node-12-is-ending-on-13-december-2022/)",
+            "[Migration Guide](https://aka.ms/functions-view-and-update-runtime-version)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid potential service disruption and security vulnerabilities in your applications, [update your Functions applications to use runtime version 4.x](https://aka.ms/functions-view-and-update-runtime-version) and [Node 16](https://aka.ms/functions-setting-node-version) before 13 December 2022.\r\n> \r\n> To learn more about Azure Functions support policy, follow this documentation.\r\n> To learn more about supported languages in Azure Functions, follow this documentation.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/functions-view-and-update-runtime-version)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-functions-node12"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-10T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-12-13T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Apps will still run but won't receive security patches or be supported.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

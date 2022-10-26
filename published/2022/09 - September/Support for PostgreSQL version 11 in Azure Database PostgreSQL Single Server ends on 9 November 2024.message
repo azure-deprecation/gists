@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "PostgreSQL version 11 in Azure Database PostgreSQL Single Server is retiring on November 9th, 2024",
+    "Impact": {
+        "Description": "PostgreSQL version 11 in Azure Database PostgreSQL Single Server is retiring on November 9th, 2024 and migration to Flexible Server with PostgreSQL 13 or above is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["DatabaseForPostgreSQL"]
+    },
+    "Notice": {
+        "OfficialReport": "> Because [community support for PostgreSQL version 11](https://www.postgresql.org/support/versioning/) will end on 9 November 2023, you’ll need to migrate your Azure Database for PostgreSQL Single Servers that use version 11 to version 13 or higher on Flexible Server.\r\n> \r\n> To ensure you have enough time to make this change, Azure Database for PostgreSQL will continue to support version 11 on Single Server for an additional year, **through 9 November 2024**, including creating new servers.",
+        "AdditionalInfo": "The versioning policy is documented [here](https://docs.microsoft.com/en-us/azure/postgresql/concepts-version-policy).",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/singlepg11-retirement/)",
+            "[Upgrade Guide](https://aka.ms/flexible-pg-upgrade)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid any disruption to your workloads, [migrate](https://aka.ms/postgres-single-to-flexible-migration) your Azure Database for PostgreSQL Single Servers that use version 11 to version 13 or higher on Flexible Server by 9 November 2024.",
+        "AdditionalInfo": "An upgrade guide is provided [here](https://aka.ms/flexible-pg-upgrade), however, migration to Flexible Server is required as well."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/qna-azure-database-postgresql-v10"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-23T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-11-09T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Disruption will occur.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

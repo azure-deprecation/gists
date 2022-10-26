@@ -1,0 +1,53 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Language Understanding (LUIS) is retiring on October 1st, 2025",
+    "Impact": {
+        "Description": "Language Understanding (LUIS) is retiring on October 1st, 2025 and migration to conversational language understanding of Azure Cognitive Services for Language is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["CognitiveServices"]
+    },
+    "Notice": {
+        "OfficialReport": "> On 1 October 2025, Language Understanding (LUIS) will be retired. Before that date, please migrate to conversational language understanding, a capability of Azure Cognitive Services for Language. Conversational language understanding provides many of the capabilities of LUIS, plus enhancements such as: \r\n> \r\n> - Enhanced AI quality using state-of-the-art machine learning models \r\n> - Multilingual capabilities that allow you to train in one language and predict in others \r\n> - Built-in routing between conversational language understanding and custom question answering projects using orchestration workflow \r\n> - Access to a suite of features available on Azure Cognitive Services for Language \r\n> \r\n> Beginning 1 April 2023, you won't be able to create new Language Understanding (LUIS) resources. All Language Understanding resources created before that date will be supported until 1 October 2025.  ",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/language-understanding-retirement/)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruptions to your applications that use Language Understanding (LUIS), first review [pricing](https://azure.microsoft.com/pricing/details/cognitive-services/language-service/) for the conversational language understanding feature of Cognitive Service for Language. Then, before 1 October 2025:  \r\n> \r\n> 1. Create a Cognitive Service for Language resource.\r\n> 2. Follow the steps to [migrate](https://aka.ms/luis-migration) your LUIS applications to conversational language understanding.\r\n> 3. If you use the LUIS SDK or REST APIs to query your applications, review the [documentation](https://docs.microsoft.com/azure/cognitive-services/language-service/conversational-language-understanding/how-to/call-api?tabs=language-studio#send-a-conversational-language-understanding-request) to learn how to call the conversational language understanding APIs and make the appropriate code changes.",
+        "AdditionalInfo": ""
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/luis-migration-qna-thread"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-04-01T00:00:00+00:00",
+            "Phase": "Creation Disabled",
+            "Description": "Creatation of new Language Understanding (LUIS) resources is disabled"
+        },
+        {
+            "Date": "2025-10-01T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Any alert rules that still use the Log Analytics alert API after that date will be automatically transitioned.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

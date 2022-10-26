@@ -13,7 +13,7 @@ MessageType: NewAzureDeprecationV1
     "Notice": {
         "OfficialReport": "> Because Node 6 reached the end of community support on 30 April 2019, applications hosted on Azure Functions using Node 6 will be unsupported after 28 February 2022.",
         "AdditionalInfo": null,
-        "Links": ["https://azure.microsoft.com/en-au/updates/azure-functions-support-for-node-6-is-ending-on-28-february-2022/"]
+        "Links": ["https://azure.microsoft.com/updates/azure-functions-support-for-node-6-is-ending-on-28-february-2022/"]
     },
     "RequiredAction": {
         "OfficialReport": "> To avoid any service disruption and potential security vulnerabilities in your applications, we recommend you upgrade to Node 14, and then [follow the steps to update your applications settings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node?tabs=v2#setting-the-node-version) before 28 February 2022.",

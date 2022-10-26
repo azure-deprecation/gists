@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Batch Low Priority VMs are retiring on September 30th, 2025",
+    "Impact": {
+        "Description": "Azure Batch Low Priority VMs are retiring on September 30th, 2025 and migration to Azure Spot Virtual Machines is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Batch"]
+    },
+    "Notice": {
+        "OfficialReport": "> Azure Batch offers Low Priority and [Spot Virtual Machines](https://learn.microsoft.com/azure/virtual-machines/spot-vms) (VMs). Low Priority VMs are a deprecated feature and will be retired on **30 September 2025**. Please transition to using Spot VMs, the official generally available (GA) preemptible offering from the Compute platform.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-batch-low-priority-vms-will-be-retired-on-30-september-2025/)",
+            "[Migration Guide](https://aka.ms/lowpriorityvmsmigration)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Follow [these steps](https://aka.ms/lowpriorityvmsmigration) to transition using Spot VMs **before 30 September 2025**. After that, we’ll stop supporting Low priority VMs. The existing Low priority pools may no longer work or be provisioned. They may be forced to be scaled down after the target date.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/lowpriorityvmsmigration)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/batchmicrosoftqna"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2025-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "The existing Low priority pools may no longer work or be provisioned. They may be forced to be scaled down after the target date.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

@@ -1,0 +1,50 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure unmanaged disks is retiring on September 30th, 2025",
+    "Impact": {
+        "Description": "Azure unmanaged disks is retiring on September 30th, 2025 and migration to Azure Managed Disks is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["VirtualMachine"]
+    },
+    "Notice": {
+        "OfficialReport": "> In 2017, we launched [Azure Managed Disks](https://azure.microsoft.com/blog/announcing-general-availability-of-managed-disks-and-larger-scale-sets/). Since then, we've been enhancing our capabilities. We will begin deprecating unmanaged disks on September 30, 2022, because Azure Managed Disks now have full capabilities of unmanaged disks and other advancements. This functionality will be completely retired on September 30, 2025.\r\n>\r\n> With managed disks, customers don’t have to worry about managing storage accounts when creating a disk as Azure manages the storage accounts behind the scenes. This level of abstraction reduces customer’s maintenance burden significantly. Furthermore, managed disks provide numerous advantages over unmanaged disks such as better [reliability](https://docs.microsoft.com/azure/virtual-machines/manage-availability#use-managed-disks-for-vms-in-an-availability-set), [scalability](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#virtual-machine-disk-limits), greater storage capacity, [bursting](https://docs.microsoft.com/azure/virtual-machines/disk-bursting), [shared disks](https://docs.microsoft.com/azure/virtual-machines/disks-shared-enable) etc.,\r\n>\r\n> If you use unmanaged disks, you should start planning your migration now. Migrate your data from Azure unmanaged disk storage to managed disks before September 30, 2025. Page blobs will not be affected by this change.\r\n>\r\n> To avoid serious service disruptions, review pricing and follow the steps to migrate your [Windows](https://docs.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) or [Linux](https://docs.microsoft.com/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks) virtual machines to managed disks before 30 September 2025.\r\n>\r\n> To learn more, read the [documentation](https://docs.microsoft.com/azure/virtual-machines/windows/migrate-to-managed-disks).",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-unmanaged-disks-will-be-retired-on-30-september-2025/)",
+            "[Migration Guide for Windows](https://docs.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks)",
+            "[Migration Guide for Linux](https://docs.microsoft.com/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid service disruptions, review [pricing](https://azure.microsoft.com/pricing/details/managed-disks/) and follow the steps to migrate your [Windows](https://docs.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) or [Linux](https://docs.microsoft.com/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks) virtual machines to managed disks before 30 September 2025.",
+        "AdditionalInfo": "A migration guide is provided for [Windows](https://docs.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) and [Linux](https://docs.microsoft.com/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/DiskQnA"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-23T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2025-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Potential service disruption may occur.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

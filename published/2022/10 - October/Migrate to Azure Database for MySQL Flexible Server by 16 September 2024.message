@@ -1,0 +1,50 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Database for MySQL Single Server is retiring on September 16th, 2024",
+    "Impact": {
+        "Description": "Azure Database for MySQL Single Server is retiring on September 16th, 2024 and migration to Azure Database for MySQL Flexible Server is required.",
+        "Type": "MigrationRequired",
+        "Area": "Sku",
+        "Cloud": "Public",
+        "Services": ["DatabaseForMySQL"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 16 September 2024, Azure Database for MySQL Single Server will be retired**, and you'll need to migrate to Flexible Server by that date.\r\n>\r\n> Flexible Server is a new, fully managed, production-ready database service that offers multiple improvements over Single Server, including:\r\n>\r\n> - More ways to optimize costs, including support for burstable tier compute options.\r\n> - Improved performance for business-critical production workloads that require low latency, high concurrency, fast failover, and high scalability.\r\n> - Improved uptime with the ability to configure a hot standby on the same or a different zone, and a one-hour time window for planned server maintenance.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/action-required-migrate-to-azure-database-for-mysql-flexible-server-by-16-september-2024/)",
+            "[Migrate with Azure Data Migration Service](https://aka.ms/single-to-flexible-server-migration)",
+            "[Migration FAQ](https://learn.microsoft.com/azure/mysql/single-server/whats-happening-to-mysql-single-server#frequently-asked-questions-faqs)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> **[Use Azure Data Migration Service to migrate](https://aka.ms/single-to-flexible-server-migration) to Azure Database for MySQL Flexible Server by 16 September 2024** (read the [FAQ](https://aka.ms/mysql-azure-single-flex-migration-faq) to learn more).",
+        "AdditionalInfo": "A migration FAQ is provided [here](https://learn.microsoft.com/azure/mysql/single-server/whats-happening-to-mysql-single-server#frequently-asked-questions-faqs) and you can migrate to flexible server with [Azure Data Migration Service](https://aka.ms/single-to-flexible-server-migration)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/microsoft-azure-mysql-qa"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-09-16T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Offering will no longer be available.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure CycleCloud 7 is retiring on September 30th, 2023",
+    "Impact": {
+        "Description": "Azure CycleCloud 7 is retiring on September 30th, 2023 and upgrade to CycleCloud 8 is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["CycleCloud"]
+    },
+    "Notice": {
+        "OfficialReport": "> Azure [CycleCloud](https://learn.microsoft.com/en-us/azure/cyclecloud/overview?view=cyclecloud-8) now provides CycleCloud 8 with new features and removal of Python 2.7 support in clusters. As Python 2.7 reached end-of-life in 2020, CycleCloud 7 will be retired on **30 September 2023**. Please transition to using CycleCloud 8 by that date.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-cyclecloud-7-will-be-retired-on-30-september-2023/)",
+            "[Migration Guide](https://aka.ms/cyclecloud7migration)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruptions to your workflow and minimize security vulnerabilities, follow these [steps](https://aka.ms/cyclecloud7migration) to transition using CycleCloud 8 **before 30 September 2023**.  After that, we’ll stop supporting CycleCloud 7 and no additional security patches or bug fixes will be released. Since CycleCloud is an installed product, you may continue to use their installations past this date at your own risk.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/cyclecloud7migration)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/cyclecloudmicrosoftqna"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "The installation will continue to work, at your own risk, as it will no longer receive patches nor security fixes.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

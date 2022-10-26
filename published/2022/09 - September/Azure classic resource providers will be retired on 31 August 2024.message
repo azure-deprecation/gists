@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure classic resource providers are retiring on August 31st, 2024",
+    "Impact": {
+        "Description": "Azure classic resource providers are retiring on August 31st, 2024 and migration to [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview#the-benefits-of-using-resource-manager) is required.",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["ResourceManager"]
+    },
+    "Notice": {
+        "OfficialReport": "> Classic resource providers that use Azure Service Manager (classic deployment model) will be retired on 31 August 2024.> \r\n> Before the retirement date, you'll need to migrate your classic resource provider that uses classic deployment model (ASM) to [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview#the-benefits-of-using-resource-manager), which provides the same capabilities as classic and additionally offers the following benefits:\r\n> \r\n> - Simplified resource deployment with a management layer that enables you to create, update, and delete Azure resources.\r\n> - Resource grouping, which allows you to deploy, monitor, manage, and apply access control policies to resources as a group.\r\n> \r\n> See also [Overview of Azure Resource Manager and classic deployment](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/deployment-models).",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-classic-resource-providers-will-be-retired-on-31-august-2024/)",
+            "[Migration Guide](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/deployment-models#migrate-from-classic-to-resource-manager)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Your access to the classic resource provider’s endpoint will be revoked and the resource provider will be disabled on 31 August 2024.\r\n> \r\n> - To take advantage of advanced capabilities offered by Azure Resource Manager and avoid service disruptions, migrate your resources that use Classic (ASM) to Azure Resource Manager by 31 August 2024.\r\n> \r\n> - Additionally, to manage service expectations of your classic resource provider, notify your end customers and coordinate with them for completing migration before the retirement date of 31 August 2024.",
+        "AdditionalInfo": "A migration guide is provided [here](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/deployment-models#migrate-from-classic-to-resource-manager)."
+    },
+    "Contact": [
+        {
+            "Type": "Email",
+            "Data": "azureclasrp_ret_sup@microsoft.com"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-07T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Endpoints will no longer work.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

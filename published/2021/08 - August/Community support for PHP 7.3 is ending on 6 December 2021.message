@@ -13,7 +13,7 @@ MessageType: NewAzureDeprecationV1
     "Notice": {
         "OfficialReport": "> Because PHP 7.3 extended support on Linux and Windows will end on 6 December 2021, any applications hosted on Azure App Service that are still using it will not be supported after 6 December 2021. Your applications will continue to run unchanged but won't receive any patches after 6 December 2021, since PHP will no longer be providing them.",
         "AdditionalInfo": null,
-        "Links": ["https://azure.microsoft.com/en-au/updates/community-support-for-php-73-is-ending-on-6-december-2021/", "https://github.com/Azure/app-service-linux-docs/blob/master/Runtime_Support/php_support.md#end-of-life-for-php-73"]
+        "Links": ["https://azure.microsoft.com/updates/community-support-for-php-73-is-ending-on-6-december-2021/", "https://github.com/Azure/app-service-linux-docs/blob/master/Runtime_Support/php_support.md#end-of-life-for-php-73"]
     },
     "RequiredAction": {
         "OfficialReport": "> To minimize risk and potential security vulnerabilities, [follow the steps to update your applications to PHP 7.4](https://aka.ms/phpsupport) before 6 December 2021.",
