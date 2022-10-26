@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Static Web Apps support for .NET Core 3.1 is retiring on December 3rd, 2022",
+    "Impact": {
+        "Description": "Azure Static Web Apps support for .NET Core 3.1 is retiring on December 3rd, 2022 and upgrade to .NET 6 is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["StaticWebApp"]
+    },
+    "Notice": {
+        "OfficialReport": "> [.NET Core 3.1 will reach the end of support](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core#lifecycle) on 13 December 2022. As a result, extended support for .NET Core 3.1 in Azure Static Web Apps that use Azure Functions will end on 3 December 2022. After this date, your existing static web apps that use Azure Functions will continue to work, but security patches and customer service for .NET Core 3.1 will no longer be provided.\r\n>\r\n> [Azure Functions announced their end of support](https://azure.microsoft.com/en-us/updates/extended-support-for-microsoft-net-core-31-will-end-on-3-december-2022/) for .NET Core 3.1 in March 2022. Since the managed functions hosted by Azure Static Web Apps run on Azure Functions, we recommend you update your functions applications to [runtime version 4.x, which uses .NET 6](https://aka.ms/functions-supported-version).\r\n>\r\n> .NET 6 is the latest version with long-term support and provides these enhancements:\r\n>\r\n> - A unified set of base libraries and an SDK that makes it easy to share code across any application type.\r\n> - Simplified development with new C# 10 features and minimal APIs.\r\n> - Hot reload that allows you to make code changes without explicit recompiling.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/en-gb/updates/staticwebappsdotnet3deprecation/)",
+            "[Upgrade Guide](https://aka.ms/static-web-apps-dotnet-6-update)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid potential service disruptions or security vulnerabilities, update your applications to runtime version 4.x before 3 December 2022.\r\n>\r\n> - Change the api runtime from .NET Core 3.1 to .NET 6, please configure the apiRuntime version in staticwebapp.config.json as explained [here](https://aka.ms/static-web-apps-apiruntime).\r\n> - Follow this [documentation](https://aka.ms/static-web-apps-dotnet-6-update) to update your local project from .NET Core 3.1 to .NET 6.\r\n>\r\n> To learn more about Azure Functions runtime support policy, check out this [documentation](https://docs.microsoft.com/en-us/azure/azure-functions/supported-languages).",
+        "AdditionalInfo": "An upgrade guide is provided [here](https://aka.ms/static-web-apps-dotnet-6-update)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/static-web-apps-qna"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2022-12-03T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Existing static web apps that use Azure Functions will continue to work, but security patches and customer service for .NET Core 3.1 will no longer be provided",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
