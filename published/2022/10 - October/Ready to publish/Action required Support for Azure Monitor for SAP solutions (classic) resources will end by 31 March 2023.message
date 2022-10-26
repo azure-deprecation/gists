@@ -1,0 +1,46 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Monitor for SAP Solutions (classic) is retiring on March 31st, 2023",
+    "Impact": {
+        "Description": "Azure Monitor for SAP Solutions (classic) is retiring on March 31st, 2023 and migration to Azure Monitor for SAP solutions v2 is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Monitor"]
+    },
+    "Notice": {
+        "OfficialReport": "> Azure Monitor for SAP Solutions (classic) is retiring. Support for Azure Monitor for SAP solutions (classic) resources will end by 31 March 2023.\r\n>\r\n> A new version of Azure Monitor for SAP Solutions (version 2.0) is [now available in public preview](https://techcommunity.microsoft.com/t5/running-sap-applications-on-the/announcing-public-preview-for-microsoft-azure-monitor-for-sap/ba-p/3575745). Azure Monitor for SAP solution (version 2.0) has feature parity with Azure Monitor for SAP Solutions (classic) and similar pricing model. Customers can collect and visualize end- to- end SAP technical monitoring telemetry in one place in Azure portal. We recommend the current Azure Monitor for SAP Solutions (classic) customers migrate to this new version as soon as possible.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-monitor-for-sap-solutions-classic-is-retiring-please-migrate-to-the-new-version-now/)",
+            "[Migration Guide](https://github.com/Azure/AMS-Migration/blob/main/README.md)",
+            "[Introduction video](https://aka.ms/ams2video)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid or mitigate possible disruptions to workflow, migrate to the new Azure Monitor for SAP solutions (version 2.0) before 31 March 2023.\r\n>\r\n> [Review the migration scripts](https://github.com/Azure/AMS-Migration/blob/main/README.md) for guidance as you migrate to SAP Solutions (version 2.0).",
+        "AdditionalInfo": "A migration guide is provided [here](https://github.com/Azure/AMS-Migration/blob/main/README.md)."
+    },
+    "Contact": [
+        {
+            "Type": "NotAvailable"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-07T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Feature will no longer work.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

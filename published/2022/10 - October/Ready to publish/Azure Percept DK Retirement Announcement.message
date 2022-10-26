@@ -1,0 +1,45 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Percept DK (public preview) is retiring on March 30th, 2023",
+    "Impact": {
+        "Description": "Azure Percept DK (public preview) is retiring on March 30th, 2023 without an alternative.",
+        "Type": "ShutdownWithoutAlternative",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["Percept"]
+    },
+    "Notice": {
+        "OfficialReport": "> The Azure Percept public preview will be evolving to support new edge device platforms and developer experiences. As part of this evolution the Azure Percept DK and Audio Accessory and associated supporting Azure services for the Percept DK will be retired March 30th, 2023.\r\n>\r\n> **How does this change affect me?**\r\n> After 30 March 2023 the Azure Percept DK and Audio Accessory will no longer be supported by any Azure services including Azure Percept Studio, OS updates, containers updates, view web stream, and Custom Vision integration. Microsoft will no longer provide customer success support for the Azure Percept DK and Audio Accessory and any associated supporting services for the Percept DK.",
+        "AdditionalInfo": "A FAQ is available [here](https://learn.microsoft.com/azure/azure-percept/retirement-of-azure-percept-dk#help-and-support)",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-percept-dk-retirement-announcement/)",
+            "[Deprecation overview](https://learn.microsoft.com/azure/azure-percept/retirement-of-azure-percept-dk)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> You should plan to close the resources and projects associated with the Azure Percept Studio and DK to avoid unanticipated billing of backend resources and projects after retirement.",
+        "AdditionalInfo": "A deprecation overview is provided [here](https://learn.microsoft.com/azure/azure-percept/retirement-of-azure-percept-dk)."
+    },
+    "Contact": [
+        {
+            "Type": "NotAvailable"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-16T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-03-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Azure Percept DK and Audio Accessory will no longer be supported by any Azure services.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

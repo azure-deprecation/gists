@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Support for Ruby on Azure App Service is retiring on April 12th, 2023",
+    "Impact": {
+        "Description": "Support for Ruby on Azure App Service is retiring on April 12th, 2023 and migration to custom containers is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["AppService","WebApp"]
+    },
+    "Notice": {
+        "OfficialReport": "> **Ruby 2.7 support is ending on 12 April 2023**. After this date, App Service won’t support Ruby 2.7 or future versions of Ruby. Your applications will continue to run unchanged but won’t receive patches after **12 April 2023**.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/rubysupport/)",
+            "[Migration Guide](https://aka.ms/rubycontainer)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To minimize risk, follow the steps to [migrate your applications to](https://aka.ms/rubycontainer) run in a custom container before 12 April 2023.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/rubycontainer)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/rubyqa"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-30T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-04-12T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Applications will still run but not receive patches.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

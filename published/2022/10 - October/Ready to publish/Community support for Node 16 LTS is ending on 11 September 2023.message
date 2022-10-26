@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Community support for Node 16 LTS for Azure App Service is retiring on September 11th, 2023",
+    "Impact": {
+        "Description": "Community support for Node 16 LTS for Azure App Service is retiring on September 11th, 2023 and upgrade to Node 18 is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["AppService","WebApp"]
+    },
+    "Notice": {
+        "OfficialReport": "> Node 16 LTS support is ending on 11 September 2023. Any applications hosted on Azure App Service that are still using it won't be supported after this. After 11 September 2023, your applications will continue to run unchanged but won't receive any patches.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/node16support/)",
+            "[Upgrade Guide](https://aka.ms/nodeversion)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To minimize risk and potential security vulnerabilities, [follow the steps to update your applications](https://aka.ms/nodeversion) to Node 18 LTS before 11 September 2023.",
+        "AdditionalInfo": "An upgrade guide is provided [here](https://aka.ms/nodeversion)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/node16lts"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-21T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-09-11T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Applications will still run but not receive patches.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

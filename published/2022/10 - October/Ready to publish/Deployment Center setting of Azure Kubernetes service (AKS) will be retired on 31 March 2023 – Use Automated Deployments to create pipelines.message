@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Kubernetes service's deployment center is retiring on March 31st, 2023",
+    "Impact": {
+        "Description": "Azure Kubernetes service's deployment center is retiring on March 31st, 2023 and migration to "Automated Deployments" feature in AKS is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["KubernetesService"]
+    },
+    "Notice": {
+        "OfficialReport": "> On 31 March 2023 Deployment Center setting of Azure Kubernetes service (AKS) will be retired. Please start using [Automated Deployments](https://docs.microsoft.com/azure/aks/automated-deployments) to create pipelines by 31 March 2023.\r\n>\r\n> Note that all existing pipelines created will still be available and functional in either GitHub Actions portal or Azure DevOps portal. Only the experience of creating and viewing the pipeline from Deployment Center in Azure portal will be unavailable after 31 March 2023.\r\n>\r\n> We encourage you to make the switch sooner to familiarize yourself with [Automated Deployments](https://docs.microsoft.com/azure/aks/automated-deployments) in Azure portal and its extensive capabilities.\r\n>\r\n> From now through 31 March 2023, you can continue to create and view pipelines from Deployment Center setting of an AKS resource in Azure portal. After 31 March 2023 this setting will no longer be available.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/deployment-center-setting-of-azure-kubernetes-service-aks-will-be-retired-on-31-march-2023-use-automated-deployments-to-creat/)",
+            "[Migration Guide](https://aka.ms/aks-dep-center-retirement-plan)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruption to your workflows, start using [Automated Deployments](https://docs.microsoft.com/azure/aks/automated-deployments) by 31 March 2023. You can use [this guide](https://aka.ms/aks-dep-center-retirement-plan) to get started with creation of pipelines using [Automated Deployments](https://docs.microsoft.com/azure/aks/automated-deployments) for an AKS resource.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/aks-dep-center-retirement-plan)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/aks-qna-card"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-09-23T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Deployments will no longer work.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

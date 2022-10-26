@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Batch Certificates are retiring on February 29th, 2024",
+    "Impact": {
+        "Description": "Azure Batch Certificates are retiring on February 29th, 2024 and migration to Azure Key Vault is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Batch"]
+    },
+    "Notice": {
+        "OfficialReport": "> As part of our efforts to modernize Batch to use the latest standard and secure Azure technologies and to improve composability with other offerings in the Azure ecosystem, we’ll retire Batch Certificates on **29 February 2024**. Please transition to [Azure Key Vault](https://learn.microsoft.com/azure/key-vault/general/best-practices) as soon as possible to more quickly realize the security and composability benefits.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-batch-certificates-will-be-retired-on-29-february-2024/)",
+            "[Migration Guide](https://aka.ms/batchcertificatesmigration)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Follow these [steps](https://aka.ms/batchcertificatesmigration) to transition using Azure Key Vault **before 29 February 2024**. After that, the Certificate functionality may cease to work properly and requests to create and/or resize pools with certificates will be rejected.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/batchcertificatesmigration)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/batchmicrosoftqna"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-07T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-02-29T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Functionality may cease to work properly and requests to create and/or resize pools with certificates will be rejected.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

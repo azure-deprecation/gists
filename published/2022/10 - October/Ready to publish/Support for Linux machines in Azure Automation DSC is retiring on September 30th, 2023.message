@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Support for Linux machines in Azure Automation DSC is retiring on September 30th, 2023",
+    "Impact": {
+        "Description": "Support for Linux machines in Azure Automation DSC is retiring on September 30th, 2023 and migration to Azure Automanage's machine configuration feature is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Automation"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 September 2023, we’ll retire desired state configuration (DSC) extension for Linux virtual machines and support for Linux machines in Azure Automation DSC.Before that date, please migrate to Azure Automanage's machine configuration feature and explore new DSC scenarios.**\r\n>\r\n> Azure provides built-in capability to deliver "configuration as code" using PowerShell desired state configuration (DSC). To address top customer requests, this capability is evolving from the "DSC VM extension" to [the machine configuration feature of Azure Automanage](https://aka.ms/gcpol), which is now generally available in Azure, including the remediation feature.\r\n>\r\n> Azure Automanage's machine configuration feature makes desired state configuration a native component of Azure, to audit or configure operating system settings as code. The solution is available both for machines running in Azure and as Arc-enabled machines in your own datacenters or multicloud environments. The feature can be used directly per-machine, or at-scale orchestrated by Azure Policy.\r\n>\r\n> Key new features in machine configuration based on customer feedback:\r\n>\r\n> 1. Advanced reporting through Azure Resource Graph including resource ID and state\r\n> 2. Manage multiple configurations for the same machine\r\n> 3. When machines drift from the desired state, you control when remediation occurs\r\n> 4. Available for all VMs (Linux and Windows) that consume PowerShell-based desired state configuration (DSC) resources\r\n>\r\n> The DSC extension for Linux machines in Azure, and Azure Automation DSC support for Linux, will no longer be supported **after 30 September 2023**. This announcement doesn’t apply to support for the DSC extension for Windows or Azure Automation DSC support for Windows.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/migrate-from-linux-dsc-extension-to-the-guest-configuration-feature-of-azure-policy-by-may-1-2025/)",
+            "[Migration Guide](https://aka.ms/dscext4linux2gc)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Begin planning your [migration strategy](https://aka.ms/dscext4linux2gc) to the machine configuration feature of Azure Automanage. Start using the new machine configuration feature of Azure Automanage as soon as possible to prevent business impact and to take advantage of the new capabilities.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/dscext4linux2gc)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/dscext4linuxretirement"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-07T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Feature will no longer work.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
