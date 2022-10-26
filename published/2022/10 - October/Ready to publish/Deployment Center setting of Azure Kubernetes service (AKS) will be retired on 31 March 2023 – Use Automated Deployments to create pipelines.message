@@ -4,7 +4,7 @@ MessageType: NewAzureDeprecationV1
 {
     "Title": "Azure Kubernetes service's deployment center is retiring on March 31st, 2023",
     "Impact": {
-        "Description": "Azure Kubernetes service's deployment center is retiring on March 31st, 2023 and migration to "Automated Deployments" feature in AKS is required.",
+        "Description": "Azure Kubernetes service's deployment center is retiring on March 31st, 2023 and migration to 'Automated Deployments' feature in AKS is required.",
         "Type": "MigrationRequired",
         "Area": "Feature",
         "Cloud": "Public",
