@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Batch pools without public IP addresses (classic) are retiring on March 31st, 2023",
+    "Impact": {
+        "Description": "Azure Batch pools without public IP addresses (classic) are retiring on March 31st, 2023 and migration to simplified compute node communication pools without public IP addresses in Azure Batch is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Batch"]
+    },
+    "Notice": {
+        "OfficialReport": "> [Azure Batch pools without public IP addresses (classic)](https://learn.microsoft.com/en-us/azure/batch/batch-pool-no-public-ip-address) has been updated to [simplified compute node communication pools without public IP addresses](https://learn.microsoft.com/en-us/azure/batch/simplified-node-communication-pool-no-public-ip), because we launched a Simplified compute node communication model for Batch to improve security and simplify the user experience. Batch pools without public addresses (classic) will be retired on **31 March 2023**. Please transition to using Simplified compute node communication pools without public IP addresses.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-batch-pools-without-public-ip-addresses-classic-will-be-retired-on-31-march-2023/)",
+            "[Migration Guide](https://aka.ms/batchpoolswithoutpublicipaddressesclassicmigration)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruptions to your workflow, follow these [steps](https://aka.ms/batchpoolswithoutpublicipaddressesclassicmigration) to transition to Simplified compute node communication pools without public IP addresses **before 31 March 2023**. After that, we will stop supporting Batch pools without public IP addresses (classic). The functionality of the existing pool in that configuration may break, such as scale out operations, or may be actively scaled down to zero at any point in time.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/batchpoolswithoutpublicipaddressesclassicmigration)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/batchmicrosoftqna"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-07T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-03-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "The functionality of the existing pool in that configuration may break, such as scale out operations, or may be actively scaled down to zero at any point in time.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

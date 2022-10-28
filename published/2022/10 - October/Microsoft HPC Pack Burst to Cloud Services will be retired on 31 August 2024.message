@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Microsoft HPC Pack Burst to Cloud Services is retiring on August 31st, 2024",
+    "Impact": {
+        "Description": "Microsoft HPC Pack Burst to Cloud Services is retiring on August 31st, 2024 and migration to HPC Pack Burst to Azure IaaS VM or Burst to Azure Batch service is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["CloudServices"]
+    },
+    "Notice": {
+        "OfficialReport": "> Microsoft HPC Pack product relies on Cloud services configuration for Bursting to Cloud Service feature. The dependent feature Cloud Service (classic) deployment model will be retired. Therefore, we will retire HPC Pack Burst to Cloud Services on **31 August 2024**. Please transition to using [HPC Pack Burst to Azure IaaS VM](https://learn.microsoft.com/en-us/powershell/high-performance-computing/hpcpack-burst-to-azure-iaas-nodes?view=hpc19-ps) or [Burst to Azure Batch service](https://learn.microsoft.com/en-us/powershell/high-performance-computing/burst-to-azure-batch-with-microsoft-hpc-pack?view=hpc19-ps) as soon as possible to keep the workload continuity.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/en-au/updates/azure-hpc-pack-burst-to-cloud-services-will-be-retired-on-31-august-2024/)",
+            "[Migration Guide](https://aka.ms/hpcpackbursttocloudservicesmigration)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Follow these [steps](https://aka.ms/hpcpackbursttocloudservicesmigration) to transition using HPC Pack Burst to Azure IaaS VM or Burst to Azure Batch service **before 31 August 2024**. After that, you will not be able to create or manage Azure Cloud service worker role instances with HPC Pack.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/hpcpackbursttocloudservicesmigration)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/hpcpackmicrosoftqna"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-07T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-08-31T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "You will no longer be able to create or manage Azure Cloud service worker role instances with HPC Pack.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

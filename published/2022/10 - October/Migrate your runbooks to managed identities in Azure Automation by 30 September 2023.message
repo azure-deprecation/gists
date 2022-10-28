@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Automation Run As accounts are retiring on September 30th, 2023",
+    "Impact": {
+        "Description": "Azure Automation Run As accounts are retiring on September 30th, 2023 and migration to using runbooks with managed identities is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["Automation"]
+    },
+    "Notice": {
+        "OfficialReport": "> **On 30 September 2023, Azure Automation Run As accounts will be retired** and you'll need to migrate your runbooks to managed identities for authentication by that date. Managed identities provide the same functionality as Run As accounts, plus:\r\n>\r\n> - Secure authentication to any Azure service that supports Azure Active Directory (Azure AD) authentication.\r\n> - Minimized management overhead with easy access to resources.\r\n> - Simplified runbooks with no requirement to use multi-line code.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-automation-runas-account-retiring-on-30-september-2023/)",
+            "[Migration Guide](https://aka.ms/migrate-run-as-accounts-managed-identity)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To ensure you're using a supported authentication method, [migrate](https://aka.ms/migrate-run-as-accounts-managed-identity) your Azure Automation runbooks from Run As accounts to managed identities by 30 September 2023.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/migrate-run-as-accounts-managed-identity)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/retirement-announcement-automation-runbook-start-using-managed-identities"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-07T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Impact is unknown but most likely they will stop working.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
