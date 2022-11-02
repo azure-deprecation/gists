@@ -1,0 +1,44 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "API version 2022-01-01-preview in Azure Container Apps is retiring on January 1st, 2023",
+    "Impact": {
+        "Description": "API version 2022-01-01-preview in Azure Container Apps is retiring on January 1st, 2023 and migration to latest stable API version is required.",
+        "Type": "MigrationRequired",
+        "Area": "ApiEndpoint",
+        "Cloud": "Public",
+        "Services": ["ContainerApps"]
+    },
+    "Notice": {
+        "OfficialReport": "> Azure Container Apps will deprecate API version 2022-01-01-preview on January 01, 2023. Please make sure you are using the latest stable or preview versions in your APIs and templates.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://github.com/microsoft/azure-container-apps/issues/475)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "",
+        "AdditionalInfo": "Migrate to the latest stable API version"
+    },
+    "Contact": [
+        {
+            "Type": "NotAvailable"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-11-01T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-01-01T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "API version will no longer be available.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

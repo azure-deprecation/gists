@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "IP Address of Azure API Management RP in Switzerland North is changing on September 30th, 2023",
+    "Impact": {
+        "Description": "IP Address of Azure API Management resource provider (RP) in Switzerland North is changing on September 30th, 2023 and migration to new IP address is required.",
+        "Type": "MigrationRequired",
+        "Area": "Security",
+        "Cloud": "Public",
+        "Services": ["ApiManagement"]
+    },
+    "Notice": {
+        "OfficialReport": "> On 30 September 2023 as part of our continuing work to increase the resiliency of API Management services, we're making the resource providers for Azure API Management zone redundant in each region. The IP address that the resource provider uses to communicate with your service will change if it's located in Switzerland North:\r\n> \r\n> - Old IP address: 51.107.0.91\r\n> - New IP address: 51.107.246.176\r\n> \r\n> This change will have no effect on the availability of your API Management service. However, you may have to take steps described below to configure your API Management service beyond 30 September 2023.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/en-us/updates/review-your-vnet-configurations-in-switzerland-north-that-may-be-affected-by-ip-address-changes/)",
+            "[All Azure API Management breaking changes](http://aka.ms/apim-updates/sep2023-rpchange)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid potential service disruptions, please review your virtual network configuration and review the [change notice in our documentation](http://aka.ms/apim-updates/sep2023-rpchange). If any security rules reference the old IP addresses in the table above, review the [virtual network configuration reference](https://learn.microsoft.com/en-us/azure/api-management/virtual-network-reference?tabs=stv2) and make necessary updates before 31 March 2023.",
+        "AdditionalInfo": "All Azure API Management breaking changes are available [here](http://aka.ms/apim-updates/sep2023-rpchange). You may also consider using [service tags](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags) instead of dedicaeted IPs."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://learn.microsoft.com/en-us/answers/topics/azure-api-management.html"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-10-28T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "New IP address will be used only.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
