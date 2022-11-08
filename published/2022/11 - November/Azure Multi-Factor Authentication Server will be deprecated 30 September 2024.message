@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Multi-Factor Authentication Server is retiring on September 30th, 2024",
+    "Impact": {
+        "Description": "Azure Database for MySQL Single Server is retiring on September 16th, 2024 and migration to cloud-based Azure MFA service is required.",
+        "Type": "MigrationRequired",
+        "Area": "Feature",
+        "Cloud": "Public",
+        "Services": ["ActiveDirectory"]
+    },
+    "Notice": {
+        "OfficialReport": "> Beginning September 30, 2024, Azure Multi-Factor Authentication Server deployments will no longer service multi-factor authentication (MFA) requests, which could cause authentications to fail for your organization.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-multifactor-authentication-server-will-be-deprecated-30-september-2024/)",
+            "[Migration guide](https://learn.microsoft.com/azure/active-directory/authentication/how-to-migrate-mfa-server-to-azure-mfa-user-authentication)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To ensure uninterrupted authentication services and to remain in a supported state, organizations should [migrate their users’ authentication data](https://learn.microsoft.com/azure/active-directory/authentication/how-to-migrate-mfa-server-to-azure-mfa-user-authentication) to the cloud-based Azure MFA service using the latest Migration Utility included in the most recent [Azure MFA Server update](https://www.microsoft.com/download/details.aspx?id=55849). Learn more at [Azure MFA Server Migration](https://learn.microsoft.com/azure/active-directory/authentication/how-to-migrate-mfa-server-to-azure-mfa).",
+        "AdditionalInfo": "A migration FAQ is provided [here](https://learn.microsoft.com/azure/active-directory/authentication/how-to-migrate-mfa-server-to-azure-mfa-user-authentication)."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/node16lts"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-11-04T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2024-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Authentications will start failing.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
