@@ -1,0 +1,45 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "TLS 1.1 or below in Azure Resource Manager is retiring by Fall 2023",
+    "Impact": {
+        "Description": "TLS 1.1 or below in Azure Resource Manager is retiring by Fall 2023 and upgrade to TLS 1.2 is required.",
+        "Type": "UpgradeRequired",
+        "Area": "Security",
+        "Cloud": "Public",
+        "Services": ["ResourceManager"]
+    },
+    "Notice": {
+        "OfficialReport": "> To ensure that Azure can provide the best level of security for our customers’ data, Azure Resource Manager will be deprecating support for incoming requests coming over TLS 1.1 and other older security protocols by Fall 2023. As such, to avoid any interruptions in your connections with Azure, we highly recommend that you migrate to TLS 1.2 and remove any dependencies on older protocols in your operating systems and work environments. \r\n>\r\n> Azure Resource Manager already supports TLS 1.2; customers currently using this version will be unaffected by this move. However, we will require HTTPS connections coming from all customers to use TLS 1.2, and we will no longer provide backwards compatibility to older security protocols.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/en-au/updates/arm-tls-12-migration/)",
+            "[Migration guide](https://learn.microsoft.com/azure/azure-resource-manager/management/tls-support)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To maintain your connections to Azure Resource Manager, please update your operating systems, development libraries, frameworks, and all other solutions to their latest versions to support TLS 1.2.",
+        "AdditionalInfo": "A migration FAQ is provided [here](https://learn.microsoft.com/azure/azure-resource-manager/management/tls-support)."
+    },
+    "Contact": [
+        {
+            "Type": "NotAvailable"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-11-11T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-09-23T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "TLS 1.1 is no longer going to be supported by fall 2023.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

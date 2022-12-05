@@ -1,0 +1,49 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Azure Functions Proxies is retiring on September 30th, 2025",
+    "Impact": {
+        "Description": "Azure Functions Proxies is retiring on September 30th, 2025 and migration to Azure API Management is required.",
+        "Type": "MigrationRequired",
+        "Area": "ServiceRuntime",
+        "Cloud": "Public",
+        "Services": ["Functions"]
+    },
+    "Notice": {
+        "OfficialReport": "> Azure API Management is Microsoft’s solution to securely create and manage modern APIs at scale. It also provides advanced tools for building and maintaining APIs such as OpenAPI integration, rate limiting and exhaustive policy support. \r\n> \r\n> Azure Functions Proxies are a very limited subset of these capabilities that will no longer be invested in to avoid duplication of functionality. Azure Functions Proxies will continue to remain in maintenance mode until **30 September 2025** after which they will no longer be supported.\r\n> \r\n> To enable seamless upgrade of Function applications to runtime V4.x, we will be adding Proxy support back in Functions runtime V4.x by October 2022. However, migrating away from Proxies is strongly recommended.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/community-support-for-azure-functions-proxies-will-end-on-30-september-2025/)",
+            "[Migration guide](https://aka.ms/proxydeprecation)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> Please review the [migration guidance](https://aka.ms/proxydeprecation) and transition to Azure API Management as soon as possible to be on the recommended and long term supported path.",
+        "AdditionalInfo": "A migration guide is provided [here](https://aka.ms/proxydeprecation).\r\n\r\nCustomers can create issues on [this GitHub repo](https://github.com/Azure/Azure-Functions) and tag them with `proxy-deprecation` in case of problems."
+    },
+    "Contact": [
+        {
+            "Type": "Support"
+        },
+        {
+            "Type": "MicrosoftQAndA",
+            "Data": "https://aka.ms/proxydeprecation-QnA"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2022-12-02T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2025-09-30T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "Offering will no longer be available.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
