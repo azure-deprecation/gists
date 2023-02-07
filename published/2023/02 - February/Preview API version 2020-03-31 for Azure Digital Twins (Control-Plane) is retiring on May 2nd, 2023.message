@@ -1,0 +1,45 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Preview API version 2020-03-31 for Azure Digital Twins (Control-Plane) is retiring on May 2nd, 2023",
+    "Impact": {
+        "Description": "Preview API version 2020-03-31 for Azure Digital Twins (Control-Plane) is retiring on May 2nd, 2023 and migration to latest stable API version 2022-10-31",
+        "Type": "UpgradeRequired",
+        "Area": "ApiEndpoint",
+        "Cloud": "Public",
+        "Services": ["DigitalTwins"]
+    },
+    "Notice": {
+        "OfficialReport": "> **Starting on May 02, 2023, Azure Digital Twins Preview Control-Plane API [2020-03-01-preview](https://github.com/Azure/azure-rest-api-specs/tree/main/specification/digitaltwins/resource-manager/Microsoft.DigitalTwins/preview/2020-03-01-preview) version will be retired.** Before that date, please migrate to the [latest GA stable API version (2022-10-31)](https://github.com/Azure/azure-rest-api-specs/tree/main/specification/digitaltwins/resource-manager/Microsoft.DigitalTwins/stable/2022-10-31), which provides more capabilities, including time-series databased connections and managed identity.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-digital-twins-controlplane-preview-api-retirement-20200331/)",
+            "[Blog post](https://learn.microsoft.com/azure/digital-twins/resources-migrate-from-preview-apis)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruption, please update by May 02 2023to the target replacement API version ([2022-10-31 stable API version](https://github.com/Azure/azure-rest-api-specs/tree/main/specification/digitaltwins/resource-manager/Microsoft.DigitalTwins/stable/2022-10-31)), which is backward compatible with the [2021-06-30-preview](https://github.com/Azure/azure-rest-api-specs/tree/main/specification/digitaltwins/resource-manager/Microsoft.DigitalTwins/preview/2021-06-30-preview) API version.\r\n>\r\n> It is recommended that users of the affected associated SDKs of the 2021-06-30-preview API to update to the latest version SDKs and follow additional migration guidance from the old to new Azure SDK.\r\n>\r\n> For more information, please reference this guide on migrating from the retiring control-plane preview API to the latest GA stable API and their associated SDKs: [https://learn.microsoft.com/azure/digital-twins/resources-migrate-from-preview-apis](https://learn.microsoft.com/azure/digital-twins/resources-migrate-from-preview-apis).",
+        "AdditionalInfo": ""
+    },
+    "Contact": [
+        {
+            "Type": "Unknown"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2023-02-03T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-05-02T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "API version will no longer be available.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```

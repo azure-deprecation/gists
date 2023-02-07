@@ -1,0 +1,45 @@
+MessageType: NewAzureDeprecationV1
+
+```json
+{
+    "Title": "Preview API version 2021-06-31 for Azure Digital Twins (Control-Plane) is retiring on May 2nd, 2023",
+    "Impact": {
+        "Description": "Preview API version 2021-06-31 for Azure Digital Twins (Control-Plane) is retiring on May 2nd, 2023 and migration to latest stable API version 2022-10-31",
+        "Type": "UpgradeRequired",
+        "Area": "ApiEndpoint",
+        "Cloud": "Public",
+        "Services": ["DigitalTwins"]
+    },
+    "Notice": {
+        "OfficialReport": "> **Starting on May 02, 2023, Azure Digital Twins Preview Control-Plane [API 2021-06-30-preview version](https://github.com/Azure/azure-rest-api-specs/tree/main/specification/digitaltwins/resource-manager/Microsoft.DigitalTwins/preview/2021-06-30-preview) will be retired.** Before that date, please migrate to the [latest GA stable API version (2022-10-31)](https://github.com/Azure/azure-rest-api-specs/tree/main/specification/digitaltwins/resource-manager/Microsoft.DigitalTwins/stable/2022-10-31), which additionally introduces user-assigned managed identities.",
+        "AdditionalInfo": "",
+        "Links": [
+            "[Announcement](https://azure.microsoft.com/updates/azure-digital-twins-controlplane-preview-api-retirement-20210631/)",
+            "[Blog post](https://learn.microsoft.com/azure/digital-twins/resources-migrate-from-preview-apis)"
+        ]
+    },  
+    "RequiredAction": {
+        "OfficialReport": "> To avoid disruption, please be aware of the following changes when migrating to the latest GA stable API version (2022-10-31) before May 02 2023: \r\n> \r\n> EventHub endpoints: EventHub endpoints have changed from “connectionString-PrimaryKey” and “connectionString-SecondaryKey” to “connectionStringPrimaryKey” and “connectionStringSecondaryKey” respectively, i.e., the dash “-“ are now removed. \r\n> \r\n> PATCH API response changed from synchronous to asynchronous: The PATCH API of Digital Twins Resources now returns “202 Accepted” (instead of “200 OK” ) as the update will complete asynchronously. Users can track the status of the update with a PUT request. \r\n> \r\n> It is recommended that users of the affected associated SDKs of the 2020-03-01-preview API to update to the latest version SDKs and follow additional migration guidance from the old to new Azure SDK.\r\n> \r\n> For more information, please reference this guide on migrating from the retiring control-plane preview API to the latest GA stable API and their associated SDKs: https://learn.microsoft.com/azure/digital-twins/resources-migrate-from-preview-apis",
+        "AdditionalInfo": ""
+    },
+    "Contact": [
+        {
+            "Type": "Unknown"
+        }
+    ],
+    "Timeline":[
+        {
+            "Date": "2023-02-03T00:00:00+00:00",
+            "Phase": "Announcement",
+            "Description": "Deprecation was announced"
+        },
+        {
+            "Date": "2023-05-02T00:00:00+00:00",
+            "Phase": "Deprecation",
+            "Description": "API version will no longer be available.",
+            "IsDueDate": true
+        }
+    ],
+    "AdditionalInformation": ""
+}
+```
